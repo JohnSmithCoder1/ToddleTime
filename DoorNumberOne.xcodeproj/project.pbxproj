@@ -11,7 +11,15 @@
 		050DBDCA20800375004278E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050DBDC920800375004278E6 /* ViewController.swift */; };
 		050DBDCD20800375004278E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDCB20800375004278E6 /* Main.storyboard */; };
 		050DBDCF20800376004278E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDCE20800376004278E6 /* Assets.xcassets */; };
-		050DBDD220800376004278E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDD020800376004278E6 /* LaunchScreen.storyboard */; };
+		050DBDDA20800435004278E6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050DBDD920800435004278E6 /* Card.swift */; };
+		050DBDE320800483004278E6 /* cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDB20800482004278E6 /* cat.wav */; };
+		050DBDE420800483004278E6 /* pig.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDC20800482004278E6 /* pig.wav */; };
+		050DBDE520800483004278E6 /* dog.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDD20800483004278E6 /* dog.wav */; };
+		050DBDE620800483004278E6 /* cow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDE20800483004278E6 /* cow.wav */; };
+		050DBDE720800483004278E6 /* elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDF20800483004278E6 /* elephant.wav */; };
+		050DBDE820800483004278E6 /* bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDE020800483004278E6 /* bird.wav */; };
+		050DBDE920800483004278E6 /* horse.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDE120800483004278E6 /* horse.wav */; };
+		050DBDEA20800483004278E6 /* owl.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDE220800483004278E6 /* owl.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +28,16 @@
 		050DBDC920800375004278E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		050DBDCC20800375004278E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		050DBDCE20800376004278E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		050DBDD120800376004278E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		050DBDD320800376004278E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		050DBDD920800435004278E6 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		050DBDDB20800482004278E6 /* cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat.wav; sourceTree = "<group>"; };
+		050DBDDC20800482004278E6 /* pig.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pig.wav; sourceTree = "<group>"; };
+		050DBDDD20800483004278E6 /* dog.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog.wav; sourceTree = "<group>"; };
+		050DBDDE20800483004278E6 /* cow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cow.wav; sourceTree = "<group>"; };
+		050DBDDF20800483004278E6 /* elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant.wav; sourceTree = "<group>"; };
+		050DBDE020800483004278E6 /* bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bird.wav; sourceTree = "<group>"; };
+		050DBDE120800483004278E6 /* horse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = horse.wav; sourceTree = "<group>"; };
+		050DBDE220800483004278E6 /* owl.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = owl.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +72,18 @@
 			children = (
 				050DBDC720800375004278E6 /* AppDelegate.swift */,
 				050DBDC920800375004278E6 /* ViewController.swift */,
+				050DBDD920800435004278E6 /* Card.swift */,
 				050DBDCB20800375004278E6 /* Main.storyboard */,
 				050DBDCE20800376004278E6 /* Assets.xcassets */,
-				050DBDD020800376004278E6 /* LaunchScreen.storyboard */,
 				050DBDD320800376004278E6 /* Info.plist */,
+				050DBDE020800483004278E6 /* bird.wav */,
+				050DBDDB20800482004278E6 /* cat.wav */,
+				050DBDDE20800483004278E6 /* cow.wav */,
+				050DBDDD20800483004278E6 /* dog.wav */,
+				050DBDDF20800483004278E6 /* elephant.wav */,
+				050DBDE120800483004278E6 /* horse.wav */,
+				050DBDE220800483004278E6 /* owl.wav */,
+				050DBDDC20800482004278E6 /* pig.wav */,
 			);
 			path = DoorNumberOne;
 			sourceTree = "<group>";
@@ -122,9 +146,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050DBDD220800376004278E6 /* LaunchScreen.storyboard in Resources */,
+				050DBDE620800483004278E6 /* cow.wav in Resources */,
+				050DBDE920800483004278E6 /* horse.wav in Resources */,
+				050DBDE320800483004278E6 /* cat.wav in Resources */,
 				050DBDCF20800376004278E6 /* Assets.xcassets in Resources */,
+				050DBDE720800483004278E6 /* elephant.wav in Resources */,
 				050DBDCD20800375004278E6 /* Main.storyboard in Resources */,
+				050DBDE820800483004278E6 /* bird.wav in Resources */,
+				050DBDE420800483004278E6 /* pig.wav in Resources */,
+				050DBDE520800483004278E6 /* dog.wav in Resources */,
+				050DBDEA20800483004278E6 /* owl.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				050DBDCA20800375004278E6 /* ViewController.swift in Sources */,
+				050DBDDA20800435004278E6 /* Card.swift in Sources */,
 				050DBDC820800375004278E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,14 +181,6 @@
 				050DBDCC20800375004278E6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		050DBDD020800376004278E6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				050DBDD120800376004278E6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
