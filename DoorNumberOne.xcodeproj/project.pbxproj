@@ -17,9 +17,12 @@
 		050DBDE520800483004278E6 /* dog.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDD20800483004278E6 /* dog.wav */; };
 		050DBDE620800483004278E6 /* cow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDE20800483004278E6 /* cow.wav */; };
 		050DBDE720800483004278E6 /* elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDF20800483004278E6 /* elephant.wav */; };
-		050DBDE820800483004278E6 /* bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDE020800483004278E6 /* bird.wav */; };
 		050DBDE920800483004278E6 /* horse.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDE120800483004278E6 /* horse.wav */; };
 		050DBDEA20800483004278E6 /* owl.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDE220800483004278E6 /* owl.wav */; };
+		050DBDEC20802D47004278E6 /* sheep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDEB20802D47004278E6 /* sheep.wav */; };
+		050DBDEE20802D54004278E6 /* openDoor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDED20802D54004278E6 /* openDoor.wav */; };
+		050DBDF020802DE9004278E6 /* closeDoor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDEF20802DE9004278E6 /* closeDoor.wav */; };
+		050DBDF220803332004278E6 /* rooster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDF120803332004278E6 /* rooster.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +38,12 @@
 		050DBDDD20800483004278E6 /* dog.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog.wav; sourceTree = "<group>"; };
 		050DBDDE20800483004278E6 /* cow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cow.wav; sourceTree = "<group>"; };
 		050DBDDF20800483004278E6 /* elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant.wav; sourceTree = "<group>"; };
-		050DBDE020800483004278E6 /* bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bird.wav; sourceTree = "<group>"; };
 		050DBDE120800483004278E6 /* horse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = horse.wav; sourceTree = "<group>"; };
 		050DBDE220800483004278E6 /* owl.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = owl.wav; sourceTree = "<group>"; };
+		050DBDEB20802D47004278E6 /* sheep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sheep.wav; sourceTree = "<group>"; };
+		050DBDED20802D54004278E6 /* openDoor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = openDoor.wav; sourceTree = "<group>"; };
+		050DBDEF20802DE9004278E6 /* closeDoor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = closeDoor.wav; sourceTree = "<group>"; };
+		050DBDF120803332004278E6 /* rooster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +82,6 @@
 				050DBDCB20800375004278E6 /* Main.storyboard */,
 				050DBDCE20800376004278E6 /* Assets.xcassets */,
 				050DBDD320800376004278E6 /* Info.plist */,
-				050DBDE020800483004278E6 /* bird.wav */,
 				050DBDDB20800482004278E6 /* cat.wav */,
 				050DBDDE20800483004278E6 /* cow.wav */,
 				050DBDDD20800483004278E6 /* dog.wav */,
@@ -84,6 +89,10 @@
 				050DBDE120800483004278E6 /* horse.wav */,
 				050DBDE220800483004278E6 /* owl.wav */,
 				050DBDDC20800482004278E6 /* pig.wav */,
+				050DBDF120803332004278E6 /* rooster.wav */,
+				050DBDEB20802D47004278E6 /* sheep.wav */,
+				050DBDED20802D54004278E6 /* openDoor.wav */,
+				050DBDEF20802DE9004278E6 /* closeDoor.wav */,
 			);
 			path = DoorNumberOne;
 			sourceTree = "<group>";
@@ -148,11 +157,14 @@
 			files = (
 				050DBDE620800483004278E6 /* cow.wav in Resources */,
 				050DBDE920800483004278E6 /* horse.wav in Resources */,
+				050DBDEE20802D54004278E6 /* openDoor.wav in Resources */,
+				050DBDF020802DE9004278E6 /* closeDoor.wav in Resources */,
 				050DBDE320800483004278E6 /* cat.wav in Resources */,
+				050DBDF220803332004278E6 /* rooster.wav in Resources */,
 				050DBDCF20800376004278E6 /* Assets.xcassets in Resources */,
 				050DBDE720800483004278E6 /* elephant.wav in Resources */,
+				050DBDEC20802D47004278E6 /* sheep.wav in Resources */,
 				050DBDCD20800375004278E6 /* Main.storyboard in Resources */,
-				050DBDE820800483004278E6 /* bird.wav in Resources */,
 				050DBDE420800483004278E6 /* pig.wav in Resources */,
 				050DBDE520800483004278E6 /* dog.wav in Resources */,
 				050DBDEA20800483004278E6 /* owl.wav in Resources */,
