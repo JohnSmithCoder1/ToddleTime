@@ -11,6 +11,9 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    @IBAction func touchAdi(_ sender: Any) {
+        playAdiSound()
+    }
     @IBAction func touchElephant(_ sender: UIButton) {
         flipCard(withEmoji: "🐘", on: sender)
     }
@@ -48,6 +51,8 @@ class ViewController: UIViewController {
     }
     
     var player: AVAudioPlayer?
+    
+//    var 
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
@@ -260,6 +265,25 @@ class ViewController: UIViewController {
     
     func playSheepSound() {
         guard let url = Bundle.main.url(forResource: "sheep", withExtension: "wav") else {
+            print("url not found")
+            return
+        }
+        
+        do {
+            /// this codes for making this app ready to takeover the device audio
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+            
+            player!.play()
+        } catch let error as NSError {
+            print("error: \(error.localizedDescription)")
+        }
+    }
+    
+    func playAdiSound() {
+        guard let url = Bundle.main.url(forResource: "Adi", withExtension: "wav") else {
             print("url not found")
             return
         }
