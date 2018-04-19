@@ -130,6 +130,16 @@
                                     <action selector="touchAdi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ey9-iP-BMU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfG-wp-GoH">
+                                <rect key="frame" x="192" y="660" width="40" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="🔈"/>
+                                <connections>
+                                    <action selector="backgroundMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9S-b7-0I8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

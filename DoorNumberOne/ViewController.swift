@@ -11,6 +11,10 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    @IBAction func backgroundMusic(_ sender: Any) {
+        playBackgroundMusic("backgroundMusic.mp3")
+    }
+    
     @IBAction func touchAdi(_ sender: Any) {
         playAdiSound()
     }
@@ -52,7 +56,8 @@ class ViewController: UIViewController {
     
     var player: AVAudioPlayer?
     
-//    var 
+    var backgroundMusicPlayer: AVAudioPlayer!
+
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
@@ -298,6 +303,24 @@ class ViewController: UIViewController {
             player!.play()
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
+        }
+    }
+    
+    func playBackgroundMusic(_ filename: String) {
+        let resourceUrl = Bundle.main.url(forResource: filename, withExtension: nil)
+        guard let url = resourceUrl else {
+            print("Could not find file: \(filename)")
+            return
+        }
+        
+        do {
+            try backgroundMusicPlayer = AVAudioPlayer(contentsOf: url)
+            backgroundMusicPlayer.numberOfLoops = -1
+            backgroundMusicPlayer.prepareToPlay()
+            backgroundMusicPlayer.play()
+        } catch {
+            print("Could not create audio player!")
+            return
         }
     }
      //var identifier = ["dog": "🐕", "pig": "🐖", "chick": "🐣", "horse": "🐎", "owl": "🦉", "elephant": "🐘", "cat": "🐈", "cow": "🐄", "sheep": "🐑"]
