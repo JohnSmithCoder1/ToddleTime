@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QnJ-Jh-Z3s">
-                                <rect key="frame" x="30" y="50" width="354" height="506"/>
+                                <rect key="frame" x="30" y="35" width="354" height="506"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pJF-Y6-qlh">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="148.66666666666666"/>
@@ -120,8 +120,9 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwz-Y7-fSX">
-                                <rect key="frame" x="75" y="564" width="275" height="97"/>
+                                <rect key="frame" x="70" y="562" width="275" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="60"/>
                                 <state key="normal" title="Adi's Farm">
                                     <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -130,22 +131,22 @@
                                     <action selector="touchAdi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ey9-iP-BMU"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ru2-8Z-erg">
-                                <rect key="frame" x="152" y="662" width="110" height="54"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Ru2-8Z-erg">
+                                <rect key="frame" x="133.66666666666666" y="631" width="147.99999999999997" height="72"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfG-wp-GoH">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="72"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="🔈"/>
                                         <connections>
                                             <action selector="backgroundMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9S-b7-0I8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXf-hk-F16">
-                                        <rect key="frame" x="70" y="0.0" width="40" height="54"/>
+                                        <rect key="frame" x="94" y="0.0" width="54" height="72"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="🔇"/>
                                         <connections>
                                             <action selector="stopBackgroundMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9in-zn-s11"/>
@@ -157,18 +158,18 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ru2-8Z-erg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B81-hP-raq"/>
-                            <constraint firstItem="QnJ-Jh-Z3s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Sda-6p-ana"/>
+                            <constraint firstItem="QnJ-Jh-Z3s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="Sda-6p-ana"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QnJ-Jh-Z3s" secondAttribute="trailing" constant="30" id="gnZ-iY-vOV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ru2-8Z-erg" secondAttribute="bottom" constant="20" id="hIW-OE-Vco"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ru2-8Z-erg" secondAttribute="bottom" constant="33" id="lXg-to-Mdz"/>
                             <constraint firstItem="QnJ-Jh-Z3s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ogN-MQ-ipy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QnJ-Jh-Z3s" secondAttribute="bottom" constant="180" id="waS-lQ-xdm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QnJ-Jh-Z3s" secondAttribute="bottom" constant="195" id="waS-lQ-xdm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-322.39999999999998" y="-115.59220389805098"/>
+            <point key="canvasLocation" x="-323.1884057971015" y="-115.7608695652174"/>
         </scene>
     </scenes>
 </document>
