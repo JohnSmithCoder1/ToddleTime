@@ -120,9 +120,9 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwz-Y7-fSX">
-                                <rect key="frame" x="54" y="575" width="307" height="96"/>
+                                <rect key="frame" x="75" y="564" width="275" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="60"/>
                                 <state key="normal" title="Adi's Farm">
                                     <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -130,21 +130,36 @@
                                     <action selector="touchAdi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ey9-iP-BMU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfG-wp-GoH">
-                                <rect key="frame" x="192" y="660" width="40" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="🔈"/>
-                                <connections>
-                                    <action selector="backgroundMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9S-b7-0I8"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ru2-8Z-erg">
+                                <rect key="frame" x="152" y="662" width="110" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfG-wp-GoH">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="54"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="🔈"/>
+                                        <connections>
+                                            <action selector="backgroundMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9S-b7-0I8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXf-hk-F16">
+                                        <rect key="frame" x="70" y="0.0" width="40" height="54"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="🔇"/>
+                                        <connections>
+                                            <action selector="stopBackgroundMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9in-zn-s11"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Ru2-8Z-erg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B81-hP-raq"/>
                             <constraint firstItem="QnJ-Jh-Z3s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Sda-6p-ana"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QnJ-Jh-Z3s" secondAttribute="trailing" constant="30" id="gnZ-iY-vOV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ru2-8Z-erg" secondAttribute="bottom" constant="20" id="hIW-OE-Vco"/>
                             <constraint firstItem="QnJ-Jh-Z3s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ogN-MQ-ipy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QnJ-Jh-Z3s" secondAttribute="bottom" constant="180" id="waS-lQ-xdm"/>
                         </constraints>

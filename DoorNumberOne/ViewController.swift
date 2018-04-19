@@ -12,12 +12,17 @@ import AVFoundation
 class ViewController: UIViewController {
     
     @IBAction func backgroundMusic(_ sender: Any) {
-        playBackgroundMusic("backgroundMusic.mp3")
+        playBackgroundMusic("backgroundMusicTrim.wav")
+    }
+    
+    @IBAction func stopBackgroundMusic(_ sender: UIButton) {
+        backgroundMusicPlayer.stop()
     }
     
     @IBAction func touchAdi(_ sender: Any) {
         playAdiSound()
     }
+    
     @IBAction func touchElephant(_ sender: UIButton) {
         flipCard(withEmoji: "🐘", on: sender)
     }
@@ -315,6 +320,7 @@ class ViewController: UIViewController {
         
         do {
             try backgroundMusicPlayer = AVAudioPlayer(contentsOf: url)
+            
             backgroundMusicPlayer.numberOfLoops = -1
             backgroundMusicPlayer.prepareToPlay()
             backgroundMusicPlayer.play()
@@ -323,6 +329,7 @@ class ViewController: UIViewController {
             return
         }
     }
+  
      //var identifier = ["dog": "🐕", "pig": "🐖", "chick": "🐣", "horse": "🐎", "owl": "🦉", "elephant": "🐘", "cat": "🐈", "cow": "🐄", "sheep": "🐑"]
 }
 
