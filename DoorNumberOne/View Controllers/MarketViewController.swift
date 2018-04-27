@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class FoodViewController: UIViewController {
+class MarketViewController: UIViewController {
     
     @IBAction func touchApple(_ sender: UIButton) {
         flipCard(withEmoji: "🍎", on: sender)
