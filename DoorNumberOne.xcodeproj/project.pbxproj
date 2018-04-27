@@ -11,7 +11,7 @@
 		05071C2D208922C700234C13 /* backgroundMusicTrim.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05071C2C208922C700234C13 /* backgroundMusicTrim.wav */; };
 		05071C2F20892AF200234C13 /* Adi'sFarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05071C2E20892AF200234C13 /* Adi'sFarm.wav */; };
 		050DBDC820800375004278E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050DBDC720800375004278E6 /* AppDelegate.swift */; };
-		050DBDCA20800375004278E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050DBDC920800375004278E6 /* ViewController.swift */; };
+		050DBDCA20800375004278E6 /* FarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050DBDC920800375004278E6 /* FarmViewController.swift */; };
 		050DBDCD20800375004278E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDCB20800375004278E6 /* Main.storyboard */; };
 		050DBDCF20800376004278E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDCE20800376004278E6 /* Assets.xcassets */; };
 		050DBDDA20800435004278E6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050DBDD920800435004278E6 /* Card.swift */; };
@@ -26,6 +26,8 @@
 		050DBDEE20802D54004278E6 /* openDoor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDED20802D54004278E6 /* openDoor.wav */; };
 		050DBDF020802DE9004278E6 /* closeDoor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDEF20802DE9004278E6 /* closeDoor.wav */; };
 		050DBDF220803332004278E6 /* rooster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDF120803332004278E6 /* rooster.wav */; };
+		05DD0C4D209371D100E9788A /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* FoodViewController.swift */; };
+		05DD0C502093777700E9788A /* Apple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05DD0C4F2093777600E9788A /* Apple.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +36,7 @@
 		05071C2E20892AF200234C13 /* Adi'sFarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Adi'sFarm.wav"; sourceTree = "<group>"; };
 		050DBDC420800375004278E6 /* DoorNumberOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorNumberOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		050DBDC720800375004278E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		050DBDC920800375004278E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		050DBDC920800375004278E6 /* FarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmViewController.swift; sourceTree = "<group>"; };
 		050DBDCC20800375004278E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		050DBDCE20800376004278E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		050DBDD320800376004278E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		050DBDED20802D54004278E6 /* openDoor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = openDoor.wav; sourceTree = "<group>"; };
 		050DBDEF20802DE9004278E6 /* closeDoor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = closeDoor.wav; sourceTree = "<group>"; };
 		050DBDF120803332004278E6 /* rooster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster.wav; sourceTree = "<group>"; };
+		05DD0C4C209371D100E9788A /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		05DD0C4F2093777600E9788A /* Apple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Apple.wav; path = DoorNumberOne/Apple.wav; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				050DBDC720800375004278E6 /* AppDelegate.swift */,
-				050DBDC920800375004278E6 /* ViewController.swift */,
 				050DBDD920800435004278E6 /* Card.swift */,
 				050DBDCB20800375004278E6 /* Main.storyboard */,
+				05DD0C4E209371E700E9788A /* View Controllers */,
 				05071C2A2089197500234C13 /* Launch Screen.storyboard */,
 				050DBDCE20800376004278E6 /* Assets.xcassets */,
 				050DBDD320800376004278E6 /* Info.plist */,
@@ -97,6 +101,7 @@
 		056058E820812A1100DC8E15 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				05DD0C4F2093777600E9788A /* Apple.wav */,
 				050DBDDB20800482004278E6 /* cat.wav */,
 				050DBDEF20802DE9004278E6 /* closeDoor.wav */,
 				050DBDDE20800483004278E6 /* cow.wav */,
@@ -112,6 +117,15 @@
 				05071C2C208922C700234C13 /* backgroundMusicTrim.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		05DD0C4E209371E700E9788A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				050DBDC920800375004278E6 /* FarmViewController.swift */,
+				05DD0C4C209371D100E9788A /* FoodViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +195,7 @@
 				050DBDF220803332004278E6 /* rooster.wav in Resources */,
 				050DBDCF20800376004278E6 /* Assets.xcassets in Resources */,
 				050DBDE720800483004278E6 /* elephant.wav in Resources */,
+				05DD0C502093777700E9788A /* Apple.wav in Resources */,
 				05071C2D208922C700234C13 /* backgroundMusicTrim.wav in Resources */,
 				05071C2B2089197500234C13 /* Launch Screen.storyboard in Resources */,
 				050DBDEC20802D47004278E6 /* sheep.wav in Resources */,
@@ -198,7 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050DBDCA20800375004278E6 /* ViewController.swift in Sources */,
+				05DD0C4D209371D100E9788A /* FoodViewController.swift in Sources */,
+				050DBDCA20800375004278E6 /* FarmViewController.swift in Sources */,
 				050DBDDA20800435004278E6 /* Card.swift in Sources */,
 				050DBDC820800375004278E6 /* AppDelegate.swift in Sources */,
 			);

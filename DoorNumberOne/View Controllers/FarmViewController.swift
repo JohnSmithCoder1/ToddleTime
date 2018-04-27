@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class FarmViewController: UIViewController {
     
     @IBAction func backgroundMusic(_ sender: Any) {
         playBackgroundMusic("backgroundMusicTrim.wav")
