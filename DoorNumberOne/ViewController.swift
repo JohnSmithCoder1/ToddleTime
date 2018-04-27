@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         playAdiSound()
     }
     
-    @IBAction func touchElephant(_ sender: UIButton) {
+    @IBAction func touchElephant(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action
         flipCard(withEmoji: "🐘", on: sender)
     }
     
