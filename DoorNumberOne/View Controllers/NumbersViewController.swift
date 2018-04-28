@@ -10,10 +10,8 @@ import UIKit
 import AVFoundation
 
 class NumbersViewController: UIViewController {
+    
     var player: AVAudioPlayer?
-    
-    var backgroundMusicPlayer: AVAudioPlayer!
-    
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
@@ -23,31 +21,31 @@ class NumbersViewController: UIViewController {
         } else {
             button.setTitle(emoji, for: .normal)
             button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            if emoji == "🍎" {
+            if emoji == "1️⃣" {
                 playAppleSound()
             }
-            if emoji == "🐄" {
+            if emoji == "2️⃣" {
                 playCowSound()
             }
-            if emoji == "🐈" {
+            if emoji == "3️⃣" {
                 playCatSound()
             }
-            if emoji == "🐕" {
+            if emoji == "4️⃣" {
                 playDogSound()
             }
-            if emoji == "🐖" {
+            if emoji == "5️⃣" {
                 playPigSound()
             }
-            if emoji == "🐎" {
+            if emoji == "6️⃣" {
                 playHorseSound()
             }
-            if emoji == "🐓" {
+            if emoji == "7️⃣" {
                 playRoosterSound()
             }
-            if emoji == "🦉" {
+            if emoji == "8️⃣" {
                 playOwlSound()
             }
-            if emoji == "🐑" {
+            if emoji == "9️⃣" {
                 playSheepSound()
             }
         }
@@ -240,44 +238,6 @@ class NumbersViewController: UIViewController {
             player!.play()
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
-        }
-    }
-    
-    func playAdiSound() {
-        guard let url = Bundle.main.url(forResource: "Adi'sFarm", withExtension: "wav") else {
-            print("url not found")
-            return
-        }
-        
-        do {
-            /// this codes for making this app ready to takeover the device audio
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            
-            player!.play()
-        } catch let error as NSError {
-            print("error: \(error.localizedDescription)")
-        }
-    }
-    
-    func playBackgroundMusic(_ filename: String) {
-        let resourceUrl = Bundle.main.url(forResource: filename, withExtension: nil)
-        guard let url = resourceUrl else {
-            print("Could not find file: \(filename)")
-            return
-        }
-        
-        do {
-            try backgroundMusicPlayer = AVAudioPlayer(contentsOf: url)
-            
-            backgroundMusicPlayer.numberOfLoops = -1
-            backgroundMusicPlayer.prepareToPlay()
-            backgroundMusicPlayer.play()
-        } catch {
-            print("Could not create audio player!")
-            return
         }
     }
 }

@@ -11,7 +11,6 @@ import AVFoundation
 
 class MarketViewController: UIViewController {
     
-    
     @IBAction func touchApple(_ sender: UIButton) {
         flipCard(withEmoji: "🍎", on: sender)
     }
@@ -55,13 +54,7 @@ class MarketViewController: UIViewController {
 
     }
     
-    
-    
-    
     var player: AVAudioPlayer?
-    
-    var backgroundMusicPlayer: AVAudioPlayer!
-    
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
@@ -288,44 +281,6 @@ class MarketViewController: UIViewController {
             player!.play()
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
-        }
-    }
-    
-    func playAdiSound() {
-        guard let url = Bundle.main.url(forResource: "Adi'sFarm", withExtension: "wav") else {
-            print("url not found")
-            return
-        }
-        
-        do {
-            /// this codes for making this app ready to takeover the device audio
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            
-            player!.play()
-        } catch let error as NSError {
-            print("error: \(error.localizedDescription)")
-        }
-    }
-    
-    func playBackgroundMusic(_ filename: String) {
-        let resourceUrl = Bundle.main.url(forResource: filename, withExtension: nil)
-        guard let url = resourceUrl else {
-            print("Could not find file: \(filename)")
-            return
-        }
-        
-        do {
-            try backgroundMusicPlayer = AVAudioPlayer(contentsOf: url)
-            
-            backgroundMusicPlayer.numberOfLoops = -1
-            backgroundMusicPlayer.prepareToPlay()
-            backgroundMusicPlayer.play()
-        } catch {
-            print("Could not create audio player!")
-            return
         }
     }
 }
