@@ -19,10 +19,6 @@ class FarmViewController: UIViewController {
         backgroundMusicPlayer.stop()
     }
     
-    @IBAction func touchAdi(_ sender: Any) {
-        playAdiSound()
-    }
-    
     @IBAction func touchElephant(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action
         flipCard(withEmoji: "🐘", on: sender)
     }
@@ -69,17 +65,10 @@ class FarmViewController: UIViewController {
             playDoorClose()
             button.setTitle("", for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.4941176471, green: 0.4078431373, blue: 0.3529411765, alpha: 1)
-//            button.layer.shadowColor = UIColor.black.cgColor
-//            button.layer.shadowOffset = CGSize(width: 5, height: 5)
-//            button.layer.shadowRadius = 5
-//            button.layer.shadowOpacity = 1.0
         } else {
             button.setTitle(emoji, for: .normal)
             button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            button.layer.shadowColor = UIColor.black.cgColor
-            button.layer.shadowOffset = CGSize(width: 5, height: 5)
-            button.layer.shadowRadius = 5
-            button.layer.shadowOpacity = 1.0
+
             if emoji == "🐘" {
                 playElephantSound()
             }
@@ -300,25 +289,6 @@ class FarmViewController: UIViewController {
         }
     }
     
-    func playAdiSound() {
-        guard let url = Bundle.main.url(forResource: "Adi'sFarm", withExtension: "wav") else {
-            print("url not found")
-            return
-        }
-        
-        do {
-            /// this codes for making this app ready to takeover the device audio
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            
-            player!.play()
-        } catch let error as NSError {
-            print("error: \(error.localizedDescription)")
-        }
-    }
-    
     func playBackgroundMusic(_ filename: String) {
         let resourceUrl = Bundle.main.url(forResource: filename, withExtension: nil)
         guard let url = resourceUrl else {
@@ -341,3 +311,89 @@ class FarmViewController: UIViewController {
      //var identifier = ["dog": "🐕", "pig": "🐖", "chick": "🐣", "horse": "🐎", "owl": "🦉", "elephant": "🐘", "cat": "🐈", "cow": "🐄", "sheep": "🐑"]
 }
 
+extension UIView {
+    
+    @IBInspectable
+    var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+        }
+    }
+    
+    @IBInspectable
+    var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    
+    @IBInspectable
+    var borderColor: UIColor? {
+        get {
+            if let color = layer.borderColor {
+                return UIColor(cgColor: color)
+            }
+            return nil
+        }
+        set {
+            if let color = newValue {
+                layer.borderColor = color.cgColor
+            } else {
+                layer.borderColor = nil
+            }
+        }
+    }
+    
+    @IBInspectable
+    var shadowRadius: CGFloat {
+        get {
+            return layer.shadowRadius
+        }
+        set {
+            layer.shadowRadius = newValue
+        }
+    }
+    
+    @IBInspectable
+    var shadowOpacity: Float {
+        get {
+            return layer.shadowOpacity
+        }
+        set {
+            layer.shadowOpacity = newValue
+        }
+    }
+    
+    @IBInspectable
+    var shadowOffset: CGSize {
+        get {
+            return layer.shadowOffset
+        }
+        set {
+            layer.shadowOffset = newValue
+        }
+    }
+    
+    @IBInspectable
+    var shadowColor: UIColor? {
+        get {
+            if let color = layer.shadowColor {
+                return UIColor(cgColor: color)
+            }
+            return nil
+        }
+        set {
+            if let color = newValue {
+                layer.shadowColor = color.cgColor
+            } else {
+                layer.shadowColor = nil
+            }
+        }
+    }
+}
