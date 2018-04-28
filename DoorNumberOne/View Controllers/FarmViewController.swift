@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FarmViewController.swift
 //  DoorNumberOne
 //
 //  Created by Banana Viking on 4/12/18.
@@ -12,7 +12,7 @@ import AVFoundation
 class FarmViewController: UIViewController {
     
     @IBAction func backgroundMusic(_ sender: Any) {
-        playBackgroundMusic("backgroundMusicTrim.wav")
+        playBackgroundMusic("backgroundMusic.wav")
     }
     
     @IBAction func stopBackgroundMusic(_ sender: UIButton) {
@@ -307,8 +307,6 @@ class FarmViewController: UIViewController {
             return
         }
     }
-  
-     //var identifier = ["dog": "🐕", "pig": "🐖", "chick": "🐣", "horse": "🐎", "owl": "🦉", "elephant": "🐘", "cat": "🐈", "cow": "🐄", "sheep": "🐑"]
 }
 
 
