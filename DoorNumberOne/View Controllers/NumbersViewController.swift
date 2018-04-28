@@ -11,6 +11,44 @@ import AVFoundation
 
 class NumbersViewController: UIViewController {
     
+    @IBAction func touch1(_ sender: UIButton) {
+        flipCard(withEmoji: "1️⃣", on: sender)
+    }
+    
+    @IBAction func touch2(_ sender: UIButton) {
+        flipCard(withEmoji: "2️⃣", on: sender)
+
+    }
+    
+    @IBAction func touch3(_ sender: UIButton) {
+        flipCard(withEmoji: "3️⃣", on: sender)
+
+    }
+    
+    @IBAction func touch4(_ sender: UIButton) {
+        flipCard(withEmoji: "4️⃣", on: sender)
+    }
+    
+    @IBAction func touch5(_ sender: UIButton) {
+        flipCard(withEmoji: "5️⃣", on: sender)
+    }
+    
+    @IBAction func touch6(_ sender: UIButton) {
+        flipCard(withEmoji: "6️⃣", on: sender)
+    }
+    
+    @IBAction func touch7(_ sender: UIButton) {
+        flipCard(withEmoji: "7️⃣", on: sender)
+    }
+    
+    @IBAction func touch8(_ sender: UIButton) {
+        flipCard(withEmoji: "8️⃣", on: sender)
+    }
+    
+    @IBAction func touch9(_ sender: UIButton) {
+        flipCard(withEmoji: "9️⃣", on: sender)
+    }
+    
     var player: AVAudioPlayer?
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
@@ -20,7 +58,7 @@ class NumbersViewController: UIViewController {
             button.backgroundColor = #colorLiteral(red: 0.4941176471, green: 0.4078431373, blue: 0.3529411765, alpha: 1)
         } else {
             button.setTitle(emoji, for: .normal)
-            button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            button.backgroundColor = #colorLiteral(red: 0.9058823529, green: 0.4431372549, blue: 0.4901960784, alpha: 1)
             if emoji == "1️⃣" {
                 playAppleSound()
             }

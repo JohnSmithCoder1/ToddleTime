@@ -67,28 +67,28 @@ class MarketViewController: UIViewController {
             if emoji == "🍎" {
                 playAppleSound()
             }
-            if emoji == "🐄" {
+            if emoji == "🍌" {
                 playCowSound()
             }
-            if emoji == "🐈" {
+            if emoji == "🍓" {
                 playCatSound()
             }
-            if emoji == "🐕" {
+            if emoji == "🍊" {
                 playDogSound()
             }
-            if emoji == "🐖" {
+            if emoji == "🍇" {
                 playPigSound()
             }
-            if emoji == "🐎" {
+            if emoji == "🌶" {
                 playHorseSound()
             }
-            if emoji == "🐓" {
+            if emoji == "🥦" {
                 playRoosterSound()
             }
-            if emoji == "🦉" {
+            if emoji == "🥕" {
                 playOwlSound()
             }
-            if emoji == "🐑" {
+            if emoji == "🌽" {
                 playSheepSound()
             }
         }
