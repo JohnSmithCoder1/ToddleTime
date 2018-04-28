@@ -11,9 +11,52 @@ import AVFoundation
 
 class MarketViewController: UIViewController {
     
+    
     @IBAction func touchApple(_ sender: UIButton) {
         flipCard(withEmoji: "🍎", on: sender)
     }
+    
+    @IBAction func touchBanana(_ sender: UIButton) {
+        flipCard(withEmoji: "🍌", on: sender)
+    }
+    
+    
+    @IBAction func touchStrawberry(_ sender: UIButton) {
+        flipCard(withEmoji: "🍓", on: sender)
+    }
+    
+    @IBAction func touchOrange(_ sender: UIButton) {
+        flipCard(withEmoji: "🍊", on: sender)
+
+    }
+    
+    @IBAction func touchGrapes(_ sender: UIButton) {
+        flipCard(withEmoji: "🍇", on: sender)
+
+    }
+    
+    @IBAction func touchPepper(_ sender: UIButton) {
+        flipCard(withEmoji: "🌶", on: sender)
+
+    }
+    
+    @IBAction func touchBroccoli(_ sender: UIButton) {
+        flipCard(withEmoji: "🥦", on: sender)
+
+    }
+    
+    @IBAction func touchCarrot(_ sender: UIButton) {
+        flipCard(withEmoji: "🥕", on: sender)
+
+    }
+    
+    @IBAction func touchCorn(_ sender: UIButton) {
+        flipCard(withEmoji: "🌽", on: sender)
+
+    }
+    
+    
+    
     
     var player: AVAudioPlayer?
     

@@ -70,7 +70,7 @@
                                 <color key="textColor" red="0.90588235289999997" green="0.4431372549" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.80190496580000004" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="shadowOffset" width="1" height="1"/>
+                                <size key="shadowOffset" width="2" height="2"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.76078431369999999" green="0.79215686269999996" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -273,6 +273,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                                 <state key="normal" title=" "/>
                                                 <connections>
+                                                    <action selector="touchBanana:" destination="XlP-1A-aCR" eventType="touchUpInside" id="xAn-WN-aDn"/>
                                                     <action selector="touchCow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cz-tg-TZh"/>
                                                 </connections>
                                             </button>
@@ -283,6 +284,7 @@
                                                 <state key="normal" title=" "/>
                                                 <connections>
                                                     <action selector="touchCat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fJu-Aj-YNr"/>
+                                                    <action selector="touchStrawberry:" destination="XlP-1A-aCR" eventType="touchUpInside" id="MeA-gG-0M6"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -297,6 +299,7 @@
                                                 <state key="normal" title=" "/>
                                                 <connections>
                                                     <action selector="touchDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K9B-KB-Btl"/>
+                                                    <action selector="touchOrange:" destination="XlP-1A-aCR" eventType="touchUpInside" id="Mep-l9-Uyj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6t-cl-DxE">
@@ -305,6 +308,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                                 <state key="normal" title=" "/>
                                                 <connections>
+                                                    <action selector="touchGrapes:" destination="XlP-1A-aCR" eventType="touchUpInside" id="Z9T-tH-cIM"/>
                                                     <action selector="touchPig:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HB4-e4-5hc"/>
                                                 </connections>
                                             </button>
@@ -315,6 +319,7 @@
                                                 <state key="normal" title=" "/>
                                                 <connections>
                                                     <action selector="touchHorse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2vZ-Pq-HSf"/>
+                                                    <action selector="touchPepper:" destination="XlP-1A-aCR" eventType="touchUpInside" id="CSV-ln-z0u"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -328,6 +333,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                                 <state key="normal" title=" "/>
                                                 <connections>
+                                                    <action selector="touchBroccoli:" destination="XlP-1A-aCR" eventType="touchUpInside" id="Yfy-LK-m06"/>
                                                     <action selector="touchChick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mve-jT-d9n"/>
                                                 </connections>
                                             </button>
@@ -337,6 +343,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                                 <state key="normal" title=" "/>
                                                 <connections>
+                                                    <action selector="touchCarrot:" destination="XlP-1A-aCR" eventType="touchUpInside" id="Bmi-GC-lLY"/>
                                                     <action selector="touchOwl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VdR-Ka-lor"/>
                                                 </connections>
                                             </button>
@@ -346,6 +353,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                                 <state key="normal" title=" "/>
                                                 <connections>
+                                                    <action selector="touchCorn:" destination="XlP-1A-aCR" eventType="touchUpInside" id="DVf-2Y-xOW"/>
                                                     <action selector="touchSheep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfu-dh-PQe"/>
                                                 </connections>
                                             </button>
