@@ -27,7 +27,7 @@
 		058B618B2093AD5300B8640D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618A2093AD5300B8640D /* MenuViewController.swift */; };
 		058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618C2093C9E100B8640D /* NumbersViewController.swift */; };
 		05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* MarketViewController.swift */; };
-		05DD0C502093777700E9788A /* Apple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05DD0C4F2093777600E9788A /* Apple.wav */; };
+		05DD0C502093777700E9788A /* apple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05DD0C4F2093777600E9788A /* apple.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +53,7 @@
 		058B618A2093AD5300B8640D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		058B618C2093C9E100B8640D /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		05DD0C4C209371D100E9788A /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
-		05DD0C4F2093777600E9788A /* Apple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Apple.wav; path = DoorNumberOne/Apple.wav; sourceTree = SOURCE_ROOT; };
+		05DD0C4F2093777600E9788A /* apple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = apple.wav; path = DoorNumberOne/apple.wav; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 		056058E820812A1100DC8E15 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				05DD0C4F2093777600E9788A /* Apple.wav */,
+				05DD0C4F2093777600E9788A /* apple.wav */,
 				050DBDDB20800482004278E6 /* cat.wav */,
 				050DBDEF20802DE9004278E6 /* closeDoor.wav */,
 				050DBDDE20800483004278E6 /* cow.wav */,
@@ -194,7 +194,7 @@
 				050DBDF220803332004278E6 /* rooster.wav in Resources */,
 				050DBDCF20800376004278E6 /* Assets.xcassets in Resources */,
 				050DBDE720800483004278E6 /* elephant.wav in Resources */,
-				05DD0C502093777700E9788A /* Apple.wav in Resources */,
+				05DD0C502093777700E9788A /* apple.wav in Resources */,
 				05071C2D208922C700234C13 /* backgroundMusic.wav in Resources */,
 				05071C2B2089197500234C13 /* Launch Screen.storyboard in Resources */,
 				050DBDEC20802D47004278E6 /* sheep.wav in Resources */,

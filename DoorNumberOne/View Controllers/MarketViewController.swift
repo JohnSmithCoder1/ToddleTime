@@ -68,28 +68,28 @@ class MarketViewController: UIViewController {
                 playAppleSound()
             }
             if emoji == "🍌" {
-                playCowSound()
+//                playBananaSound()
             }
             if emoji == "🍓" {
-                playCatSound()
+//                playStrawberrySound()
             }
             if emoji == "🍊" {
-                playDogSound()
+//                playOrangeSound()
             }
             if emoji == "🍇" {
-                playPigSound()
+//                playGrapesSound()
             }
             if emoji == "🌶" {
-                playHorseSound()
+//                playPepperSound()
             }
             if emoji == "🥦" {
-                playRoosterSound()
+//                playBroccoliSound()
             }
             if emoji == "🥕" {
-                playOwlSound()
+//                playCarrotSound()
             }
             if emoji == "🌽" {
-                playSheepSound()
+//                playCornSound()
             }
         }
     }
@@ -114,7 +114,7 @@ class MarketViewController: UIViewController {
     }
     
     func playAppleSound() {
-        guard let url = Bundle.main.url(forResource: "Apple", withExtension: "wav") else {
+        guard let url = Bundle.main.url(forResource: "apple", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -132,8 +132,8 @@ class MarketViewController: UIViewController {
         }
     }
     
-    func playCowSound() {
-        guard let url = Bundle.main.url(forResource: "cow", withExtension: "wav") else {
+    func playBananaSound() {
+        guard let url = Bundle.main.url(forResource: "banana", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -151,8 +151,8 @@ class MarketViewController: UIViewController {
         }
     }
     
-    func playCatSound() {
-        guard let url = Bundle.main.url(forResource: "cat", withExtension: "wav") else {
+    func playStrawberrySound() {
+        guard let url = Bundle.main.url(forResource: "strawberry", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -170,8 +170,8 @@ class MarketViewController: UIViewController {
         }
     }
     
-    func playDogSound() {
-        guard let url = Bundle.main.url(forResource: "dog", withExtension: "wav") else {
+    func playOrangeSound() {
+        guard let url = Bundle.main.url(forResource: "orange", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -189,8 +189,8 @@ class MarketViewController: UIViewController {
         }
     }
     
-    func playPigSound() {
-        guard let url = Bundle.main.url(forResource: "pig", withExtension: "wav") else {
+    func playGrapesSound() {
+        guard let url = Bundle.main.url(forResource: "grapes", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -208,8 +208,8 @@ class MarketViewController: UIViewController {
         }
     }
     
-    func playHorseSound() {
-        guard let url = Bundle.main.url(forResource: "horse", withExtension: "wav") else {
+    func playPepperSound() {
+        guard let url = Bundle.main.url(forResource: "pepper", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -227,8 +227,8 @@ class MarketViewController: UIViewController {
         }
     }
     
-    func playRoosterSound() {
-        guard let url = Bundle.main.url(forResource: "rooster", withExtension: "wav") else {
+    func playBroccoliSound() {
+        guard let url = Bundle.main.url(forResource: "broccoli", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -246,8 +246,8 @@ class MarketViewController: UIViewController {
         }
     }
     
-    func playOwlSound() {
-        guard let url = Bundle.main.url(forResource: "owl", withExtension: "wav") else {
+    func playCarrotSound() {
+        guard let url = Bundle.main.url(forResource: "carrot", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -265,8 +265,8 @@ class MarketViewController: UIViewController {
         }
     }
     
-    func playSheepSound() {
-        guard let url = Bundle.main.url(forResource: "sheep", withExtension: "wav") else {
+    func playCornSound() {
+        guard let url = Bundle.main.url(forResource: "corn", withExtension: "wav") else {
             print("url not found")
             return
         }

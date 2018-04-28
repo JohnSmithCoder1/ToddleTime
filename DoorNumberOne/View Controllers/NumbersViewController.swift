@@ -60,31 +60,31 @@ class NumbersViewController: UIViewController {
             button.setTitle(emoji, for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.9058823529, green: 0.4431372549, blue: 0.4901960784, alpha: 1)
             if emoji == "1️⃣" {
-                playAppleSound()
+//                play1Sound()
             }
             if emoji == "2️⃣" {
-                playCowSound()
+//                play2Sound()
             }
             if emoji == "3️⃣" {
-                playCatSound()
+//                play3Sound()
             }
             if emoji == "4️⃣" {
-                playDogSound()
+//                play4Sound()
             }
             if emoji == "5️⃣" {
-                playPigSound()
+//                play5Sound()
             }
             if emoji == "6️⃣" {
-                playHorseSound()
+//                play6Sound()
             }
             if emoji == "7️⃣" {
-                playRoosterSound()
+//                play7Sound()
             }
             if emoji == "8️⃣" {
-                playOwlSound()
+//                play8Sound()
             }
             if emoji == "9️⃣" {
-                playSheepSound()
+//                play9Sound()
             }
         }
     }
@@ -108,8 +108,8 @@ class NumbersViewController: UIViewController {
         }
     }
     
-    func playAppleSound() {
-        guard let url = Bundle.main.url(forResource: "Apple", withExtension: "wav") else {
+    func play1Sound() {
+        guard let url = Bundle.main.url(forResource: "1", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -127,8 +127,8 @@ class NumbersViewController: UIViewController {
         }
     }
     
-    func playCowSound() {
-        guard let url = Bundle.main.url(forResource: "cow", withExtension: "wav") else {
+    func play2Sound() {
+        guard let url = Bundle.main.url(forResource: "2", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -146,8 +146,8 @@ class NumbersViewController: UIViewController {
         }
     }
     
-    func playCatSound() {
-        guard let url = Bundle.main.url(forResource: "cat", withExtension: "wav") else {
+    func play3Sound() {
+        guard let url = Bundle.main.url(forResource: "3", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -165,8 +165,8 @@ class NumbersViewController: UIViewController {
         }
     }
     
-    func playDogSound() {
-        guard let url = Bundle.main.url(forResource: "dog", withExtension: "wav") else {
+    func play4Sound() {
+        guard let url = Bundle.main.url(forResource: "4", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -184,8 +184,8 @@ class NumbersViewController: UIViewController {
         }
     }
     
-    func playPigSound() {
-        guard let url = Bundle.main.url(forResource: "pig", withExtension: "wav") else {
+    func play5Sound() {
+        guard let url = Bundle.main.url(forResource: "5", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -203,8 +203,8 @@ class NumbersViewController: UIViewController {
         }
     }
     
-    func playHorseSound() {
-        guard let url = Bundle.main.url(forResource: "horse", withExtension: "wav") else {
+    func play6Sound() {
+        guard let url = Bundle.main.url(forResource: "6", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -222,8 +222,8 @@ class NumbersViewController: UIViewController {
         }
     }
     
-    func playRoosterSound() {
-        guard let url = Bundle.main.url(forResource: "rooster", withExtension: "wav") else {
+    func play7Sound() {
+        guard let url = Bundle.main.url(forResource: "7", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -241,8 +241,8 @@ class NumbersViewController: UIViewController {
         }
     }
     
-    func playOwlSound() {
-        guard let url = Bundle.main.url(forResource: "owl", withExtension: "wav") else {
+    func play8Sound() {
+        guard let url = Bundle.main.url(forResource: "8", withExtension: "wav") else {
             print("url not found")
             return
         }
@@ -260,8 +260,8 @@ class NumbersViewController: UIViewController {
         }
     }
     
-    func playSheepSound() {
-        guard let url = Bundle.main.url(forResource: "sheep", withExtension: "wav") else {
+    func play9Sound() {
+        guard let url = Bundle.main.url(forResource: "9", withExtension: "wav") else {
             print("url not found")
             return
         }
