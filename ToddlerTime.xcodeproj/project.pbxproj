@@ -27,13 +27,12 @@
 		058B618B2093AD5300B8640D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618A2093AD5300B8640D /* MenuViewController.swift */; };
 		058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618C2093C9E100B8640D /* NumbersViewController.swift */; };
 		05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* MarketViewController.swift */; };
-		05DD0C502093777700E9788A /* apple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05DD0C4F2093777600E9788A /* apple.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05071C2A2089197500234C13 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		05071C2C208922C700234C13 /* backgroundMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = backgroundMusic.wav; sourceTree = "<group>"; };
-		050DBDC420800375004278E6 /* DoorNumberOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorNumberOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		050DBDC420800375004278E6 /* ToddlerTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToddlerTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		050DBDC720800375004278E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		050DBDC920800375004278E6 /* FarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmViewController.swift; sourceTree = "<group>"; };
 		050DBDCC20800375004278E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,7 +52,6 @@
 		058B618A2093AD5300B8640D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		058B618C2093C9E100B8640D /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		05DD0C4C209371D100E9788A /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
-		05DD0C4F2093777600E9788A /* apple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = apple.wav; path = DoorNumberOne/apple.wav; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +68,7 @@
 		050DBDBB20800375004278E6 = {
 			isa = PBXGroup;
 			children = (
-				050DBDC620800375004278E6 /* DoorNumberOne */,
+				050DBDC620800375004278E6 /* ToddlerTime */,
 				050DBDC520800375004278E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,12 +76,12 @@
 		050DBDC520800375004278E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				050DBDC420800375004278E6 /* DoorNumberOne.app */,
+				050DBDC420800375004278E6 /* ToddlerTime.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		050DBDC620800375004278E6 /* DoorNumberOne */ = {
+		050DBDC620800375004278E6 /* ToddlerTime */ = {
 			isa = PBXGroup;
 			children = (
 				050DBDC720800375004278E6 /* AppDelegate.swift */,
@@ -94,13 +92,12 @@
 				050DBDD320800376004278E6 /* Info.plist */,
 				056058E820812A1100DC8E15 /* Sounds */,
 			);
-			path = DoorNumberOne;
+			path = ToddlerTime;
 			sourceTree = "<group>";
 		};
 		056058E820812A1100DC8E15 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				05DD0C4F2093777600E9788A /* apple.wav */,
 				050DBDDB20800482004278E6 /* cat.wav */,
 				050DBDEF20802DE9004278E6 /* closeDoor.wav */,
 				050DBDDE20800483004278E6 /* cow.wav */,
@@ -131,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		050DBDC320800375004278E6 /* DoorNumberOne */ = {
+		050DBDC320800375004278E6 /* ToddlerTime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 050DBDD620800376004278E6 /* Build configuration list for PBXNativeTarget "DoorNumberOne" */;
+			buildConfigurationList = 050DBDD620800376004278E6 /* Build configuration list for PBXNativeTarget "ToddlerTime" */;
 			buildPhases = (
 				050DBDC020800375004278E6 /* Sources */,
 				050DBDC120800375004278E6 /* Frameworks */,
@@ -143,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = DoorNumberOne;
+			name = ToddlerTime;
 			productName = DoorNumberOne;
-			productReference = 050DBDC420800375004278E6 /* DoorNumberOne.app */;
+			productReference = 050DBDC420800375004278E6 /* ToddlerTime.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 050DBDBF20800375004278E6 /* Build configuration list for PBXProject "DoorNumberOne" */;
+			buildConfigurationList = 050DBDBF20800375004278E6 /* Build configuration list for PBXProject "ToddlerTime" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -176,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				050DBDC320800375004278E6 /* DoorNumberOne */,
+				050DBDC320800375004278E6 /* ToddlerTime */,
 			);
 		};
 /* End PBXProject section */
@@ -194,7 +191,6 @@
 				050DBDF220803332004278E6 /* rooster.wav in Resources */,
 				050DBDCF20800376004278E6 /* Assets.xcassets in Resources */,
 				050DBDE720800483004278E6 /* elephant.wav in Resources */,
-				05DD0C502093777700E9788A /* apple.wav in Resources */,
 				05071C2D208922C700234C13 /* backgroundMusic.wav in Resources */,
 				05071C2B2089197500234C13 /* Launch Screen.storyboard in Resources */,
 				050DBDEC20802D47004278E6 /* sheep.wav in Resources */,
@@ -355,12 +351,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YNF79H478;
-				INFOPLIST_FILE = DoorNumberOne/Info.plist;
+				INFOPLIST_FILE = ToddlerTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bananaviking.DoorNumberOne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bananaviking.ToddlerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -375,12 +371,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YNF79H478;
-				INFOPLIST_FILE = DoorNumberOne/Info.plist;
+				INFOPLIST_FILE = ToddlerTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bananaviking.DoorNumberOne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bananaviking.ToddlerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -391,7 +387,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		050DBDBF20800375004278E6 /* Build configuration list for PBXProject "DoorNumberOne" */ = {
+		050DBDBF20800375004278E6 /* Build configuration list for PBXProject "ToddlerTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				050DBDD420800376004278E6 /* Debug */,
@@ -400,7 +396,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		050DBDD620800376004278E6 /* Build configuration list for PBXNativeTarget "DoorNumberOne" */ = {
+		050DBDD620800376004278E6 /* Build configuration list for PBXNativeTarget "ToddlerTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				050DBDD720800376004278E6 /* Debug */,

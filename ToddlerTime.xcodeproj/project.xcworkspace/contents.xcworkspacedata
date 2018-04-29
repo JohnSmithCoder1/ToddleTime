@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DoorNumberOne.xcodeproj">
+      location = "self:/Users/banana_viking/Coding/MyApps/DoorNumberOne/ToddlerTime.xcodeproj">
    </FileRef>
 </Workspace>
