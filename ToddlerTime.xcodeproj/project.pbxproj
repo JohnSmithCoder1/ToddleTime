@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05071C2B2089197500234C13 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05071C2A2089197500234C13 /* Launch Screen.storyboard */; };
 		05071C2D208922C700234C13 /* backgroundMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05071C2C208922C700234C13 /* backgroundMusic.wav */; };
 		050DBDC820800375004278E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050DBDC720800375004278E6 /* AppDelegate.swift */; };
 		050DBDCA20800375004278E6 /* FarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050DBDC920800375004278E6 /* FarmViewController.swift */; };
@@ -30,7 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05071C2A2089197500234C13 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		05071C2C208922C700234C13 /* backgroundMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = backgroundMusic.wav; sourceTree = "<group>"; };
 		050DBDC420800375004278E6 /* ToddlerTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToddlerTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		050DBDC720800375004278E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				050DBDC720800375004278E6 /* AppDelegate.swift */,
 				050DBDCB20800375004278E6 /* Main.storyboard */,
 				05DD0C4E209371E700E9788A /* View Controllers */,
-				05071C2A2089197500234C13 /* Launch Screen.storyboard */,
 				050DBDCE20800376004278E6 /* Assets.xcassets */,
 				050DBDD320800376004278E6 /* Info.plist */,
 				056058E820812A1100DC8E15 /* Sounds */,
@@ -192,7 +189,6 @@
 				050DBDCF20800376004278E6 /* Assets.xcassets in Resources */,
 				050DBDE720800483004278E6 /* elephant.wav in Resources */,
 				05071C2D208922C700234C13 /* backgroundMusic.wav in Resources */,
-				05071C2B2089197500234C13 /* Launch Screen.storyboard in Resources */,
 				050DBDEC20802D47004278E6 /* sheep.wav in Resources */,
 				050DBDCD20800375004278E6 /* Main.storyboard in Resources */,
 				050DBDE420800483004278E6 /* pig.wav in Resources */,
