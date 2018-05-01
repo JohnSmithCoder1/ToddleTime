@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class FarmViewController: UIViewController {
- 
+    
     @IBAction func touchElephant(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action
         flipCard(withEmoji: "🐘", on: sender)
     }
@@ -54,7 +54,7 @@ class FarmViewController: UIViewController {
         if button.currentTitle == emoji {
             playSound(forObject: "woosh")
             button.setTitle("", for: .normal)
-            button.backgroundColor = #colorLiteral(red: 0.4941176471, green: 0.4078431373, blue: 0.3529411765, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1)
         } else {
             button.setTitle(emoji, for: .normal)
             button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
@@ -196,5 +196,16 @@ extension UIView {
         }
     }
 }
+
+extension UITabBar {
+    
+    override open func sizeThatFits(_ size: CGSize) -> CGSize {
+        var sizeThatFits = super.sizeThatFits(size)
+        sizeThatFits.height = 100 // adjust your size here
+        return sizeThatFits
+    }
+}
+
+
 
 

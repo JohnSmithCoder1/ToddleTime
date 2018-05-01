@@ -53,10 +53,10 @@ class NumbersViewController: UIViewController {
         if button.currentTitle == emoji {
             playSound(forObject: "closeDoor")
             button.setTitle("", for: .normal)
-            button.backgroundColor = #colorLiteral(red: 0.4941176471, green: 0.4078431373, blue: 0.3529411765, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 0, green: 0.568627451, blue: 0.8117647059, alpha: 1)
         } else {
             button.setTitle(emoji, for: .normal)
-            button.backgroundColor = #colorLiteral(red: 0.9058823529, green: 0.4431372549, blue: 0.4901960784, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
             if emoji == "1️⃣" {
                 playSound(forObject: "One")
             }

@@ -53,7 +53,7 @@ class MarketViewController: UIViewController {
         if button.currentTitle == emoji {
             playSound(forObject: "woosh")
             button.setTitle("", for: .normal)
-            button.backgroundColor = #colorLiteral(red: 0.4941176471, green: 0.4078431373, blue: 0.3529411765, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 0.9921568627, green: 0.2666666667, blue: 0.2705882353, alpha: 1)
         } else {
             button.setTitle(emoji, for: .normal)
             button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)

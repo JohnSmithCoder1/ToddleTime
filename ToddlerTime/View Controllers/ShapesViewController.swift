@@ -53,7 +53,7 @@ class ShapesViewController: UIViewController {
         if button.currentTitle == emoji {
             playSound(forObject: "closeDoor")
             button.setTitle("", for: .normal)
-            button.backgroundColor = #colorLiteral(red: 0.4941176471, green: 0.4078431373, blue: 0.3529411765, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.2235294118, blue: 0.368627451, alpha: 1)
         } else {
             button.setTitle(emoji, for: .normal)
             button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
