@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05071C2D208922C700234C13 /* backgroundMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05071C2C208922C700234C13 /* backgroundMusic.wav */; };
 		050DBDC820800375004278E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050DBDC720800375004278E6 /* AppDelegate.swift */; };
 		050DBDCA20800375004278E6 /* FarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050DBDC920800375004278E6 /* FarmViewController.swift */; };
 		050DBDCD20800375004278E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDCB20800375004278E6 /* Main.storyboard */; };
@@ -23,13 +22,11 @@
 		050DBDEE20802D54004278E6 /* openDoor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDED20802D54004278E6 /* openDoor.wav */; };
 		050DBDF020802DE9004278E6 /* closeDoor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDEF20802DE9004278E6 /* closeDoor.wav */; };
 		050DBDF220803332004278E6 /* rooster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDF120803332004278E6 /* rooster.wav */; };
-		058B618B2093AD5300B8640D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618A2093AD5300B8640D /* MenuViewController.swift */; };
 		058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618C2093C9E100B8640D /* NumbersViewController.swift */; };
 		05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* MarketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05071C2C208922C700234C13 /* backgroundMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = backgroundMusic.wav; sourceTree = "<group>"; };
 		050DBDC420800375004278E6 /* ToddlerTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToddlerTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		050DBDC720800375004278E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		050DBDC920800375004278E6 /* FarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +44,6 @@
 		050DBDED20802D54004278E6 /* openDoor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = openDoor.wav; sourceTree = "<group>"; };
 		050DBDEF20802DE9004278E6 /* closeDoor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = closeDoor.wav; sourceTree = "<group>"; };
 		050DBDF120803332004278E6 /* rooster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster.wav; sourceTree = "<group>"; };
-		058B618A2093AD5300B8640D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		058B618C2093C9E100B8640D /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		05DD0C4C209371D100E9788A /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +102,6 @@
 				050DBDDC20800482004278E6 /* pig.wav */,
 				050DBDF120803332004278E6 /* rooster.wav */,
 				050DBDEB20802D47004278E6 /* sheep.wav */,
-				05071C2C208922C700234C13 /* backgroundMusic.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -114,7 +109,6 @@
 		05DD0C4E209371E700E9788A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				058B618A2093AD5300B8640D /* MenuViewController.swift */,
 				050DBDC920800375004278E6 /* FarmViewController.swift */,
 				05DD0C4C209371D100E9788A /* MarketViewController.swift */,
 				058B618C2093C9E100B8640D /* NumbersViewController.swift */,
@@ -188,7 +182,6 @@
 				050DBDF220803332004278E6 /* rooster.wav in Resources */,
 				050DBDCF20800376004278E6 /* Assets.xcassets in Resources */,
 				050DBDE720800483004278E6 /* elephant.wav in Resources */,
-				05071C2D208922C700234C13 /* backgroundMusic.wav in Resources */,
 				050DBDEC20802D47004278E6 /* sheep.wav in Resources */,
 				050DBDCD20800375004278E6 /* Main.storyboard in Resources */,
 				050DBDE420800483004278E6 /* pig.wav in Resources */,
@@ -205,7 +198,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */,
-				058B618B2093AD5300B8640D /* MenuViewController.swift in Sources */,
 				050DBDCA20800375004278E6 /* FarmViewController.swift in Sources */,
 				058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */,
 				050DBDC820800375004278E6 /* AppDelegate.swift in Sources */,

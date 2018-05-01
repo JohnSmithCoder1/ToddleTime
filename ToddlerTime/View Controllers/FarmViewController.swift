@@ -10,15 +10,7 @@ import UIKit
 import AVFoundation
 
 class FarmViewController: UIViewController {
-    
-    @IBAction func backgroundMusic(_ sender: Any) {
-        playBackgroundMusic("backgroundMusic.wav")
-    }
-    
-    @IBAction func stopBackgroundMusic(_ sender: UIButton) {
-        backgroundMusicPlayer.stop()
-    }
-    
+ 
     @IBAction func touchElephant(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action
         flipCard(withEmoji: "🐘", on: sender)
     }
@@ -115,25 +107,93 @@ class FarmViewController: UIViewController {
             print("error: \(error.localizedDescription)")
         }
     }
+}
+
+// adds the following settings in IB for all views under attributes inspector
+extension UIView {
     
-    func playBackgroundMusic(_ filename: String) {
-        let resourceUrl = Bundle.main.url(forResource: filename, withExtension: nil)
-        guard let url = resourceUrl else {
-            print("Could not find file: \(filename)")
-            return
+    @IBInspectable
+    var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
         }
-        
-        do {
-            try backgroundMusicPlayer = AVAudioPlayer(contentsOf: url)
-            
-            backgroundMusicPlayer.numberOfLoops = -1
-            backgroundMusicPlayer.prepareToPlay()
-            backgroundMusicPlayer.play()
-        } catch {
-            print("Could not create audio player!")
-            return
+        set {
+            layer.cornerRadius = newValue
+        }
+    }
+    
+    @IBInspectable
+    var borderWidth: CGFloat {  //take out if don't use
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    
+    @IBInspectable
+    var borderColor: UIColor? {  //take out if don't use
+        get {
+            if let color = layer.borderColor {
+                return UIColor(cgColor: color)
+            }
+            return nil
+        }
+        set {
+            if let color = newValue {
+                layer.borderColor = color.cgColor
+            } else {
+                layer.borderColor = nil
+            }
+        }
+    }
+    
+    @IBInspectable
+    var shadowRadius: CGFloat {
+        get {
+            return layer.shadowRadius
+        }
+        set {
+            layer.shadowRadius = newValue
+        }
+    }
+    
+    @IBInspectable
+    var shadowOpacity: Float {
+        get {
+            return layer.shadowOpacity
+        }
+        set {
+            layer.shadowOpacity = newValue
+        }
+    }
+    
+    @IBInspectable
+    var shadowOffset: CGSize {
+        get {
+            return layer.shadowOffset
+        }
+        set {
+            layer.shadowOffset = newValue
+        }
+    }
+    
+    @IBInspectable
+    var shadowColor: UIColor? {
+        get {
+            if let color = layer.shadowColor {
+                return UIColor(cgColor: color)
+            }
+            return nil
+        }
+        set {
+            if let color = newValue {
+                layer.shadowColor = color.cgColor
+            } else {
+                layer.shadowColor = nil
+            }
         }
     }
 }
-
 
