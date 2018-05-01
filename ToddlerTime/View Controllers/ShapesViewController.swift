@@ -16,7 +16,7 @@ class ShapesViewController: UIViewController {
     }
     
     @IBAction func touchOval(_ sender: UIButton) {
-        flipCard(withEmoji: "🔵", on: sender)
+        flipCard(withEmoji: "❌", on: sender)
     }
     
     @IBAction func touchSquare(_ sender: UIButton) {
@@ -24,7 +24,7 @@ class ShapesViewController: UIViewController {
     }
     
     @IBAction func touchRectangle(_ sender: UIButton) {
-        flipCard(withEmoji: "🔵", on: sender)
+        flipCard(withEmoji: "⬆️", on: sender)
     }
     
     @IBAction func touchTriangle(_ sender: UIButton) {
@@ -40,7 +40,7 @@ class ShapesViewController: UIViewController {
     }
     
     @IBAction func touchStar(_ sender: UIButton) {
-        flipCard(withEmoji: "🔵", on: sender)
+        flipCard(withEmoji: "⭐️", on: sender)
     }
     
     @IBAction func touchHeart(_ sender: UIButton) {
