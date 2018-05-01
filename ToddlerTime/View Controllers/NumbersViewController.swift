@@ -51,7 +51,7 @@ class NumbersViewController: UIViewController {
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
-            playSound(forObject: "closeDoor")
+            playSound(forObject: "card")
             button.setTitle("", for: .normal)
             button.backgroundColor = #colorLiteral(red: 0, green: 0.568627451, blue: 0.8117647059, alpha: 1)
         } else {

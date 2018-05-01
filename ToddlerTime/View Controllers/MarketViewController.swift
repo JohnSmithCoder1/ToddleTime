@@ -51,7 +51,7 @@ class MarketViewController: UIViewController {
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
-            playSound(forObject: "woosh")
+            playSound(forObject: "card")
             button.setTitle("", for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.9921568627, green: 0.2666666667, blue: 0.2705882353, alpha: 1)
         } else {

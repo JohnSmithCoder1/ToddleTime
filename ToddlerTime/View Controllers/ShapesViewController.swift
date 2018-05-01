@@ -51,7 +51,7 @@ class ShapesViewController: UIViewController {
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
-            playSound(forObject: "closeDoor")
+            playSound(forObject: "card")
             button.setTitle("", for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.2235294118, blue: 0.368627451, alpha: 1)
         } else {

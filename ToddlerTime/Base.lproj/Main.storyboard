@@ -1127,10 +1127,10 @@
             </objects>
             <point key="canvasLocation" x="3187" y="580"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="vTe-5n-9be">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fSx-QU-fRb" customClass="TabBarViewController" customModule="ToddlerTime" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fSx-QU-fRb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VWw-gU-r6l">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
