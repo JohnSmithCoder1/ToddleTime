@@ -22,7 +22,7 @@
 		050DBDF220803332004278E6 /* rooster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDF120803332004278E6 /* rooster.wav */; };
 		052C7AF6209810C8008B3BD5 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */; };
 		058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618C2093C9E100B8640D /* NumbersViewController.swift */; };
-		05A3FDE62098F513005BF8AF /* card.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05A3FDE52098F512005BF8AF /* card.wav */; };
+		05A3FDE8209920AB005BF8AF /* card.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05A3FDE7209920AB005BF8AF /* card.wav */; };
 		05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* MarketViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,7 @@
 		050DBDF120803332004278E6 /* rooster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster.wav; sourceTree = "<group>"; };
 		052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
 		058B618C2093C9E100B8640D /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
-		05A3FDE52098F512005BF8AF /* card.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = card.wav; sourceTree = "<group>"; };
+		05A3FDE7209920AB005BF8AF /* card.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = card.wav; sourceTree = "<group>"; };
 		05DD0C4C209371D100E9788A /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +91,7 @@
 		056058E820812A1100DC8E15 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				05A3FDE7209920AB005BF8AF /* card.wav */,
 				050DBDDB20800482004278E6 /* cat.wav */,
 				050DBDDE20800483004278E6 /* cow.wav */,
 				050DBDDD20800483004278E6 /* dog.wav */,
@@ -100,7 +101,6 @@
 				050DBDDC20800482004278E6 /* pig.wav */,
 				050DBDF120803332004278E6 /* rooster.wav */,
 				050DBDEB20802D47004278E6 /* sheep.wav */,
-				05A3FDE52098F512005BF8AF /* card.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -174,8 +174,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05A3FDE62098F513005BF8AF /* card.wav in Resources */,
 				050DBDE620800483004278E6 /* cow.wav in Resources */,
+				05A3FDE8209920AB005BF8AF /* card.wav in Resources */,
 				050DBDE920800483004278E6 /* horse.wav in Resources */,
 				050DBDE320800483004278E6 /* cat.wav in Resources */,
 				050DBDF220803332004278E6 /* rooster.wav in Resources */,
