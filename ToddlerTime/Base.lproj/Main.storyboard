@@ -286,7 +286,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Farm" id="lfF-pd-M0e"/>
+                    <tabBarItem key="tabBarItem" title="" image="cow@75x75" id="lfF-pd-M0e"/>
                     <navigationItem key="navigationItem" title="Farm" id="Jrm-Nm-HrP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -565,7 +565,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Jf-pE-MEd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Market" id="viy-xP-dYc"/>
+                    <tabBarItem key="tabBarItem" title="" image="apple@75x75" id="viy-xP-dYc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUC-pu-tfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -843,13 +843,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tX8-wC-afm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Numbers" id="azx-ge-idD"/>
+                    <tabBarItem key="tabBarItem" title="" image="123@75x75" id="azx-ge-idD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fyv-70-DfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2480" y="580"/>
         </scene>
-        <!--Shapes-->
+        <!--Shapes View Controller-->
         <scene sceneID="DqO-Lc-OWc">
             <objects>
                 <viewController id="mbg-QG-rOd" customClass="ShapesViewController" customModule="ToddlerTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -1094,18 +1094,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vYt-v9-tId"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shapes" id="qzT-fY-Al6"/>
+                    <tabBarItem key="tabBarItem" title="" image="star@75x75" id="qzT-fY-Al6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KE8-kW-RLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3187" y="580"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="vTe-5n-9be">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fSx-QU-fRb" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fSx-QU-fRb" customClass="TabBarViewController" customModule="ToddlerTime" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VWw-gU-r6l">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -1121,4 +1122,10 @@
             <point key="canvasLocation" x="1702.8985507246377" y="208.69565217391306"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="123@75x75" width="75" height="75"/>
+        <image name="apple@75x75" width="75" height="75"/>
+        <image name="cow@75x75" width="75" height="75"/>
+        <image name="star@75x75" width="75" height="75"/>
+    </resources>
 </document>
