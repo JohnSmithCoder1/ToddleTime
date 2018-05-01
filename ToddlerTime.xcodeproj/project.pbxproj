@@ -22,6 +22,7 @@
 		050DBDEE20802D54004278E6 /* openDoor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDED20802D54004278E6 /* openDoor.wav */; };
 		050DBDF020802DE9004278E6 /* closeDoor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDEF20802DE9004278E6 /* closeDoor.wav */; };
 		050DBDF220803332004278E6 /* rooster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDF120803332004278E6 /* rooster.wav */; };
+		052C7AF6209810C8008B3BD5 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */; };
 		058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618C2093C9E100B8640D /* NumbersViewController.swift */; };
 		05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* MarketViewController.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		050DBDED20802D54004278E6 /* openDoor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = openDoor.wav; sourceTree = "<group>"; };
 		050DBDEF20802DE9004278E6 /* closeDoor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = closeDoor.wav; sourceTree = "<group>"; };
 		050DBDF120803332004278E6 /* rooster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster.wav; sourceTree = "<group>"; };
+		052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
 		058B618C2093C9E100B8640D /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		05DD0C4C209371D100E9788A /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 				050DBDC920800375004278E6 /* FarmViewController.swift */,
 				05DD0C4C209371D100E9788A /* MarketViewController.swift */,
 				058B618C2093C9E100B8640D /* NumbersViewController.swift */,
+				052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				052C7AF6209810C8008B3BD5 /* ShapesViewController.swift in Sources */,
 				05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */,
 				050DBDCA20800375004278E6 /* FarmViewController.swift in Sources */,
 				058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */,
