@@ -11,6 +11,8 @@ import AVFoundation
 
 class FarmViewController: UIViewController {
     
+    var test = ""
+    
     @IBAction func touchElephant(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action
         flipCard(withEmoji: "🐘", on: sender)
     }
