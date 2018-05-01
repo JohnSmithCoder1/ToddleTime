@@ -885,6 +885,9 @@
                                                         <real key="value" value="4.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCircle:" destination="mbg-QG-rOd" eventType="touchUpInside" id="GC4-nQ-Z6r"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTz-oy-gOR">
                                                 <rect key="frame" x="128" y="0.0" width="98" height="150.66666666666666"/>
@@ -908,6 +911,9 @@
                                                         <real key="value" value="4.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchOval:" destination="mbg-QG-rOd" eventType="touchUpInside" id="fJb-fW-7WJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dV-Cw-Kic">
                                                 <rect key="frame" x="256" y="0.0" width="98" height="150.66666666666666"/>
@@ -931,6 +937,9 @@
                                                         <real key="value" value="4.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchSquare:" destination="mbg-QG-rOd" eventType="touchUpInside" id="vNF-75-g4R"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -959,6 +968,9 @@
                                                         <real key="value" value="4.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchRectangle:" destination="mbg-QG-rOd" eventType="touchUpInside" id="flF-WW-WpL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iS0-Fq-KdN">
                                                 <rect key="frame" x="128" y="0.0" width="98" height="150.66666666666666"/>
@@ -982,6 +994,9 @@
                                                         <real key="value" value="4.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchTriangle:" destination="mbg-QG-rOd" eventType="touchUpInside" id="CQ2-ka-Odo"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCA-ZJ-hUb">
                                                 <rect key="frame" x="256" y="0.0" width="98" height="150.66666666666666"/>
@@ -1005,6 +1020,9 @@
                                                         <real key="value" value="4.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchDiamond:" destination="mbg-QG-rOd" eventType="touchUpInside" id="vpt-8j-7K1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1033,6 +1051,9 @@
                                                         <real key="value" value="4.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchOctagon:" destination="mbg-QG-rOd" eventType="touchUpInside" id="7Zs-9C-PLL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTk-ED-wRJ">
                                                 <rect key="frame" x="128" y="0.0" width="98" height="150.66666666666666"/>
@@ -1056,6 +1077,9 @@
                                                         <real key="value" value="4.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchStar:" destination="mbg-QG-rOd" eventType="touchUpInside" id="p6b-Uk-eFs"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bM2-NB-IzX">
                                                 <rect key="frame" x="256" y="0.0" width="98" height="150.66666666666666"/>
@@ -1079,13 +1103,16 @@
                                                         <real key="value" value="4.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchHeart:" destination="mbg-QG-rOd" eventType="touchUpInside" id="zj4-JT-rOh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.68627450980000004" green="0.82352941180000006" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vYt-v9-tId" firstAttribute="bottom" secondItem="vCo-DL-awI" secondAttribute="bottom" constant="120" id="Ugl-OD-v0W"/>
                             <constraint firstItem="vYt-v9-tId" firstAttribute="trailing" secondItem="vCo-DL-awI" secondAttribute="trailing" constant="30" id="b17-rP-79Y"/>

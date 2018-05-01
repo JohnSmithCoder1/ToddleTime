@@ -24,6 +24,7 @@
 		052C7AF6209810C8008B3BD5 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */; };
 		058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618C2093C9E100B8640D /* NumbersViewController.swift */; };
 		05A3FDE42098E51D005BF8AF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A3FDE32098E51D005BF8AF /* TabBarViewController.swift */; };
+		05A3FDE62098F513005BF8AF /* woosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05A3FDE52098F512005BF8AF /* woosh.wav */; };
 		05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* MarketViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
 		058B618C2093C9E100B8640D /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		05A3FDE32098E51D005BF8AF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		05A3FDE52098F512005BF8AF /* woosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = woosh.wav; sourceTree = "<group>"; };
 		05DD0C4C209371D100E9788A /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 				050DBDDC20800482004278E6 /* pig.wav */,
 				050DBDF120803332004278E6 /* rooster.wav */,
 				050DBDEB20802D47004278E6 /* sheep.wav */,
+				05A3FDE52098F512005BF8AF /* woosh.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A3FDE62098F513005BF8AF /* woosh.wav in Resources */,
 				050DBDE620800483004278E6 /* cow.wav in Resources */,
 				050DBDE920800483004278E6 /* horse.wav in Resources */,
 				050DBDF020802DE9004278E6 /* closeDoor.wav in Resources */,

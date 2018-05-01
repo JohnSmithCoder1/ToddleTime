@@ -52,7 +52,7 @@ class FarmViewController: UIViewController {
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
-            playSound(forObject: "closeDoor")
+            playSound(forObject: "woosh")
             button.setTitle("", for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.4941176471, green: 0.4078431373, blue: 0.3529411765, alpha: 1)
         } else {
