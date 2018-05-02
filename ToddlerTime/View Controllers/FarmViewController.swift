@@ -8,87 +8,101 @@
 
 import UIKit
 import AVFoundation
+import Foundation
 
 class FarmViewController: UIViewController {
-    
-    @IBAction func touchElephant(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action
-        flipCard(withImage: (UIImage(named: "gorilla.jpg") as UIImage?)!, on: sender)
+        
+    @IBAction func touchElephant(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action?
+        if let image = UIImage(named: "elephant") as UIImage? {
+            flipCard(withImage: image, on: sender)
+        }
     }
     
-//    @IBAction func touchCow(_ sender: UIButton) {
-//        flipCard(withEmoji: "🐄", on: sender)
-//    }
-//
-//    @IBAction func touchCat(_ sender: UIButton) {
-//        flipCard(withEmoji: "🐈", on: sender)
-//    }
-//
-//    @IBAction func touchDog(_ sender: UIButton) {
-//        flipCard(withEmoji: "🐕", on: sender)
-//    }
-//
-//    @IBAction func touchPig(_ sender: UIButton) {
-//        flipCard(withEmoji: "🐖", on: sender)
-//    }
-//
-//    @IBAction func touchHorse(_ sender: UIButton) {
-//        flipCard(withEmoji: "🐎", on: sender)
-//    }
-//
-//    @IBAction func touchChick(_ sender: UIButton) {
-//        flipCard(withEmoji: "🐓", on: sender)
-//    }
-//
-//    @IBAction func touchOwl(_ sender: UIButton) {
-//        flipCard(withEmoji: "🦉", on: sender)
-//    }
-//
-//    @IBAction func touchSheep(_ sender: UIButton) {
-//        flipCard(withEmoji: "🐑", on: sender)
-//    }
+    @IBAction func touchCow(_ sender: UIButton) {
+        if let image = UIImage(named: "cow") as UIImage? {
+            flipCard(withImage: image, on: sender)
+        }
+    }
+
+    @IBAction func touchCat(_ sender: UIButton) {
+        if let image = UIImage(named: "cat") as UIImage? {
+            flipCard(withImage: image, on: sender)
+        }
+    }
+
+    @IBAction func touchDog(_ sender: UIButton) {
+        if let image = UIImage(named: "dog") as UIImage? {
+            flipCard(withImage: image, on: sender)
+        }
+    }
+
+    @IBAction func touchPig(_ sender: UIButton) {
+        if let image = UIImage(named: "pig") as UIImage? {
+            flipCard(withImage: image, on: sender)
+        }
+    }
+
+    @IBAction func touchHorse(_ sender: UIButton) {
+        if let image = UIImage(named: "horse") as UIImage? {
+            flipCard(withImage: image, on: sender)
+        }
+    }
+
+    @IBAction func touchChick(_ sender: UIButton) {
+        if let image = UIImage(named: "rooster") as UIImage? {
+            flipCard(withImage: image, on: sender)
+        }
+    }
+
+    @IBAction func touchOwl(_ sender: UIButton) {
+        if let image = UIImage(named: "owl") as UIImage? {
+            flipCard(withImage: image, on: sender)
+        }
+    }
+
+    @IBAction func touchSheep(_ sender: UIButton) {
+        if let image = UIImage(named: "sheep") as UIImage? {
+            flipCard(withImage: image, on: sender)
+        }
+    }
     
     var player: AVAudioPlayer?
-    var backgroundMusicPlayer: AVAudioPlayer!
     
     func flipCard(withImage image: UIImage, on button: UIButton) {
-        let image = UIImage(named: "gorilla.jpg") as UIImage?
         if button.currentImage == image {
             playSound(forObject: "card")
             button.setImage(nil, for: .normal)
-            button.setTitle("", for: .normal)
             button.backgroundColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1)
         } else {
             button.setImage(image, for: .normal)
-//            button.setTitle(emoji, for: .normal)
-//            button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
 
-            if image == UIImage(named: "gorilla.jpg") as UIImage? {
+            if image == UIImage(named: "elephant") as UIImage? {
                 playSound(forObject: "elephant")
             }
-//            if emoji == "🐄" {
-//                playSound(forObject: "cow")
-//            }
-//            if emoji == "🐈" {
-//                playSound(forObject: "cat")
-//            }
-//            if emoji == "🐕" {
-//                playSound(forObject: "dog")
-//            }
-//            if emoji == "🐖" {
-//                playSound(forObject: "pig")
-//            }
-//            if emoji == "🐎" {
-//                playSound(forObject: "horse")
-//            }
-//            if emoji == "🐓" {
-//                playSound(forObject: "rooster")
-//            }
-//            if emoji == "🦉" {
-//                playSound(forObject: "owl")
-//            }
-//            if emoji == "🐑" {
-//                playSound(forObject: "sheep")
-//            }
+            if image == UIImage(named: "cow") as UIImage? {
+                playSound(forObject: "cow")
+            }
+            if image == UIImage(named: "cat") as UIImage? {
+                playSound(forObject: "cat")
+            }
+            if image == UIImage(named: "dog") as UIImage? {
+                playSound(forObject: "dog")
+            }
+            if image == UIImage(named: "pig") as UIImage? {
+                playSound(forObject: "pig")
+            }
+            if image == UIImage(named: "horse") as UIImage? {
+                playSound(forObject: "horse")
+            }
+            if image == UIImage(named: "rooster") as UIImage? {
+                playSound(forObject: "rooster")
+            }
+            if image == UIImage(named: "owl") as UIImage? {
+                playSound(forObject: "owl")
+            }
+            if image == UIImage(named: "sheep") as UIImage? {
+                playSound(forObject: "sheep")
+            }
         }
     }
     
@@ -208,6 +222,7 @@ extension UITabBar {
         return sizeThatFits
     }
 }
+
 
 
 
