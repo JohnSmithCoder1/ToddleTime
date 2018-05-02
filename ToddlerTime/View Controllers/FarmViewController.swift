@@ -12,80 +12,83 @@ import AVFoundation
 class FarmViewController: UIViewController {
     
     @IBAction func touchElephant(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action
-        flipCard(withEmoji: "🐘", on: sender)
+        flipCard(withImage: (UIImage(named: "gorilla.jpg") as UIImage?)!, on: sender)
     }
     
-    @IBAction func touchCow(_ sender: UIButton) {
-        flipCard(withEmoji: "🐄", on: sender)
-    }
-    
-    @IBAction func touchCat(_ sender: UIButton) {
-        flipCard(withEmoji: "🐈", on: sender)
-    }
-    
-    @IBAction func touchDog(_ sender: UIButton) {
-        flipCard(withEmoji: "🐕", on: sender)
-    }
-    
-    @IBAction func touchPig(_ sender: UIButton) {
-        flipCard(withEmoji: "🐖", on: sender)
-    }
-    
-    @IBAction func touchHorse(_ sender: UIButton) {
-        flipCard(withEmoji: "🐎", on: sender)
-    }
-    
-    @IBAction func touchChick(_ sender: UIButton) {
-        flipCard(withEmoji: "🐓", on: sender)
-    }
-    
-    @IBAction func touchOwl(_ sender: UIButton) {
-        flipCard(withEmoji: "🦉", on: sender)
-    }
-    
-    @IBAction func touchSheep(_ sender: UIButton) {
-        flipCard(withEmoji: "🐑", on: sender)
-    }
+//    @IBAction func touchCow(_ sender: UIButton) {
+//        flipCard(withEmoji: "🐄", on: sender)
+//    }
+//
+//    @IBAction func touchCat(_ sender: UIButton) {
+//        flipCard(withEmoji: "🐈", on: sender)
+//    }
+//
+//    @IBAction func touchDog(_ sender: UIButton) {
+//        flipCard(withEmoji: "🐕", on: sender)
+//    }
+//
+//    @IBAction func touchPig(_ sender: UIButton) {
+//        flipCard(withEmoji: "🐖", on: sender)
+//    }
+//
+//    @IBAction func touchHorse(_ sender: UIButton) {
+//        flipCard(withEmoji: "🐎", on: sender)
+//    }
+//
+//    @IBAction func touchChick(_ sender: UIButton) {
+//        flipCard(withEmoji: "🐓", on: sender)
+//    }
+//
+//    @IBAction func touchOwl(_ sender: UIButton) {
+//        flipCard(withEmoji: "🦉", on: sender)
+//    }
+//
+//    @IBAction func touchSheep(_ sender: UIButton) {
+//        flipCard(withEmoji: "🐑", on: sender)
+//    }
     
     var player: AVAudioPlayer?
     var backgroundMusicPlayer: AVAudioPlayer!
     
-    func flipCard(withEmoji emoji: String, on button: UIButton) {
-        if button.currentTitle == emoji {
+    func flipCard(withImage image: UIImage, on button: UIButton) {
+        let image = UIImage(named: "gorilla.jpg") as UIImage?
+        if button.currentImage == image {
             playSound(forObject: "card")
+            button.setImage(nil, for: .normal)
             button.setTitle("", for: .normal)
             button.backgroundColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1)
         } else {
-            button.setTitle(emoji, for: .normal)
-            button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            button.setImage(image, for: .normal)
+//            button.setTitle(emoji, for: .normal)
+//            button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
 
-            if emoji == "🐘" {
+            if image == UIImage(named: "gorilla.jpg") as UIImage? {
                 playSound(forObject: "elephant")
             }
-            if emoji == "🐄" {
-                playSound(forObject: "cow")
-            }
-            if emoji == "🐈" {
-                playSound(forObject: "cat")
-            }
-            if emoji == "🐕" {
-                playSound(forObject: "dog")
-            }
-            if emoji == "🐖" {
-                playSound(forObject: "pig")
-            }
-            if emoji == "🐎" {
-                playSound(forObject: "horse")
-            }
-            if emoji == "🐓" {
-                playSound(forObject: "rooster")
-            }
-            if emoji == "🦉" {
-                playSound(forObject: "owl")
-            }
-            if emoji == "🐑" {
-                playSound(forObject: "sheep")
-            }
+//            if emoji == "🐄" {
+//                playSound(forObject: "cow")
+//            }
+//            if emoji == "🐈" {
+//                playSound(forObject: "cat")
+//            }
+//            if emoji == "🐕" {
+//                playSound(forObject: "dog")
+//            }
+//            if emoji == "🐖" {
+//                playSound(forObject: "pig")
+//            }
+//            if emoji == "🐎" {
+//                playSound(forObject: "horse")
+//            }
+//            if emoji == "🐓" {
+//                playSound(forObject: "rooster")
+//            }
+//            if emoji == "🦉" {
+//                playSound(forObject: "owl")
+//            }
+//            if emoji == "🐑" {
+//                playSound(forObject: "sheep")
+//            }
         }
     }
     
