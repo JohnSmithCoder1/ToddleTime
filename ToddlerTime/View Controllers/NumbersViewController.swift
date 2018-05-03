@@ -19,10 +19,6 @@ class NumbersViewController: UIViewController {
         flipCard(withEmoji: "2️⃣", on: sender)
     }
     
-    @IBAction func touch3(_ sender: UIButton) {
-        flipCard(withEmoji: "3️⃣", on: sender)
-    }
-    
     @IBAction func touch4(_ sender: UIButton) {
         flipCard(withEmoji: "4️⃣", on: sender)
     }
@@ -30,11 +26,7 @@ class NumbersViewController: UIViewController {
     @IBAction func touch5(_ sender: UIButton) {
         flipCard(withEmoji: "5️⃣", on: sender)
     }
-    
-    @IBAction func touch6(_ sender: UIButton) {
-        flipCard(withEmoji: "6️⃣", on: sender)
-    }
-    
+   
     @IBAction func touch7(_ sender: UIButton) {
         flipCard(withEmoji: "7️⃣", on: sender)
     }
@@ -42,11 +34,7 @@ class NumbersViewController: UIViewController {
     @IBAction func touch8(_ sender: UIButton) {
         flipCard(withEmoji: "8️⃣", on: sender)
     }
-    
-    @IBAction func touch9(_ sender: UIButton) {
-        flipCard(withEmoji: "9️⃣", on: sender)
-    }
-    
+  
     var player: AVAudioPlayer?
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {

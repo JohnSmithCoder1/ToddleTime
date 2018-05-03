@@ -8,7 +8,6 @@
 
 import UIKit
 import AVFoundation
-import Foundation
 
 class FarmViewController: UIViewController {
         
@@ -20,12 +19,6 @@ class FarmViewController: UIViewController {
     
     @IBAction func touchCow(_ sender: UIButton) {
         if let image = UIImage(named: "cow") as UIImage? {
-            flipCard(withImage: image, on: sender)
-        }
-    }
-
-    @IBAction func touchCat(_ sender: UIButton) {
-        if let image = UIImage(named: "cat") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
@@ -42,12 +35,6 @@ class FarmViewController: UIViewController {
         }
     }
 
-    @IBAction func touchHorse(_ sender: UIButton) {
-        if let image = UIImage(named: "horse") as UIImage? {
-            flipCard(withImage: image, on: sender)
-        }
-    }
-
     @IBAction func touchChick(_ sender: UIButton) {
         if let image = UIImage(named: "rooster") as UIImage? {
             flipCard(withImage: image, on: sender)
@@ -56,12 +43,6 @@ class FarmViewController: UIViewController {
 
     @IBAction func touchOwl(_ sender: UIButton) {
         if let image = UIImage(named: "owl") as UIImage? {
-            flipCard(withImage: image, on: sender)
-        }
-    }
-
-    @IBAction func touchSheep(_ sender: UIButton) {
-        if let image = UIImage(named: "sheep") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }

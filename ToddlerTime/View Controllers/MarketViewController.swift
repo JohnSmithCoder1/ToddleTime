@@ -18,11 +18,7 @@ class MarketViewController: UIViewController {
     @IBAction func touchBanana(_ sender: UIButton) {
         flipCard(withEmoji: "🍌", on: sender)
     }
-    
-    @IBAction func touchStrawberry(_ sender: UIButton) {
-        flipCard(withEmoji: "🍓", on: sender)
-    }
-    
+   
     @IBAction func touchOrange(_ sender: UIButton) {
         flipCard(withEmoji: "🍊", on: sender)
     }
@@ -30,11 +26,7 @@ class MarketViewController: UIViewController {
     @IBAction func touchGrapes(_ sender: UIButton) {
         flipCard(withEmoji: "🍇", on: sender)
     }
-    
-    @IBAction func touchPepper(_ sender: UIButton) {
-        flipCard(withEmoji: "🌶", on: sender)
-    }
-    
+  
     @IBAction func touchBroccoli(_ sender: UIButton) {
         flipCard(withEmoji: "🥦", on: sender)
     }
@@ -42,11 +34,7 @@ class MarketViewController: UIViewController {
     @IBAction func touchCarrot(_ sender: UIButton) {
         flipCard(withEmoji: "🥕", on: sender)
     }
-    
-    @IBAction func touchCorn(_ sender: UIButton) {
-        flipCard(withEmoji: "🌽", on: sender)
-    }
-    
+   
     var player: AVAudioPlayer?
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
