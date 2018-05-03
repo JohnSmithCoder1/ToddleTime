@@ -11,27 +11,27 @@ import AVFoundation
 
 class ShapesViewController: UIViewController {
     
-    @IBAction func touchCircle(_ sender: UIButton) {
+    @IBAction func touchCard0(_ sender: UIButton) {
         flipCard(withEmoji: "🔵", on: sender)
     }
     
-    @IBAction func touchOval(_ sender: UIButton) {
+    @IBAction func touchCard1(_ sender: UIButton) {
         flipCard(withEmoji: "⬛️", on: sender)
     }
     
-    @IBAction func touchRectangle(_ sender: UIButton) {
+    @IBAction func touchCard2(_ sender: UIButton) {
         flipCard(withEmoji: "🔺", on: sender)
     }
     
-    @IBAction func touchTriangle(_ sender: UIButton) {
+    @IBAction func touchCard3(_ sender: UIButton) {
         flipCard(withEmoji: "🔶", on: sender)
     }
    
-    @IBAction func touchOctagon(_ sender: UIButton) {
+    @IBAction func touchCard4(_ sender: UIButton) {
         flipCard(withEmoji: "⭐️", on: sender)
     }
     
-    @IBAction func touchStar(_ sender: UIButton) {
+    @IBAction func touchCard5(_ sender: UIButton) {
         flipCard(withEmoji: "♥️", on: sender)
     }
     

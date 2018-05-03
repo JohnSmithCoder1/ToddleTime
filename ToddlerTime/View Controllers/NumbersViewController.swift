@@ -11,27 +11,27 @@ import AVFoundation
 
 class NumbersViewController: UIViewController {
     
-    @IBAction func touch1(_ sender: UIButton) {
+    @IBAction func touchCard0(_ sender: UIButton) {
         flipCard(withEmoji: "1️⃣", on: sender)
     }
     
-    @IBAction func touch2(_ sender: UIButton) {
+    @IBAction func touchCard1(_ sender: UIButton) {
         flipCard(withEmoji: "2️⃣", on: sender)
     }
     
-    @IBAction func touch4(_ sender: UIButton) {
+    @IBAction func touchCard2(_ sender: UIButton) {
         flipCard(withEmoji: "3️⃣", on: sender)
     }
     
-    @IBAction func touch5(_ sender: UIButton) {
+    @IBAction func touchCard3(_ sender: UIButton) {
         flipCard(withEmoji: "4️⃣", on: sender)
     }
    
-    @IBAction func touch7(_ sender: UIButton) {
+    @IBAction func touchCard4(_ sender: UIButton) {
         flipCard(withEmoji: "5️⃣", on: sender)
     }
     
-    @IBAction func touch8(_ sender: UIButton) {
+    @IBAction func touchCard5(_ sender: UIButton) {
         flipCard(withEmoji: "6️⃣", on: sender)
     }
   

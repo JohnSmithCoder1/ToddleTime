@@ -11,43 +11,47 @@ import AVFoundation
 
 class FarmViewController: UIViewController {
         
-    @IBAction func touchElephant(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action?
+    @IBAction func touchCard0(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action?
         if let image = UIImage(named: "cow") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
     
-    @IBAction func touchCow(_ sender: UIButton) {
+    @IBAction func touchCard1(_ sender: UIButton) {
         if let image = UIImage(named: "dog") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
 
-    @IBAction func touchDog(_ sender: UIButton) {
+    @IBAction func touchCard2(_ sender: UIButton) {
         if let image = UIImage(named: "rooster") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
 
-    @IBAction func touchPig(_ sender: UIButton) {
+    @IBAction func touchCard3(_ sender: UIButton) {
         if let image = UIImage(named: "pig") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
 
-    @IBAction func touchChick(_ sender: UIButton) {
+    @IBAction func touchCard4(_ sender: UIButton) {
         if let image = UIImage(named: "horse") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
 
-    @IBAction func touchOwl(_ sender: UIButton) {
+    @IBAction func touchCard5(_ sender: UIButton) {
         if let image = UIImage(named: "cat") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
     
     var player: AVAudioPlayer?
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        playSound(forObject: "card")
+    }
     
     func flipCard(withImage image: UIImage, on button: UIButton) {
         if button.currentImage == image {

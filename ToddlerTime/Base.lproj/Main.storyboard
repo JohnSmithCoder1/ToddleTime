@@ -50,7 +50,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchElephant:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MMV-Dg-fFT"/>
+                                                    <action selector="touchCard0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUl-fm-CDR"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbB-Xc-dtN">
@@ -75,7 +75,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchCow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KhK-cc-TOn"/>
+                                                    <action selector="touchCard1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNv-QM-zN8"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -105,7 +105,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgX-MS-iVZ"/>
+                                                    <action selector="touchCard2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SfD-wE-ivc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wd-oe-Lqp">
@@ -130,7 +130,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchPig:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X5U-Mn-H8a"/>
+                                                    <action selector="touchCard3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="op7-BP-MU4"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -160,7 +160,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchChick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jlf-kT-GlX"/>
+                                                    <action selector="touchCard4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVC-EC-UHn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnn-HZ-gN1">
@@ -185,7 +185,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchOwl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evR-gQ-CQz"/>
+                                                    <action selector="touchCard5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OxX-EQ-FrP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -248,7 +248,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchApple:" destination="XlP-1A-aCR" eventType="touchUpInside" id="aVs-i5-gEW"/>
+                                                    <action selector="touchCard0:" destination="XlP-1A-aCR" eventType="touchUpInside" id="cdF-ZV-Fdu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y70-fR-75q">
@@ -274,7 +274,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchBanana:" destination="XlP-1A-aCR" eventType="touchUpInside" id="xAn-WN-aDn"/>
+                                                    <action selector="touchCard1:" destination="XlP-1A-aCR" eventType="touchUpInside" id="pXD-qI-Gfe"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -305,7 +305,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchOrange:" destination="XlP-1A-aCR" eventType="touchUpInside" id="Mep-l9-Uyj"/>
+                                                    <action selector="touchCard2:" destination="XlP-1A-aCR" eventType="touchUpInside" id="h8I-QE-Amj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6t-cl-DxE">
@@ -331,7 +331,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchGrapes:" destination="XlP-1A-aCR" eventType="touchUpInside" id="Z9T-tH-cIM"/>
+                                                    <action selector="touchCard3:" destination="XlP-1A-aCR" eventType="touchUpInside" id="MuU-NX-7Vf"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -362,7 +362,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchBroccoli:" destination="XlP-1A-aCR" eventType="touchUpInside" id="Yfy-LK-m06"/>
+                                                    <action selector="touchCard4:" destination="XlP-1A-aCR" eventType="touchUpInside" id="rxv-7h-yHy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbd-sP-Hqo">
@@ -388,7 +388,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchCarrot:" destination="XlP-1A-aCR" eventType="touchUpInside" id="Bmi-GC-lLY"/>
+                                                    <action selector="touchCard5:" destination="XlP-1A-aCR" eventType="touchUpInside" id="2l5-fU-PDw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -448,7 +448,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touch1:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="i1O-Wo-MyK"/>
+                                                    <action selector="touchCard0:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="j5q-Gg-jvQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="im3-5M-pX9">
@@ -474,7 +474,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touch2:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="QJD-g5-eRV"/>
+                                                    <action selector="touchCard1:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="U9V-j0-PeY"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -505,7 +505,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touch4:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="9wZ-w0-gRb"/>
+                                                    <action selector="touchCard2:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="EWc-is-AG8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlD-4s-Z4j">
@@ -531,7 +531,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touch5:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="BF4-te-lif"/>
+                                                    <action selector="touchCard3:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="ELl-qs-i6h"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -562,7 +562,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touch7:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="mzq-qE-f58"/>
+                                                    <action selector="touchCard4:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="iKM-gJ-ESI"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArS-YU-Www">
@@ -588,7 +588,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touch8:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="uKD-bj-W3G"/>
+                                                    <action selector="touchCard5:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="JMI-op-9b1"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -648,7 +648,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchCircle:" destination="mbg-QG-rOd" eventType="touchUpInside" id="GC4-nQ-Z6r"/>
+                                                    <action selector="touchCard0:" destination="mbg-QG-rOd" eventType="touchUpInside" id="wlT-oY-Vgx"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTz-oy-gOR">
@@ -674,7 +674,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchOval:" destination="mbg-QG-rOd" eventType="touchUpInside" id="fJb-fW-7WJ"/>
+                                                    <action selector="touchCard1:" destination="mbg-QG-rOd" eventType="touchUpInside" id="Hes-ai-12E"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -705,7 +705,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchRectangle:" destination="mbg-QG-rOd" eventType="touchUpInside" id="flF-WW-WpL"/>
+                                                    <action selector="touchCard2:" destination="mbg-QG-rOd" eventType="touchUpInside" id="s7m-gs-QzE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iS0-Fq-KdN">
@@ -731,7 +731,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchTriangle:" destination="mbg-QG-rOd" eventType="touchUpInside" id="CQ2-ka-Odo"/>
+                                                    <action selector="touchCard3:" destination="mbg-QG-rOd" eventType="touchUpInside" id="eZm-ML-GH5"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -762,7 +762,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchOctagon:" destination="mbg-QG-rOd" eventType="touchUpInside" id="7Zs-9C-PLL"/>
+                                                    <action selector="touchCard4:" destination="mbg-QG-rOd" eventType="touchUpInside" id="Uvd-ZU-e27"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTk-ED-wRJ">
@@ -788,7 +788,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="touchStar:" destination="mbg-QG-rOd" eventType="touchUpInside" id="p6b-Uk-eFs"/>
+                                                    <action selector="touchCard5:" destination="mbg-QG-rOd" eventType="touchUpInside" id="iGv-Ak-dDt"/>
                                                 </connections>
                                             </button>
                                         </subviews>

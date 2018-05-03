@@ -11,27 +11,27 @@ import AVFoundation
 
 class MarketViewController: UIViewController {
     
-    @IBAction func touchApple(_ sender: UIButton) {
+    @IBAction func touchCard0(_ sender: UIButton) {
         flipCard(withEmoji: "🍎", on: sender)
     }
     
-    @IBAction func touchBanana(_ sender: UIButton) {
+    @IBAction func touchCard1(_ sender: UIButton) {
         flipCard(withEmoji: "🍌", on: sender)
     }
    
-    @IBAction func touchOrange(_ sender: UIButton) {
+    @IBAction func touchCard2(_ sender: UIButton) {
         flipCard(withEmoji: "🥕", on: sender)
     }
     
-    @IBAction func touchGrapes(_ sender: UIButton) {
+    @IBAction func touchCard3(_ sender: UIButton) {
         flipCard(withEmoji: "🥦", on: sender)
     }
   
-    @IBAction func touchBroccoli(_ sender: UIButton) {
+    @IBAction func touchCard4(_ sender: UIButton) {
         flipCard(withEmoji: "🍓", on: sender)
     }
     
-    @IBAction func touchCarrot(_ sender: UIButton) {
+    @IBAction func touchCard5(_ sender: UIButton) {
         flipCard(withEmoji: "🌶", on: sender)
     }
    
