@@ -12,37 +12,37 @@ import AVFoundation
 class FarmViewController: UIViewController {
         
     @IBAction func touchElephant(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action?
-        if let image = UIImage(named: "elephant") as UIImage? {
+        if let image = UIImage(named: "cow") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
     
     @IBAction func touchCow(_ sender: UIButton) {
-        if let image = UIImage(named: "cow") as UIImage? {
-            flipCard(withImage: image, on: sender)
-        }
-    }
-
-    @IBAction func touchDog(_ sender: UIButton) {
         if let image = UIImage(named: "dog") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
 
-    @IBAction func touchPig(_ sender: UIButton) {
-        if let image = UIImage(named: "cow(final)") as UIImage? {
-            flipCard(withImage: image, on: sender)
-        }
-    }
-
-    @IBAction func touchChick(_ sender: UIButton) {
+    @IBAction func touchDog(_ sender: UIButton) {
         if let image = UIImage(named: "rooster") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
 
+    @IBAction func touchPig(_ sender: UIButton) {
+        if let image = UIImage(named: "pig") as UIImage? {
+            flipCard(withImage: image, on: sender)
+        }
+    }
+
+    @IBAction func touchChick(_ sender: UIButton) {
+        if let image = UIImage(named: "horse") as UIImage? {
+            flipCard(withImage: image, on: sender)
+        }
+    }
+
     @IBAction func touchOwl(_ sender: UIButton) {
-        if let image = UIImage(named: "owl") as UIImage? {
+        if let image = UIImage(named: "cat") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
