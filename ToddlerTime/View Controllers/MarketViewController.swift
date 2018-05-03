@@ -48,29 +48,25 @@ class MarketViewController: UIViewController {
             if emoji == "🍎" {
                 playSound(forObject: "apple")
             }
+            
             if emoji == "🍌" {
                 playSound(forObject: "banana")
             }
-            if emoji == "🍓" {
-                playSound(forObject: "strawberry")
-            }
-            if emoji == "🍊" {
-                playSound(forObject: "orange")
-            }
-            if emoji == "🍇" {
-                playSound(forObject: "grapes")
-            }
-            if emoji == "🌶" {
-                playSound(forObject: "pepper")
-            }
-            if emoji == "🥦" {
-                playSound(forObject: "broccoli")
-            }
+            
             if emoji == "🥕" {
                 playSound(forObject: "carrot")
             }
-            if emoji == "🌽" {
-                playSound(forObject: "corn")
+            
+            if emoji == "🥦" {
+                playSound(forObject: "broccoli")
+            }
+            
+            if emoji == "🍓" {
+                playSound(forObject: "strawberry")
+            }
+           
+            if emoji == "🌶" {
+                playSound(forObject: "pepper")
             }
         }
     }

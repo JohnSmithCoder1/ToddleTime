@@ -45,32 +45,23 @@ class ShapesViewController: UIViewController {
         } else {
             button.setTitle(emoji, for: .normal)
             button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            if emoji == "🍎" {
-                playSound(forObject: "apple")
+            if emoji == "🔵" {
+                playSound(forObject: "circle")
             }
-            if emoji == "🍌" {
-                playSound(forObject: "banana")
+            if emoji == "⬛️" {
+                playSound(forObject: "square")
             }
-            if emoji == "🍓" {
-                playSound(forObject: "strawberry")
+            if emoji == "🔺" {
+                playSound(forObject: "triangle")
             }
-            if emoji == "🍊" {
-                playSound(forObject: "orange")
+            if emoji == "🔶" {
+                playSound(forObject: "diamond")
             }
-            if emoji == "🍇" {
-                playSound(forObject: "grapes")
+            if emoji == "⭐️" {
+                playSound(forObject: "star")
             }
-            if emoji == "🌶" {
-                playSound(forObject: "pepper")
-            }
-            if emoji == "🥦" {
-                playSound(forObject: "broccoli")
-            }
-            if emoji == "🥕" {
-                playSound(forObject: "carrot")
-            }
-            if emoji == "🌽" {
-                playSound(forObject: "corn")
+            if emoji == "♥️" {
+                playSound(forObject: "heart")
             }
         }
     }

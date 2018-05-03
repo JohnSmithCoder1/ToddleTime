@@ -57,32 +57,28 @@ class FarmViewController: UIViewController {
         } else {
             button.setImage(image, for: .normal)
 
-            if image == UIImage(named: "elephant") as UIImage? {
-                playSound(forObject: "elephant")
-            }
             if image == UIImage(named: "cow") as UIImage? {
                 playSound(forObject: "cow")
             }
-            if image == UIImage(named: "cat") as UIImage? {
-                playSound(forObject: "cat")
-            }
+            
             if image == UIImage(named: "dog") as UIImage? {
                 playSound(forObject: "dog")
             }
-            if image == UIImage(named: "pig") as UIImage? {
-                playSound(forObject: "pig")
-            }
-            if image == UIImage(named: "horse") as UIImage? {
-                playSound(forObject: "horse")
-            }
+            
             if image == UIImage(named: "rooster") as UIImage? {
                 playSound(forObject: "rooster")
             }
-            if image == UIImage(named: "owl") as UIImage? {
-                playSound(forObject: "owl")
+            
+            if image == UIImage(named: "pig") as UIImage? {
+                playSound(forObject: "pig")
             }
-            if image == UIImage(named: "sheep") as UIImage? {
-                playSound(forObject: "sheep")
+            
+            if image == UIImage(named: "horse") as UIImage? {
+                playSound(forObject: "horse")
+            }
+            
+            if image == UIImage(named: "cat") as UIImage? {
+                playSound(forObject: "cat")
             }
         }
     }
