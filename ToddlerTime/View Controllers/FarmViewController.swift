@@ -19,7 +19,7 @@ class FarmViewController: UIViewController {
     }
     
     @IBAction func touchCow(_ sender: UIButton) {
-        if let image = UIImage(named: "cow(cropped)") as UIImage? {
+        if let image = UIImage(named: "cow") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
@@ -37,7 +37,7 @@ class FarmViewController: UIViewController {
     }
 
     @IBAction func touchPig(_ sender: UIButton) {
-        if let image = UIImage(named: "pig") as UIImage? {
+        if let image = UIImage(named: "cow(final)") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
     }
