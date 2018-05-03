@@ -21,6 +21,7 @@
 		050DBDEC20802D47004278E6 /* sheep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDEB20802D47004278E6 /* sheep.wav */; };
 		050DBDF220803332004278E6 /* rooster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDF120803332004278E6 /* rooster.wav */; };
 		052C7AF6209810C8008B3BD5 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */; };
+		05726101209B709800781381 /* page.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05726100209B709800781381 /* page.wav */; };
 		058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618C2093C9E100B8640D /* NumbersViewController.swift */; };
 		05A3FDE8209920AB005BF8AF /* card.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05A3FDE7209920AB005BF8AF /* card.wav */; };
 		05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* MarketViewController.swift */; };
@@ -43,6 +44,7 @@
 		050DBDEB20802D47004278E6 /* sheep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sheep.wav; sourceTree = "<group>"; };
 		050DBDF120803332004278E6 /* rooster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster.wav; sourceTree = "<group>"; };
 		052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
+		05726100209B709800781381 /* page.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = page.wav; sourceTree = "<group>"; };
 		058B618C2093C9E100B8640D /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		05A3FDE7209920AB005BF8AF /* card.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = card.wav; sourceTree = "<group>"; };
 		05DD0C4C209371D100E9788A /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				050DBDDF20800483004278E6 /* elephant.wav */,
 				050DBDE120800483004278E6 /* horse.wav */,
 				050DBDE220800483004278E6 /* owl.wav */,
+				05726100209B709800781381 /* page.wav */,
 				050DBDDC20800482004278E6 /* pig.wav */,
 				050DBDF120803332004278E6 /* rooster.wav */,
 				050DBDEB20802D47004278E6 /* sheep.wav */,
@@ -182,6 +185,7 @@
 				050DBDCF20800376004278E6 /* Assets.xcassets in Resources */,
 				050DBDE720800483004278E6 /* elephant.wav in Resources */,
 				050DBDEC20802D47004278E6 /* sheep.wav in Resources */,
+				05726101209B709800781381 /* page.wav in Resources */,
 				050DBDCD20800375004278E6 /* Main.storyboard in Resources */,
 				050DBDE420800483004278E6 /* pig.wav in Resources */,
 				050DBDE520800483004278E6 /* dog.wav in Resources */,

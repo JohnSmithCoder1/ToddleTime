@@ -50,7 +50,7 @@ class FarmViewController: UIViewController {
     var player: AVAudioPlayer?
     
     override func viewWillDisappear(_ animated: Bool) {
-        playSound(forObject: "card")
+        playSound(forObject: "page")
     }
     
     func flipCard(withImage image: UIImage, on button: UIButton) {

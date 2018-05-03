@@ -37,6 +37,10 @@ class ShapesViewController: UIViewController {
     
     var player: AVAudioPlayer?
     
+    override func viewWillDisappear(_ animated: Bool) {
+        playSound(forObject: "page")
+    }
+    
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
             playSound(forObject: "card")
