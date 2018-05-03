@@ -16,23 +16,23 @@ class ShapesViewController: UIViewController {
     }
     
     @IBAction func touchOval(_ sender: UIButton) {
-        flipCard(withEmoji: "❌", on: sender)
+        flipCard(withEmoji: "⬛️", on: sender)
     }
     
     @IBAction func touchRectangle(_ sender: UIButton) {
-        flipCard(withEmoji: "⬆️", on: sender)
+        flipCard(withEmoji: "🔺", on: sender)
     }
     
     @IBAction func touchTriangle(_ sender: UIButton) {
-        flipCard(withEmoji: "🔺", on: sender)
+        flipCard(withEmoji: "🔶", on: sender)
     }
    
     @IBAction func touchOctagon(_ sender: UIButton) {
-        flipCard(withEmoji: "🛑", on: sender)
+        flipCard(withEmoji: "⭐️", on: sender)
     }
     
     @IBAction func touchStar(_ sender: UIButton) {
-        flipCard(withEmoji: "⭐️", on: sender)
+        flipCard(withEmoji: "♥️", on: sender)
     }
     
     var player: AVAudioPlayer?

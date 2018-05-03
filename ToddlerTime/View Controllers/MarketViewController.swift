@@ -20,19 +20,19 @@ class MarketViewController: UIViewController {
     }
    
     @IBAction func touchOrange(_ sender: UIButton) {
-        flipCard(withEmoji: "🍊", on: sender)
+        flipCard(withEmoji: "🥕", on: sender)
     }
     
     @IBAction func touchGrapes(_ sender: UIButton) {
-        flipCard(withEmoji: "🍇", on: sender)
+        flipCard(withEmoji: "🥦", on: sender)
     }
   
     @IBAction func touchBroccoli(_ sender: UIButton) {
-        flipCard(withEmoji: "🥦", on: sender)
+        flipCard(withEmoji: "🍓", on: sender)
     }
     
     @IBAction func touchCarrot(_ sender: UIButton) {
-        flipCard(withEmoji: "🥕", on: sender)
+        flipCard(withEmoji: "🌶", on: sender)
     }
    
     var player: AVAudioPlayer?
