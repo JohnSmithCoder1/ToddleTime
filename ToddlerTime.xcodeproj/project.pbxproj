@@ -15,10 +15,7 @@
 		050DBDE420800483004278E6 /* pig.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDC20800482004278E6 /* pig.wav */; };
 		050DBDE520800483004278E6 /* dog.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDD20800483004278E6 /* dog.wav */; };
 		050DBDE620800483004278E6 /* cow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDE20800483004278E6 /* cow.wav */; };
-		050DBDE720800483004278E6 /* elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDF20800483004278E6 /* elephant.wav */; };
 		050DBDE920800483004278E6 /* horse.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDE120800483004278E6 /* horse.wav */; };
-		050DBDEA20800483004278E6 /* owl.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDE220800483004278E6 /* owl.wav */; };
-		050DBDEC20802D47004278E6 /* sheep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDEB20802D47004278E6 /* sheep.wav */; };
 		050DBDF220803332004278E6 /* rooster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDF120803332004278E6 /* rooster.wav */; };
 		052C7AF6209810C8008B3BD5 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */; };
 		05726101209B709800781381 /* page.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05726100209B709800781381 /* page.wav */; };
@@ -38,10 +35,7 @@
 		050DBDDC20800482004278E6 /* pig.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pig.wav; sourceTree = "<group>"; };
 		050DBDDD20800483004278E6 /* dog.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog.wav; sourceTree = "<group>"; };
 		050DBDDE20800483004278E6 /* cow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cow.wav; sourceTree = "<group>"; };
-		050DBDDF20800483004278E6 /* elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant.wav; sourceTree = "<group>"; };
 		050DBDE120800483004278E6 /* horse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = horse.wav; sourceTree = "<group>"; };
-		050DBDE220800483004278E6 /* owl.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = owl.wav; sourceTree = "<group>"; };
-		050DBDEB20802D47004278E6 /* sheep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sheep.wav; sourceTree = "<group>"; };
 		050DBDF120803332004278E6 /* rooster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster.wav; sourceTree = "<group>"; };
 		052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
 		05726100209B709800781381 /* page.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = page.wav; sourceTree = "<group>"; };
@@ -82,28 +76,33 @@
 			children = (
 				050DBDC720800375004278E6 /* AppDelegate.swift */,
 				050DBDCB20800375004278E6 /* Main.storyboard */,
-				05DD0C4E209371E700E9788A /* View Controllers */,
 				050DBDCE20800376004278E6 /* Assets.xcassets */,
 				050DBDD320800376004278E6 /* Info.plist */,
+				05DD0C4E209371E700E9788A /* View Controllers */,
 				056058E820812A1100DC8E15 /* Sounds */,
 			);
 			path = ToddlerTime;
 			sourceTree = "<group>";
 		};
-		056058E820812A1100DC8E15 /* Sounds */ = {
+		0555D9C1209BFAA80066C07E /* Farm Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				05A3FDE7209920AB005BF8AF /* card.wav */,
 				050DBDDB20800482004278E6 /* cat.wav */,
 				050DBDDE20800483004278E6 /* cow.wav */,
 				050DBDDD20800483004278E6 /* dog.wav */,
-				050DBDDF20800483004278E6 /* elephant.wav */,
 				050DBDE120800483004278E6 /* horse.wav */,
-				050DBDE220800483004278E6 /* owl.wav */,
-				05726100209B709800781381 /* page.wav */,
 				050DBDDC20800482004278E6 /* pig.wav */,
 				050DBDF120803332004278E6 /* rooster.wav */,
-				050DBDEB20802D47004278E6 /* sheep.wav */,
+			);
+			path = "Farm Sounds";
+			sourceTree = "<group>";
+		};
+		056058E820812A1100DC8E15 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0555D9C1209BFAA80066C07E /* Farm Sounds */,
+				05A3FDE7209920AB005BF8AF /* card.wav */,
+				05726100209B709800781381 /* page.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -183,13 +182,10 @@
 				050DBDE320800483004278E6 /* cat.wav in Resources */,
 				050DBDF220803332004278E6 /* rooster.wav in Resources */,
 				050DBDCF20800376004278E6 /* Assets.xcassets in Resources */,
-				050DBDE720800483004278E6 /* elephant.wav in Resources */,
-				050DBDEC20802D47004278E6 /* sheep.wav in Resources */,
 				05726101209B709800781381 /* page.wav in Resources */,
 				050DBDCD20800375004278E6 /* Main.storyboard in Resources */,
 				050DBDE420800483004278E6 /* pig.wav in Resources */,
 				050DBDE520800483004278E6 /* dog.wav in Resources */,
-				050DBDEA20800483004278E6 /* owl.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
