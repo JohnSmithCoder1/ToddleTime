@@ -74,22 +74,22 @@ class NumbersViewController: UIViewController {
             button.setTitle(emoji, for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
             if emoji == "1️⃣" {
-                playSound(forObject: "One")
+                playSound(forObject: "one")
             }
             if emoji == "2️⃣" {
-                playSound(forObject: "Two")
+                playSound(forObject: "two")
             }
             if emoji == "3️⃣" {
-                playSound(forObject: "Three")
+                playSound(forObject: "three")
             }
             if emoji == "4️⃣" {
-                playSound(forObject: "Four")
+                playSound(forObject: "four")
             }
             if emoji == "5️⃣" {
-                playSound(forObject: "Five")
+                playSound(forObject: "five")
             }
             if emoji == "6️⃣" {
-                playSound(forObject: "Six")
+                playSound(forObject: "six")
             }
         }
     }
