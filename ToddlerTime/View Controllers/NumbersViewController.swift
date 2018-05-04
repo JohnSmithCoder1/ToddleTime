@@ -41,27 +41,27 @@ class NumbersViewController: UIViewController {
         playSound(forObject: "page")
         if let button0 = self.view.viewWithTag(300) as? UIButton {
             button0.setTitle("", for: .normal)
-            button0.backgroundColor = #colorLiteral(red: 0, green: 0.568627451, blue: 0.8117647059, alpha: 1)
+            button0.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
         if let button1 = self.view.viewWithTag(301) as? UIButton {
             button1.setTitle("", for: .normal)
-            button1.backgroundColor = #colorLiteral(red: 0, green: 0.568627451, blue: 0.8117647059, alpha: 1)
+            button1.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
         if let button2 = self.view.viewWithTag(302) as? UIButton {
             button2.setTitle("", for: .normal)
-            button2.backgroundColor = #colorLiteral(red: 0, green: 0.568627451, blue: 0.8117647059, alpha: 1)
+            button2.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
         if let button3 = self.view.viewWithTag(303) as? UIButton {
             button3.setTitle("", for: .normal)
-            button3.backgroundColor = #colorLiteral(red: 0, green: 0.568627451, blue: 0.8117647059, alpha: 1)
+            button3.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
         if let button4 = self.view.viewWithTag(304) as? UIButton {
             button4.setTitle("", for: .normal)
-            button4.backgroundColor = #colorLiteral(red: 0, green: 0.568627451, blue: 0.8117647059, alpha: 1)
+            button4.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
         if let button5 = self.view.viewWithTag(305) as? UIButton {
             button5.setTitle("", for: .normal)
-            button5.backgroundColor = #colorLiteral(red: 0, green: 0.568627451, blue: 0.8117647059, alpha: 1)
+            button5.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
     }
     
@@ -69,7 +69,7 @@ class NumbersViewController: UIViewController {
         if button.currentTitle == emoji {
             playSound(forObject: "card")
             button.setTitle("", for: .normal)
-            button.backgroundColor = #colorLiteral(red: 0, green: 0.568627451, blue: 0.8117647059, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         } else {
             button.setTitle(emoji, for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)

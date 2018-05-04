@@ -41,27 +41,27 @@ class MarketViewController: UIViewController {
         playSound(forObject: "page")
         if let button0 = self.view.viewWithTag(200) as? UIButton {
             button0.setTitle("", for: .normal)
-            button0.backgroundColor = #colorLiteral(red: 0.9921568627, green: 0.2666666667, blue: 0.2705882353, alpha: 1)
+            button0.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
         if let button1 = self.view.viewWithTag(201) as? UIButton {
             button1.setTitle("", for: .normal)
-            button1.backgroundColor = #colorLiteral(red: 0.9921568627, green: 0.2666666667, blue: 0.2705882353, alpha: 1)
+            button1.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
         if let button2 = self.view.viewWithTag(202) as? UIButton {
             button2.setTitle("", for: .normal)
-            button2.backgroundColor = #colorLiteral(red: 0.9921568627, green: 0.2666666667, blue: 0.2705882353, alpha: 1)
+            button2.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
         if let button3 = self.view.viewWithTag(203) as? UIButton {
             button3.setTitle("", for: .normal)
-            button3.backgroundColor = #colorLiteral(red: 0.9921568627, green: 0.2666666667, blue: 0.2705882353, alpha: 1)
+            button3.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
         if let button4 = self.view.viewWithTag(204) as? UIButton {
             button4.setTitle("", for: .normal)
-            button4.backgroundColor = #colorLiteral(red: 0.9921568627, green: 0.2666666667, blue: 0.2705882353, alpha: 1)
+            button4.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
         if let button5 = self.view.viewWithTag(205) as? UIButton {
             button5.setTitle("", for: .normal)
-            button5.backgroundColor = #colorLiteral(red: 0.9921568627, green: 0.2666666667, blue: 0.2705882353, alpha: 1)
+            button5.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
     }
     
@@ -69,7 +69,7 @@ class MarketViewController: UIViewController {
         if button.currentTitle == emoji {
             playSound(forObject: "card")
             button.setTitle("", for: .normal)
-            button.backgroundColor = #colorLiteral(red: 0.9921568627, green: 0.2666666667, blue: 0.2705882353, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         } else {
             button.setTitle(emoji, for: .normal)
             button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)

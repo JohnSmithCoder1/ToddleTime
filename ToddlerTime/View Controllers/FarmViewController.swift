@@ -53,27 +53,27 @@ class FarmViewController: UIViewController {
         playSound(forObject: "page")
         if let button0 = self.view.viewWithTag(100) as? UIButton {
             button0.setImage(nil, for: .normal)
-            button0.backgroundColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1)
+            button0.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         }
         if let button1 = self.view.viewWithTag(101) as? UIButton {
             button1.setImage(nil, for: .normal)
-            button1.backgroundColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1)
+            button1.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         }
         if let button2 = self.view.viewWithTag(102) as? UIButton {
             button2.setImage(nil, for: .normal)
-            button2.backgroundColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1)
+            button2.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         }
         if let button3 = self.view.viewWithTag(103) as? UIButton {
             button3.setImage(nil, for: .normal)
-            button3.backgroundColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1)
+            button3.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         }
         if let button4 = self.view.viewWithTag(104) as? UIButton {
             button4.setImage(nil, for: .normal)
-            button4.backgroundColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1)
+            button4.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         }
         if let button5 = self.view.viewWithTag(105) as? UIButton {
             button5.setImage(nil, for: .normal)
-            button5.backgroundColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1)
+            button5.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         }
     }
     
@@ -81,7 +81,7 @@ class FarmViewController: UIViewController {
         if button.currentImage == image {
             playSound(forObject: "card")
             button.setImage(nil, for: .normal)
-            button.backgroundColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         } else {
             button.setImage(image, for: .normal)
 

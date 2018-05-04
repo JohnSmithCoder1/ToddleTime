@@ -41,27 +41,27 @@ class ShapesViewController: UIViewController {
         playSound(forObject: "page")
         if let button0 = self.view.viewWithTag(400) as? UIButton {
             button0.setTitle("", for: .normal)
-            button0.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.2235294118, blue: 0.368627451, alpha: 1)
+            button0.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
         }
         if let button1 = self.view.viewWithTag(401) as? UIButton {
             button1.setTitle("", for: .normal)
-            button1.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.2235294118, blue: 0.368627451, alpha: 1)
+            button1.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
         }
         if let button2 = self.view.viewWithTag(402) as? UIButton {
             button2.setTitle("", for: .normal)
-            button2.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.2235294118, blue: 0.368627451, alpha: 1)
+            button2.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
         }
         if let button3 = self.view.viewWithTag(403) as? UIButton {
             button3.setTitle("", for: .normal)
-            button3.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.2235294118, blue: 0.368627451, alpha: 1)
+            button3.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
         }
         if let button4 = self.view.viewWithTag(404) as? UIButton {
             button4.setTitle("", for: .normal)
-            button4.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.2235294118, blue: 0.368627451, alpha: 1)
+            button4.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
         }
         if let button5 = self.view.viewWithTag(405) as? UIButton {
             button5.setTitle("", for: .normal)
-            button5.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.2235294118, blue: 0.368627451, alpha: 1)
+            button5.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
         }
     }
     
@@ -69,7 +69,7 @@ class ShapesViewController: UIViewController {
         if button.currentTitle == emoji {
             playSound(forObject: "card")
             button.setTitle("", for: .normal)
-            button.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.2235294118, blue: 0.368627451, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
         } else {
             button.setTitle(emoji, for: .normal)
             button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
