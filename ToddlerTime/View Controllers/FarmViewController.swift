@@ -49,33 +49,20 @@ class FarmViewController: UIViewController {
     
     var player: AVAudioPlayer?
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground), name: .UIApplicationDidEnterBackground, object: nil)
+    }
+    
+    @objc func appDidEnterBackground() {
+        resetFarmCards()
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         playSound(forObject: "page")
-        if let button0 = self.view.viewWithTag(100) as? UIButton {
-            button0.setImage(nil, for: .normal)
-            button0.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
-        }
-        if let button1 = self.view.viewWithTag(101) as? UIButton {
-            button1.setImage(nil, for: .normal)
-            button1.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
-        }
-        if let button2 = self.view.viewWithTag(102) as? UIButton {
-            button2.setImage(nil, for: .normal)
-            button2.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
-        }
-        if let button3 = self.view.viewWithTag(103) as? UIButton {
-            button3.setImage(nil, for: .normal)
-            button3.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
-        }
-        if let button4 = self.view.viewWithTag(104) as? UIButton {
-            button4.setImage(nil, for: .normal)
-            button4.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
-        }
-        if let button5 = self.view.viewWithTag(105) as? UIButton {
-            button5.setImage(nil, for: .normal)
-            button5.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
-        }
+        resetFarmCards()
     }
+   
     
     func flipCard(withImage image: UIImage, on button: UIButton) {
         if button.currentImage == image {
@@ -129,7 +116,36 @@ class FarmViewController: UIViewController {
             print("error: \(error.localizedDescription)")
         }
     }
+    
+    
+    func resetFarmCards() {
+        if let button0 = self.view.viewWithTag(100) as? UIButton {
+            button0.setImage(nil, for: .normal)
+            button0.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+        }
+        if let button1 = self.view.viewWithTag(101) as? UIButton {
+            button1.setImage(nil, for: .normal)
+            button1.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+        }
+        if let button2 = self.view.viewWithTag(102) as? UIButton {
+            button2.setImage(nil, for: .normal)
+            button2.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+        }
+        if let button3 = self.view.viewWithTag(103) as? UIButton {
+            button3.setImage(nil, for: .normal)
+            button3.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+        }
+        if let button4 = self.view.viewWithTag(104) as? UIButton {
+            button4.setImage(nil, for: .normal)
+            button4.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+        }
+        if let button5 = self.view.viewWithTag(105) as? UIButton {
+            button5.setImage(nil, for: .normal)
+            button5.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+        }
+    }
 }
+
 
 // adds the following settings in IB for all views under attributes inspector
 extension UIView {
