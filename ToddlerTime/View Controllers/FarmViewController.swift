@@ -12,6 +12,8 @@ import AVFoundation
 class FarmViewController: UIViewController {
         
     @IBAction func touchCard0(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action?
+        
+        
         if let image = UIImage(named: "cow") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
@@ -236,7 +238,7 @@ extension UIView {
 }
 
 extension UITabBar {
-    
+
     override open func sizeThatFits(_ size: CGSize) -> CGSize {
         var sizeThatFits = super.sizeThatFits(size)
         sizeThatFits.height = 100
