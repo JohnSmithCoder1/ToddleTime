@@ -36,6 +36,7 @@
 		0555D9E6209C09540066C07E /* four.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9E5209C09540066C07E /* four.wav */; };
 		0555D9E8209C095B0066C07E /* five.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9E7209C095B0066C07E /* five.wav */; };
 		0555D9EA209C09630066C07E /* six.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9E9209C09630066C07E /* six.wav */; };
+		056981F020F43DE600C831B0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056981EF20F43DE600C831B0 /* Launch Screen.storyboard */; };
 		05726101209B709800781381 /* page.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05726100209B709800781381 /* page.wav */; };
 		058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618C2093C9E100B8640D /* NumbersViewController.swift */; };
 		05A3FDE8209920AB005BF8AF /* card.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05A3FDE7209920AB005BF8AF /* card.wav */; };
@@ -74,6 +75,7 @@
 		0555D9E5209C09540066C07E /* four.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = four.wav; sourceTree = "<group>"; };
 		0555D9E7209C095B0066C07E /* five.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = five.wav; sourceTree = "<group>"; };
 		0555D9E9209C09630066C07E /* six.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = six.wav; sourceTree = "<group>"; };
+		056981EF20F43DE600C831B0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		05726100209B709800781381 /* page.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = page.wav; sourceTree = "<group>"; };
 		058B618C2093C9E100B8640D /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		05A3FDE7209920AB005BF8AF /* card.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = card.wav; sourceTree = "<group>"; };
@@ -110,8 +112,9 @@
 		050DBDC620800375004278E6 /* ToddlerTime */ = {
 			isa = PBXGroup;
 			children = (
-				050DBDC720800375004278E6 /* AppDelegate.swift */,
 				050DBDCB20800375004278E6 /* Main.storyboard */,
+				056981EF20F43DE600C831B0 /* Launch Screen.storyboard */,
+				050DBDC720800375004278E6 /* AppDelegate.swift */,
 				050DBDCE20800376004278E6 /* Assets.xcassets */,
 				050DBDD320800376004278E6 /* Info.plist */,
 				05DD0C4E209371E700E9788A /* View Controllers */,
@@ -279,6 +282,7 @@
 				050DBDCF20800376004278E6 /* Assets.xcassets in Resources */,
 				05726101209B709800781381 /* page.wav in Resources */,
 				050DBDCD20800375004278E6 /* Main.storyboard in Resources */,
+				056981F020F43DE600C831B0 /* Launch Screen.storyboard in Resources */,
 				050DBDE420800483004278E6 /* pig.wav in Resources */,
 				0555D9D9209C06070066C07E /* star.wav in Resources */,
 				050DBDE520800483004278E6 /* dog.wav in Resources */,
