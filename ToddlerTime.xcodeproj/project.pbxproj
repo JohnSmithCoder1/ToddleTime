@@ -40,7 +40,7 @@
 		056981F020F43DE600C831B0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056981EF20F43DE600C831B0 /* Launch Screen.storyboard */; };
 		05726101209B709800781381 /* page.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05726100209B709800781381 /* page.wav */; };
 		058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618C2093C9E100B8640D /* NumbersViewController.swift */; };
-		05A3FDE8209920AB005BF8AF /* card.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05A3FDE7209920AB005BF8AF /* card.wav */; };
+		05A3FDE8209920AB005BF8AF /* flipCardSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05A3FDE7209920AB005BF8AF /* flipCardSound.wav */; };
 		05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* MarketViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,7 +80,7 @@
 		056981EF20F43DE600C831B0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		05726100209B709800781381 /* page.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = page.wav; sourceTree = "<group>"; };
 		058B618C2093C9E100B8640D /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
-		05A3FDE7209920AB005BF8AF /* card.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = card.wav; sourceTree = "<group>"; };
+		05A3FDE7209920AB005BF8AF /* flipCardSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flipCardSound.wav; sourceTree = "<group>"; };
 		05DD0C4C209371D100E9788A /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,7 +189,7 @@
 		056058E820812A1100DC8E15 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				05A3FDE7209920AB005BF8AF /* card.wav */,
+				05A3FDE7209920AB005BF8AF /* flipCardSound.wav */,
 				05726100209B709800781381 /* page.wav */,
 				0555D9C1209BFAA80066C07E /* Farm Sounds */,
 				0555D9C4209C01E90066C07E /* Market Sounds */,
@@ -279,7 +279,7 @@
 				050DBDE620800483004278E6 /* cowSound.wav in Resources */,
 				0555D9E6209C09540066C07E /* four.wav in Resources */,
 				0555D9C8209C03A50066C07E /* carrot.wav in Resources */,
-				05A3FDE8209920AB005BF8AF /* card.wav in Resources */,
+				05A3FDE8209920AB005BF8AF /* flipCardSound.wav in Resources */,
 				0555D9CE209C05C00066C07E /* circle.wav in Resources */,
 				050DBDE920800483004278E6 /* horse.wav in Resources */,
 				050DBDE320800483004278E6 /* cat.wav in Resources */,

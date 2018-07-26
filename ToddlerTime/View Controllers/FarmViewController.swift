@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class FarmViewController: UIViewController {
-        
+    
     @IBAction func touchCard0(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action?
         if let image = UIImage(named: "cow") as UIImage? {
             flipCard(withImage: image, on: sender)
@@ -66,7 +66,7 @@ class FarmViewController: UIViewController {
     
     func flipCard(withImage image: UIImage, on button: UIButton) {
         if button.currentImage == image {
-            playSound(forObject: "card")
+            playSound(forObject: "flipCardSound")
             button.setImage(nil, for: .normal)
             button.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         } else {
@@ -146,14 +146,6 @@ class FarmViewController: UIViewController {
     }
 }
 
-extension UITabBar {
-
-    override open func sizeThatFits(_ size: CGSize) -> CGSize {
-        var sizeThatFits = super.sizeThatFits(size)
-        sizeThatFits.height = 80
-        return sizeThatFits
-    }
-}
 
 
 
