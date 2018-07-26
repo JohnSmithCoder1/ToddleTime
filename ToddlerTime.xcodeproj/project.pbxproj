@@ -14,10 +14,11 @@
 		050DBDE320800483004278E6 /* cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDB20800482004278E6 /* cat.wav */; };
 		050DBDE420800483004278E6 /* pig.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDC20800482004278E6 /* pig.wav */; };
 		050DBDE520800483004278E6 /* dog.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDD20800483004278E6 /* dog.wav */; };
-		050DBDE620800483004278E6 /* cow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDE20800483004278E6 /* cow.wav */; };
+		050DBDE620800483004278E6 /* cowSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDE20800483004278E6 /* cowSound.wav */; };
 		050DBDE920800483004278E6 /* horse.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDE120800483004278E6 /* horse.wav */; };
 		050DBDF220803332004278E6 /* rooster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDF120803332004278E6 /* rooster.wav */; };
 		052C7AF6209810C8008B3BD5 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */; };
+		0548B602210A4AD00066132F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548B601210A4AD00066132F /* Card.swift */; };
 		0555D9C3209C01DE0066C07E /* apple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9C2209C01DE0066C07E /* apple.wav */; };
 		0555D9C6209C02EF0066C07E /* banana.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9C5209C02EF0066C07E /* banana.wav */; };
 		0555D9C8209C03A50066C07E /* carrot.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9C7209C03A40066C07E /* carrot.wav */; };
@@ -53,10 +54,11 @@
 		050DBDDB20800482004278E6 /* cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat.wav; sourceTree = "<group>"; };
 		050DBDDC20800482004278E6 /* pig.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pig.wav; sourceTree = "<group>"; };
 		050DBDDD20800483004278E6 /* dog.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog.wav; sourceTree = "<group>"; };
-		050DBDDE20800483004278E6 /* cow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cow.wav; sourceTree = "<group>"; };
+		050DBDDE20800483004278E6 /* cowSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowSound.wav; sourceTree = "<group>"; };
 		050DBDE120800483004278E6 /* horse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = horse.wav; sourceTree = "<group>"; };
 		050DBDF120803332004278E6 /* rooster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster.wav; sourceTree = "<group>"; };
 		052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
+		0548B601210A4AD00066132F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		0555D9C2209C01DE0066C07E /* apple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = apple.wav; sourceTree = "<group>"; };
 		0555D9C5209C02EF0066C07E /* banana.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = banana.wav; sourceTree = "<group>"; };
 		0555D9C7209C03A40066C07E /* carrot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = carrot.wav; sourceTree = "<group>"; };
@@ -117,17 +119,26 @@
 				050DBDC720800375004278E6 /* AppDelegate.swift */,
 				050DBDCE20800376004278E6 /* Assets.xcassets */,
 				050DBDD320800376004278E6 /* Info.plist */,
+				0548B603210A4E170066132F /* Data Models */,
 				05DD0C4E209371E700E9788A /* View Controllers */,
 				056058E820812A1100DC8E15 /* Sounds */,
 			);
 			path = ToddlerTime;
 			sourceTree = "<group>";
 		};
+		0548B603210A4E170066132F /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				0548B601210A4AD00066132F /* Card.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
 		0555D9C1209BFAA80066C07E /* Farm Sounds */ = {
 			isa = PBXGroup;
 			children = (
 				050DBDDB20800482004278E6 /* cat.wav */,
-				050DBDDE20800483004278E6 /* cow.wav */,
+				050DBDDE20800483004278E6 /* cowSound.wav */,
 				050DBDDD20800483004278E6 /* dog.wav */,
 				050DBDE120800483004278E6 /* horse.wav */,
 				050DBDDC20800482004278E6 /* pig.wav */,
@@ -265,7 +276,7 @@
 				0555D9DD209C06180066C07E /* triangle.wav in Resources */,
 				0555D9C6209C02EF0066C07E /* banana.wav in Resources */,
 				0555D9DB209C06110066C07E /* strawberry.wav in Resources */,
-				050DBDE620800483004278E6 /* cow.wav in Resources */,
+				050DBDE620800483004278E6 /* cowSound.wav in Resources */,
 				0555D9E6209C09540066C07E /* four.wav in Resources */,
 				0555D9C8209C03A50066C07E /* carrot.wav in Resources */,
 				05A3FDE8209920AB005BF8AF /* card.wav in Resources */,
@@ -297,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				052C7AF6209810C8008B3BD5 /* ShapesViewController.swift in Sources */,
+				0548B602210A4AD00066132F /* Card.swift in Sources */,
 				05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */,
 				050DBDCA20800375004278E6 /* FarmViewController.swift in Sources */,
 				058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */,

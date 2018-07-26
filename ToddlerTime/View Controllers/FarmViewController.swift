@@ -12,8 +12,6 @@ import AVFoundation
 class FarmViewController: UIViewController {
         
     @IBAction func touchCard0(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action?
-        
-        
         if let image = UIImage(named: "cow") as UIImage? {
             flipCard(withImage: image, on: sender)
         }
