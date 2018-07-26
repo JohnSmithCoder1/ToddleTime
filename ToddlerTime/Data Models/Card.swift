@@ -18,6 +18,10 @@ class Card {
         self.image = image
         self.sound = sound
     }
+    
+    func resetCards() {
+        // add universal card rest func here?
+    }
 }
 
 let cow = Card(color: #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1), image: UIImage(named: "cowImage")!, sound: "cowSound")
