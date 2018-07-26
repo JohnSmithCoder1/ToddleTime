@@ -11,58 +11,51 @@ import AVFoundation
 
 class FarmViewController: UIViewController {
     
+    var player: AVAudioPlayer?
+    
+    
+    //MARK: - Actions
     @IBAction func touchCard0(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action?
-        if let image = UIImage(named: "cow") as UIImage? {
-            flipCard(withImage: image, on: sender)
-        }
+        flipCard(withImage: cow.image, on: sender)
     }
     
     @IBAction func touchCard1(_ sender: UIButton) {
-        if let image = UIImage(named: "dog") as UIImage? {
-            flipCard(withImage: image, on: sender)
-        }
+        flipCard(withImage: dog.image, on: sender)
     }
-
+    
     @IBAction func touchCard2(_ sender: UIButton) {
-        if let image = UIImage(named: "rooster") as UIImage? {
-            flipCard(withImage: image, on: sender)
-        }
+        flipCard(withImage: chicken.image, on: sender)
     }
-
+    
     @IBAction func touchCard3(_ sender: UIButton) {
-        if let image = UIImage(named: "pig") as UIImage? {
-            flipCard(withImage: image, on: sender)
-        }
+        flipCard(withImage: pig.image, on: sender)
     }
-
+    
     @IBAction func touchCard4(_ sender: UIButton) {
-        if let image = UIImage(named: "horse") as UIImage? {
-            flipCard(withImage: image, on: sender)
-        }
+        flipCard(withImage: horse.image, on: sender)
     }
-
+    
     @IBAction func touchCard5(_ sender: UIButton) {
-        if let image = UIImage(named: "cat") as UIImage? {
-            flipCard(withImage: image, on: sender)
-        }
+        flipCard(withImage: cat.image, on: sender)
     }
     
-    var player: AVAudioPlayer?
     
+    //MARK: - Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground), name: .UIApplicationDidEnterBackground, object: nil)
     }
     
-    @objc func appDidEnterBackground() {
+    override func viewWillDisappear(_ animated: Bool) {
+        playSound(forObject: "pageTurnSound")
         resetFarmCards()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        playSound(forObject: "page")
+    
+    //MARK: - Functions
+    @objc func appDidEnterBackground() {
         resetFarmCards()
     }
-   
     
     func flipCard(withImage image: UIImage, on button: UIButton) {
         if button.currentImage == image {
@@ -71,29 +64,22 @@ class FarmViewController: UIViewController {
             button.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         } else {
             button.setImage(image, for: .normal)
-
-            if image == UIImage(named: "cow") as UIImage? {
-                playSound(forObject: "cow")
-            }
             
-            if image == UIImage(named: "dog") as UIImage? {
-                playSound(forObject: "dog")
-            }
-            
-            if image == UIImage(named: "rooster") as UIImage? {
-                playSound(forObject: "rooster")
-            }
-            
-            if image == UIImage(named: "pig") as UIImage? {
-                playSound(forObject: "pig")
-            }
-            
-            if image == UIImage(named: "horse") as UIImage? {
-                playSound(forObject: "horse")
-            }
-            
-            if image == UIImage(named: "cat") as UIImage? {
-                playSound(forObject: "cat")
+            switch image {
+            case cow.image:
+                playSound(forObject: cow.sound)
+            case dog.image:
+                playSound(forObject: dog.sound)
+            case chicken.image:
+                playSound(forObject: chicken.sound)
+            case pig.image:
+                playSound(forObject: pig.sound)
+            case horse.image:
+                playSound(forObject: horse.sound)
+            case cat.image:
+                playSound(forObject: cat.sound)
+            default:
+                print("error finding sound")
             }
         }
     }
@@ -111,14 +97,13 @@ class FarmViewController: UIViewController {
             
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
             
-            player!.play()  // this can be ? instead of ! I think
+            player?.play()  // this was player!.play()
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
         }
     }
     
-    
-    func resetFarmCards() {
+    func resetFarmCards() {  // move this function to card.swift
         if let button0 = self.view.viewWithTag(100) as? UIButton {
             button0.setImage(nil, for: .normal)
             button0.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
