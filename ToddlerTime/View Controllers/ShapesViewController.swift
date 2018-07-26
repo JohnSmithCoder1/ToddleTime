@@ -47,13 +47,13 @@ class ShapesViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        playSound(forObject: "page")
+        playSound(forObject: "pageTurnSound")
         resetShapesCards()
     }
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
-            playSound(forObject: "card")
+            playSound(forObject: "flipCardSound")
             button.setTitle("", for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
         } else {

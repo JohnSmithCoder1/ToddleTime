@@ -47,13 +47,13 @@ class MarketViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        playSound(forObject: "page")
+        playSound(forObject: "pageTurnSound")
         resetMarketCards()
     }
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
-            playSound(forObject: "card")
+            playSound(forObject: "flipCardSound")
             button.setTitle("", for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         } else {
