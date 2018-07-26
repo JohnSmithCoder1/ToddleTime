@@ -44,6 +44,21 @@ class FarmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground), name: .UIApplicationDidEnterBackground, object: nil)
+        
+        // refactor this code duplication
+        let card0 = self.view.viewWithTag(100) as? UIButton
+        let card1 = self.view.viewWithTag(101) as? UIButton
+        let card2 = self.view.viewWithTag(102) as? UIButton
+        let card3 = self.view.viewWithTag(103) as? UIButton
+        let card4 = self.view.viewWithTag(104) as? UIButton
+        let card5 = self.view.viewWithTag(105) as? UIButton
+        
+        setupButtonStyle(button: card0!)
+        setupButtonStyle(button: card1!)
+        setupButtonStyle(button: card2!)
+        setupButtonStyle(button: card3!)
+        setupButtonStyle(button: card4!)
+        setupButtonStyle(button: card5!)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -55,6 +70,14 @@ class FarmViewController: UIViewController {
     //MARK: - Functions
     @objc func appDidEnterBackground() {
         resetFarmCards()
+    }
+    
+    func setupButtonStyle(button: UIButton) {
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 4.5, height: 4.5)
+        button.layer.shadowRadius = 4.5
+        button.layer.shadowOpacity = 1
     }
     
     func flipCard(withImage image: UIImage, on button: UIButton) {
