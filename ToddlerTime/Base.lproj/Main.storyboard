@@ -14,7 +14,7 @@
         <!--Farm-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="Farm" id="BYZ-38-t0r" customClass="FarmViewController" customModule="ToddlerTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Farm" wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="FarmViewController" customModule="ToddlerTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -692,23 +692,6 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title=" "/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                        <real key="value" value="4.5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                        <size key="value" width="4.5" height="4.5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="touchCard0:" destination="mbg-QG-rOd" eventType="touchUpInside" id="wlT-oY-Vgx"/>
                                                 </connections>
