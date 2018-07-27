@@ -49,30 +49,22 @@ class MarketViewController: UIViewController {
         let card4 = self.view.viewWithTag(204) as? UIButton
         let card5 = self.view.viewWithTag(205) as? UIButton
         
-        setupButtonStyle(button: card0!)
-        setupButtonStyle(button: card1!)
-        setupButtonStyle(button: card2!)
-        setupButtonStyle(button: card3!)
-        setupButtonStyle(button: card4!)
-        setupButtonStyle(button: card5!)
+        primaryVC.setupButtonStyle(button: card0!)
+        primaryVC.setupButtonStyle(button: card1!)
+        primaryVC.setupButtonStyle(button: card2!)
+        primaryVC.setupButtonStyle(button: card3!)
+        primaryVC.setupButtonStyle(button: card4!)
+        primaryVC.setupButtonStyle(button: card5!)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        primaryVC.playSound(forObject: "pageTurnSound")
+        resetMarketCards()
     }
     
     
     // MARK: - Functions
     @objc func appDidEnterBackground() {
-        resetMarketCards()
-    }
-    
-    func setupButtonStyle(button: UIButton) {
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.black.cgColor
-        button.layer.shadowOffset = CGSize(width: 4.5, height: 4.5)
-        button.layer.shadowRadius = 4.5
-        button.layer.shadowOpacity = 1
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        primaryVC.playSound(forObject: "pageTurnSound")
         resetMarketCards()
     }
     
