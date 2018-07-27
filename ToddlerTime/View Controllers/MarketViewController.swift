@@ -11,6 +11,8 @@ import AVFoundation
 
 class MarketViewController: UIViewController {
     
+    let primaryVC = FarmViewController()
+    
     @IBAction func touchCard0(_ sender: UIButton) {
         flipCard(withEmoji: "🍎", on: sender)
     }
@@ -34,8 +36,6 @@ class MarketViewController: UIViewController {
     @IBAction func touchCard5(_ sender: UIButton) {
         flipCard(withEmoji: "🌶", on: sender)
     }
-   
-    var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,60 +70,41 @@ class MarketViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        playSound(forObject: "pageTurnSound")
+        primaryVC.playSound(forObject: "pageTurnSound")
         resetMarketCards()
     }
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
-            playSound(forObject: "flipCardSound")
+            primaryVC.playSound(forObject: "flipCardSound")
             button.setTitle("", for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         } else {
             button.setTitle(emoji, for: .normal)
             button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             if emoji == "🍎" {
-                playSound(forObject: "apple")
+                primaryVC.playSound(forObject: "apple")
             }
             
             if emoji == "🍌" {
-                playSound(forObject: "banana")
+                primaryVC.playSound(forObject: "banana")
             }
             
             if emoji == "🥕" {
-                playSound(forObject: "carrot")
+                primaryVC.playSound(forObject: "carrot")
             }
             
             if emoji == "🥦" {
-                playSound(forObject: "broccoli")
+                primaryVC.playSound(forObject: "broccoli")
             }
             
             if emoji == "🍓" {
-                playSound(forObject: "strawberry")
+                primaryVC.playSound(forObject: "strawberry")
             }
            
             if emoji == "🌶" {
-                playSound(forObject: "pepper")
+                primaryVC.playSound(forObject: "pepper")
             }
-        }
-    }
-    
-    func playSound(forObject: String) {
-        guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else {
-            print("url not found")
-            return
-        }
-        
-        do {
-            /// this codes for making this app ready to takeover the device audio
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            
-            player!.play()
-        } catch let error as NSError {
-            print("error: \(error.localizedDescription)")
         }
     }
     

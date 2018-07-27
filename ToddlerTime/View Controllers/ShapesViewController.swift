@@ -11,6 +11,8 @@ import AVFoundation
 
 class ShapesViewController: UIViewController {
     
+    let primaryVC = FarmViewController()
+    
     @IBAction func touchCard0(_ sender: UIButton) {
         flipCard(withEmoji: "🔵", on: sender)
     }
@@ -34,8 +36,6 @@ class ShapesViewController: UIViewController {
     @IBAction func touchCard5(_ sender: UIButton) {
         flipCard(withEmoji: "♥️", on: sender)
     }
-    
-    var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,13 +70,13 @@ class ShapesViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        playSound(forObject: "pageTurnSound")
+        primaryVC.playSound(forObject: "pageTurnSound")
         resetShapesCards()
     }
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
-            playSound(forObject: "flipCardSound")
+            primaryVC.playSound(forObject: "flipCardSound")
             button.setTitle("", for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
         } else {
@@ -84,42 +84,23 @@ class ShapesViewController: UIViewController {
             button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             
             if emoji == "🔵" {
-                playSound(forObject: "circle")
+                primaryVC.playSound(forObject: "circle")
             }
             if emoji == "⬛️" {
-                playSound(forObject: "square")
+                primaryVC.playSound(forObject: "square")
             }
             if emoji == "🔺" {
-                playSound(forObject: "triangle")
+                primaryVC.playSound(forObject: "triangle")
             }
             if emoji == "🔶" {
-                playSound(forObject: "diamond")
+                primaryVC.playSound(forObject: "diamond")
             }
             if emoji == "⭐️" {
-                playSound(forObject: "star")
+                primaryVC.playSound(forObject: "star")
             }
             if emoji == "♥️" {
-                playSound(forObject: "heart")
+                primaryVC.playSound(forObject: "heart")
             }
-        }
-    }
-    
-    func playSound(forObject: String) {
-        guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else {
-            print("url not found")
-            return
-        }
-        
-        do {
-            /// this codes for making this app ready to takeover the device audio
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            
-            player!.play()
-        } catch let error as NSError {
-            print("error: \(error.localizedDescription)")
         }
     }
     

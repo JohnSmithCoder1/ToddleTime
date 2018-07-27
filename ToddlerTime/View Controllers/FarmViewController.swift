@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+
 class FarmViewController: UIViewController {
     
     var player: AVAudioPlayer?
@@ -132,7 +133,7 @@ class FarmViewController: UIViewController {
         }
     }
     
-    func playSound(forObject: String) {
+    func playSound(forObject: String) {  // refactor this so you don't repeat it in each VC
         guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else {
             print("url not found")
             return
