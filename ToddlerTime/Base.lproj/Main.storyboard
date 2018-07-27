@@ -151,7 +151,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard0:" destination="XlP-1A-aCR" eventType="touchUpInside" id="cdF-ZV-Fdu"/>
+                                                    <action selector="touchCard:" destination="XlP-1A-aCR" eventType="touchUpInside" id="NAj-p4-Mow"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y70-fR-75q">
@@ -161,9 +161,11 @@
                                                     <constraint firstAttribute="width" secondItem="y70-fR-75q" secondAttribute="height" multiplier="1:1" id="Ryr-qn-T8a"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                                <state key="normal" title=" "/>
+                                                <state key="normal" title=" ">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="touchCard1:" destination="XlP-1A-aCR" eventType="touchUpInside" id="pXD-qI-Gfe"/>
+                                                    <action selector="touchCard:" destination="XlP-1A-aCR" eventType="touchUpInside" id="ebI-ac-Jq7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -180,7 +182,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard2:" destination="XlP-1A-aCR" eventType="touchUpInside" id="h8I-QE-Amj"/>
+                                                    <action selector="touchCard:" destination="XlP-1A-aCR" eventType="touchUpInside" id="eug-EF-wjJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6t-cl-DxE">
@@ -192,7 +194,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard3:" destination="XlP-1A-aCR" eventType="touchUpInside" id="MuU-NX-7Vf"/>
+                                                    <action selector="touchCard:" destination="XlP-1A-aCR" eventType="touchUpInside" id="Fjt-hp-0FR"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -209,7 +211,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard4:" destination="XlP-1A-aCR" eventType="touchUpInside" id="rxv-7h-yHy"/>
+                                                    <action selector="touchCard:" destination="XlP-1A-aCR" eventType="touchUpInside" id="WyL-3I-dmp"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="205" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbd-sP-Hqo">
@@ -221,7 +223,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard5:" destination="XlP-1A-aCR" eventType="touchUpInside" id="2l5-fU-PDw"/>
+                                                    <action selector="touchCard:" destination="XlP-1A-aCR" eventType="touchUpInside" id="xib-Up-2aN"/>
                                                 </connections>
                                             </button>
                                         </subviews>

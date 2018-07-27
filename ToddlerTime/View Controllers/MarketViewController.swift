@@ -13,30 +13,30 @@ class MarketViewController: UIViewController {
     
     let primaryVC = FarmViewController()
     
-    @IBAction func touchCard0(_ sender: UIButton) {
-        flipCard(withEmoji: "🍎", on: sender)
+    @IBAction func touchCard(_ sender: AnyObject) {
+        guard let card = sender as? UIButton else { return }
+        
+        switch card.tag {
+        case 200:
+            flipCard(withImage: apple.image, on: card)
+        case 201:
+            flipCard(withImage: banana.image, on: card)
+        case 202:
+            flipCard(withImage: carrot.image, on: card)
+        case 203:
+            flipCard(withImage: broccoli.image, on: card)
+        case 204:
+            flipCard(withImage: strawberry.image, on: card)
+        case 205:
+            flipCard(withImage: pepper.image, on: card)
+        default:
+            print("unkown card touched")
+            return
+        }
     }
     
-    @IBAction func touchCard1(_ sender: UIButton) {
-        flipCard(withEmoji: "🍌", on: sender)
-    }
-   
-    @IBAction func touchCard2(_ sender: UIButton) {
-        flipCard(withEmoji: "🥕", on: sender)
-    }
     
-    @IBAction func touchCard3(_ sender: UIButton) {
-        flipCard(withEmoji: "🥦", on: sender)
-    }
-  
-    @IBAction func touchCard4(_ sender: UIButton) {
-        flipCard(withEmoji: "🍓", on: sender)
-    }
-    
-    @IBAction func touchCard5(_ sender: UIButton) {
-        flipCard(withEmoji: "🌶", on: sender)
-    }
-    
+    // MARK: - Function Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground), name: .UIApplicationDidEnterBackground, object: nil)
@@ -57,6 +57,8 @@ class MarketViewController: UIViewController {
         setupButtonStyle(button: card5!)
     }
     
+    
+    // MARK: - Functions
     @objc func appDidEnterBackground() {
         resetMarketCards()
     }
@@ -74,63 +76,56 @@ class MarketViewController: UIViewController {
         resetMarketCards()
     }
     
-    func flipCard(withEmoji emoji: String, on button: UIButton) {
-        if button.currentTitle == emoji {
+    func flipCard(withImage image: UIImage, on button: UIButton) {
+        if button.currentImage == image {
             primaryVC.playSound(forObject: "flipCardSound")
-            button.setTitle("", for: .normal)
+            button.setImage(nil, for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         } else {
-            button.setTitle(emoji, for: .normal)
-            button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            if emoji == "🍎" {
-                primaryVC.playSound(forObject: "apple")
-            }
+            button.setImage(image, for: .normal)
             
-            if emoji == "🍌" {
-                primaryVC.playSound(forObject: "banana")
-            }
-            
-            if emoji == "🥕" {
-                primaryVC.playSound(forObject: "carrot")
-            }
-            
-            if emoji == "🥦" {
-                primaryVC.playSound(forObject: "broccoli")
-            }
-            
-            if emoji == "🍓" {
-                primaryVC.playSound(forObject: "strawberry")
-            }
-           
-            if emoji == "🌶" {
-                primaryVC.playSound(forObject: "pepper")
+            switch image {
+            case apple.image:
+                primaryVC.playSound(forObject: apple.sound)
+            case banana.image:
+                primaryVC.playSound(forObject: banana.sound)
+            case carrot.image:
+                primaryVC.playSound(forObject: carrot.sound)
+            case broccoli.image:
+                primaryVC.playSound(forObject: broccoli.sound)
+            case strawberry.image:
+                primaryVC.playSound(forObject: strawberry.sound)
+            case pepper.image:
+                primaryVC.playSound(forObject: pepper.sound)
+            default:
+                print("error finding sound")
             }
         }
     }
     
     func resetMarketCards() {
         if let button0 = self.view.viewWithTag(200) as? UIButton {
-            button0.setTitle("", for: .normal)
+            button0.setImage(nil, for: .normal)
             button0.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
         if let button1 = self.view.viewWithTag(201) as? UIButton {
-            button1.setTitle("", for: .normal)
+            button1.setImage(nil, for: .normal)
             button1.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
         if let button2 = self.view.viewWithTag(202) as? UIButton {
-            button2.setTitle("", for: .normal)
+            button2.setImage(nil, for: .normal)
             button2.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
         if let button3 = self.view.viewWithTag(203) as? UIButton {
-            button3.setTitle("", for: .normal)
+            button3.setImage(nil, for: .normal)
             button3.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
         if let button4 = self.view.viewWithTag(204) as? UIButton {
-            button4.setTitle("", for: .normal)
+            button4.setImage(nil, for: .normal)
             button4.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
         if let button5 = self.view.viewWithTag(205) as? UIButton {
-            button5.setTitle("", for: .normal)
+            button5.setImage(nil, for: .normal)
             button5.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
     }

@@ -14,8 +14,6 @@ class FarmViewController: UIViewController {
     
     var player: AVAudioPlayer?
     
-    
-    //MARK: - Actions
     @IBAction func touchCard(_ sender: AnyObject) {
         guard let card = sender as? UIButton else { return }
         
@@ -39,7 +37,7 @@ class FarmViewController: UIViewController {
     }
     
     
-    //MARK: - Overrides
+    //MARK: - Function Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground), name: .UIApplicationDidEnterBackground, object: nil)
