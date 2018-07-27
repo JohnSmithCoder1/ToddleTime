@@ -13,7 +13,6 @@ class NumbersViewController: UIViewController {
     
     let primaryVC = FarmViewController()
     
-    
     @IBAction func touchCard(_ sender: AnyObject) {
         guard let card = sender as? UIButton else { return }
         
@@ -97,29 +96,18 @@ class NumbersViewController: UIViewController {
     }
     
     func resetNumbersCards() {
-        if let button0 = self.view.viewWithTag(300) as? UIButton {
-            button0.setImage(nil, for: .normal)
-            button0.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
-        }
-        if let button1 = self.view.viewWithTag(301) as? UIButton {
-            button1.setImage(nil, for: .normal)
-            button1.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
-        }
-        if let button2 = self.view.viewWithTag(302) as? UIButton {
-            button2.setImage(nil, for: .normal)
-            button2.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
-        }
-        if let button3 = self.view.viewWithTag(303) as? UIButton {
-            button3.setImage(nil, for: .normal)
-            button3.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
-        }
-        if let button4 = self.view.viewWithTag(304) as? UIButton {
-            button4.setImage(nil, for: .normal)
-            button4.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
-        }
-        if let button5 = self.view.viewWithTag(305) as? UIButton {
-            button5.setImage(nil, for: .normal)
-            button5.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
+        let card0 = self.view.viewWithTag(300) as? UIButton
+        let card1 = self.view.viewWithTag(301) as? UIButton
+        let card2 = self.view.viewWithTag(302) as? UIButton
+        let card3 = self.view.viewWithTag(303) as? UIButton
+        let card4 = self.view.viewWithTag(304) as? UIButton
+        let card5 = self.view.viewWithTag(305) as? UIButton
+        
+        let cards = [card0, card1, card2, card3, card4, card5]
+        
+        for card in cards {
+            card?.setImage(nil, for: .normal)
+            card?.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
     }
 }

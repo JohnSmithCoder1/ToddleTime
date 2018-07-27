@@ -96,29 +96,18 @@ class MarketViewController: UIViewController {
     }
     
     func resetMarketCards() {
-        if let button0 = self.view.viewWithTag(200) as? UIButton {
-            button0.setImage(nil, for: .normal)
-            button0.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
-        }
-        if let button1 = self.view.viewWithTag(201) as? UIButton {
-            button1.setImage(nil, for: .normal)
-            button1.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
-        }
-        if let button2 = self.view.viewWithTag(202) as? UIButton {
-            button2.setImage(nil, for: .normal)
-            button2.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
-        }
-        if let button3 = self.view.viewWithTag(203) as? UIButton {
-            button3.setImage(nil, for: .normal)
-            button3.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
-        }
-        if let button4 = self.view.viewWithTag(204) as? UIButton {
-            button4.setImage(nil, for: .normal)
-            button4.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
-        }
-        if let button5 = self.view.viewWithTag(205) as? UIButton {
-            button5.setImage(nil, for: .normal)
-            button5.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
+        let card0 = self.view.viewWithTag(200) as? UIButton
+        let card1 = self.view.viewWithTag(201) as? UIButton
+        let card2 = self.view.viewWithTag(202) as? UIButton
+        let card3 = self.view.viewWithTag(203) as? UIButton
+        let card4 = self.view.viewWithTag(204) as? UIButton
+        let card5 = self.view.viewWithTag(205) as? UIButton
+        
+        let cards = [card0, card1, card2, card3, card4, card5]
+        
+        for card in cards {
+            card?.setImage(nil, for: .normal)
+            card?.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         }
     }
 }
