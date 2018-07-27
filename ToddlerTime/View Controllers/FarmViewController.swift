@@ -9,7 +9,6 @@
 import UIKit
 import AVFoundation
 
-
 class FarmViewController: UIViewController {
     
     var player: AVAudioPlayer?
@@ -69,14 +68,6 @@ class FarmViewController: UIViewController {
         resetFarmCards()
     }
     
-    func setupButtonStyle(button: UIButton) {
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.black.cgColor
-        button.layer.shadowOffset = CGSize(width: 4.5, height: 4.5)
-        button.layer.shadowRadius = 4.5
-        button.layer.shadowOpacity = 1
-    }
-    
     func flipCard(withImage image: UIImage, on button: UIButton) {
         if button.currentImage == image {
             playSound(forObject: "flipCardSound")
@@ -129,6 +120,14 @@ class FarmViewController: UIViewController {
             button5.setImage(nil, for: .normal)
             button5.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         }
+    }
+    
+    func setupButtonStyle(button: UIButton) {
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 4.5, height: 4.5)
+        button.layer.shadowRadius = 4.5
+        button.layer.shadowOpacity = 1
     }
     
     func playSound(forObject: String) {  // refactor this so you don't repeat it in each VC

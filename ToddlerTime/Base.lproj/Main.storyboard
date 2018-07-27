@@ -266,7 +266,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard0:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="j5q-Gg-jvQ"/>
+                                                    <action selector="touchCard:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="S9w-xU-tLN"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="im3-5M-pX9">
@@ -277,7 +277,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard1:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="U9V-j0-PeY"/>
+                                                    <action selector="touchCard:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="F64-Li-1tW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -293,7 +293,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard2:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="EWc-is-AG8"/>
+                                                    <action selector="touchCard:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="QuG-1b-FgU"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="303" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlD-4s-Z4j">
@@ -304,7 +304,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard3:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="ELl-qs-i6h"/>
+                                                    <action selector="touchCard:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="V1R-vC-Jdt"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -320,7 +320,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard4:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="iKM-gJ-ESI"/>
+                                                    <action selector="touchCard:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="xFm-rj-8I2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="305" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArS-YU-Www">
@@ -331,7 +331,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard5:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="JMI-op-9b1"/>
+                                                    <action selector="touchCard:" destination="Tdo-uY-vDY" eventType="touchUpInside" id="5c1-UX-4Wg"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -379,7 +379,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard0:" destination="mbg-QG-rOd" eventType="touchUpInside" id="wlT-oY-Vgx"/>
+                                                    <action selector="touchCard:" destination="mbg-QG-rOd" eventType="touchUpInside" id="xAp-le-OTy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="401" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTz-oy-gOR">
@@ -390,7 +390,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard1:" destination="mbg-QG-rOd" eventType="touchUpInside" id="Hes-ai-12E"/>
+                                                    <action selector="touchCard:" destination="mbg-QG-rOd" eventType="touchUpInside" id="0eS-Rk-mPp"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -406,7 +406,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard2:" destination="mbg-QG-rOd" eventType="touchUpInside" id="s7m-gs-QzE"/>
+                                                    <action selector="touchCard:" destination="mbg-QG-rOd" eventType="touchUpInside" id="m6z-KE-eky"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="403" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iS0-Fq-KdN">
@@ -417,7 +417,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard3:" destination="mbg-QG-rOd" eventType="touchUpInside" id="eZm-ML-GH5"/>
+                                                    <action selector="touchCard:" destination="mbg-QG-rOd" eventType="touchUpInside" id="FqV-Zd-WR8"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -433,7 +433,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard4:" destination="mbg-QG-rOd" eventType="touchUpInside" id="Uvd-ZU-e27"/>
+                                                    <action selector="touchCard:" destination="mbg-QG-rOd" eventType="touchUpInside" id="TWV-l0-aM6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="405" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTk-ED-wRJ">
@@ -444,7 +444,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard5:" destination="mbg-QG-rOd" eventType="touchUpInside" id="iGv-Ak-dDt"/>
+                                                    <action selector="touchCard:" destination="mbg-QG-rOd" eventType="touchUpInside" id="2KJ-hV-RQS"/>
                                                 </connections>
                                             </button>
                                         </subviews>

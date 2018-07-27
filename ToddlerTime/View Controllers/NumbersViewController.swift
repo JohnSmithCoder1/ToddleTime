@@ -13,28 +13,27 @@ class NumbersViewController: UIViewController {
     
     let primaryVC = FarmViewController()
     
-    @IBAction func touchCard0(_ sender: UIButton) {
-        flipCard(withEmoji: "1️⃣", on: sender)
-    }
     
-    @IBAction func touchCard1(_ sender: UIButton) {
-        flipCard(withEmoji: "2️⃣", on: sender)
-    }
-    
-    @IBAction func touchCard2(_ sender: UIButton) {
-        flipCard(withEmoji: "3️⃣", on: sender)
-    }
-    
-    @IBAction func touchCard3(_ sender: UIButton) {
-        flipCard(withEmoji: "4️⃣", on: sender)
-    }
-   
-    @IBAction func touchCard4(_ sender: UIButton) {
-        flipCard(withEmoji: "5️⃣", on: sender)
-    }
-    
-    @IBAction func touchCard5(_ sender: UIButton) {
-        flipCard(withEmoji: "6️⃣", on: sender)
+    @IBAction func touchCard(_ sender: AnyObject) {
+        guard let card = sender as? UIButton else { return }
+        
+        switch card.tag {
+        case 300:
+            flipCard(withImage: one.image, on: card)
+        case 301:
+            flipCard(withImage: two.image, on: card)
+        case 302:
+            flipCard(withImage: three.image, on: card)
+        case 303:
+            flipCard(withImage: four.image, on: card)
+        case 304:
+            flipCard(withImage: five.image, on: card)
+        case 305:
+            flipCard(withImage: six.image, on: card)
+        default:
+            print("unkown card touched")
+            return
+        }
     }
     
     
@@ -70,58 +69,56 @@ class NumbersViewController: UIViewController {
         resetNumbersCards()
     }
     
-    func flipCard(withEmoji emoji: String, on button: UIButton) {
-        if button.currentTitle == emoji {
+    func flipCard(withImage image: UIImage, on button: UIButton) {
+        if button.currentImage == image {
             primaryVC.playSound(forObject: "flipCardSound")
-            button.setTitle("", for: .normal)
+            button.setImage(nil, for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         } else {
-            button.setTitle(emoji, for: .normal)
-            button.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
-            if emoji == "1️⃣" {
-                primaryVC.playSound(forObject: "one")
-            }
-            if emoji == "2️⃣" {
-                primaryVC.playSound(forObject: "two")
-            }
-            if emoji == "3️⃣" {
-                primaryVC.playSound(forObject: "three")
-            }
-            if emoji == "4️⃣" {
-                primaryVC.playSound(forObject: "four")
-            }
-            if emoji == "5️⃣" {
-                primaryVC.playSound(forObject: "five")
-            }
-            if emoji == "6️⃣" {
-                primaryVC.playSound(forObject: "six")
+            button.setImage(image, for: .normal)
+            
+            switch image {
+            case one.image:
+                primaryVC.playSound(forObject: one.sound)
+            case two.image:
+                primaryVC.playSound(forObject: two.sound)
+            case three.image:
+                primaryVC.playSound(forObject: three.sound)
+            case four.image:
+                primaryVC.playSound(forObject: four.sound)
+            case five.image:
+                primaryVC.playSound(forObject: five.sound)
+            case six.image:
+                primaryVC.playSound(forObject: six.sound)
+            default:
+                print("error finding sound")
             }
         }
     }
     
     func resetNumbersCards() {
         if let button0 = self.view.viewWithTag(300) as? UIButton {
-            button0.setTitle("", for: .normal)
+            button0.setImage(nil, for: .normal)
             button0.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
         if let button1 = self.view.viewWithTag(301) as? UIButton {
-            button1.setTitle("", for: .normal)
+            button1.setImage(nil, for: .normal)
             button1.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
         if let button2 = self.view.viewWithTag(302) as? UIButton {
-            button2.setTitle("", for: .normal)
+            button2.setImage(nil, for: .normal)
             button2.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
         if let button3 = self.view.viewWithTag(303) as? UIButton {
-            button3.setTitle("", for: .normal)
+            button3.setImage(nil, for: .normal)
             button3.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
         if let button4 = self.view.viewWithTag(304) as? UIButton {
-            button4.setTitle("", for: .normal)
+            button4.setImage(nil, for: .normal)
             button4.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
         if let button5 = self.view.viewWithTag(305) as? UIButton {
-            button5.setTitle("", for: .normal)
+            button5.setImage(nil, for: .normal)
             button5.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         }
     }
