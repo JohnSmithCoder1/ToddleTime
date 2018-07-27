@@ -36,7 +36,7 @@
                                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="touchCard0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUl-fm-CDR"/>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7LO-N5-gNj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbB-Xc-dtN">
@@ -47,7 +47,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNv-QM-zN8"/>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b11-T8-oN6"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -63,7 +63,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SfD-wE-ivc"/>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wYh-ox-dQJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wd-oe-Lqp">
@@ -74,7 +74,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="op7-BP-MU4"/>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ydk-94-2eQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -90,7 +90,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVC-EC-UHn"/>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RVo-TR-cqw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnn-HZ-gN1">
@@ -101,7 +101,7 @@
                                                 </constraints>
                                                 <state key="normal" title=" "/>
                                                 <connections>
-                                                    <action selector="touchCard5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OxX-EQ-FrP"/>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iiY-xz-keO"/>
                                                 </connections>
                                             </button>
                                         </subviews>

@@ -15,28 +15,26 @@ class FarmViewController: UIViewController {
     
     
     //MARK: - Actions
-    @IBAction func touchCard0(_ sender: UIButton) { //can connect all these buttons to same buttonTapped action?
-        flipCard(withImage: cow.image, on: sender)
-    }
-    
-    @IBAction func touchCard1(_ sender: UIButton) {
-        flipCard(withImage: dog.image, on: sender)
-    }
-    
-    @IBAction func touchCard2(_ sender: UIButton) {
-        flipCard(withImage: chicken.image, on: sender)
-    }
-    
-    @IBAction func touchCard3(_ sender: UIButton) {
-        flipCard(withImage: pig.image, on: sender)
-    }
-    
-    @IBAction func touchCard4(_ sender: UIButton) {
-        flipCard(withImage: horse.image, on: sender)
-    }
-    
-    @IBAction func touchCard5(_ sender: UIButton) {
-        flipCard(withImage: cat.image, on: sender)
+    @IBAction func touchCard(_ sender: AnyObject) {
+        guard let card = sender as? UIButton else { return }
+        
+        switch card.tag {
+        case 100:
+            flipCard(withImage: cow.image, on: card)
+        case 101:
+            flipCard(withImage: dog.image, on: card)
+        case 102:
+            flipCard(withImage: chicken.image, on: card)
+        case 103:
+            flipCard(withImage: pig.image, on: card)
+        case 104:
+            flipCard(withImage: horse.image, on: card)
+        case 105:
+            flipCard(withImage: cat.image, on: card)
+        default:
+            print("unkown card touched")
+            return
+        }
     }
     
     
@@ -107,25 +105,6 @@ class FarmViewController: UIViewController {
         }
     }
     
-    func playSound(forObject: String) {
-        guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else {
-            print("url not found")
-            return
-        }
-        
-        do {
-            /// this codes for making this app ready to takeover the device audio
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            
-            player?.play()  // this was player!.play()
-        } catch let error as NSError {
-            print("error: \(error.localizedDescription)")
-        }
-    }
-    
     func resetFarmCards() {  // move this function to card.swift
         if let button0 = self.view.viewWithTag(100) as? UIButton {
             button0.setImage(nil, for: .normal)
@@ -150,6 +129,25 @@ class FarmViewController: UIViewController {
         if let button5 = self.view.viewWithTag(105) as? UIButton {
             button5.setImage(nil, for: .normal)
             button5.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+        }
+    }
+    
+    func playSound(forObject: String) {
+        guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else {
+            print("url not found")
+            return
+        }
+        
+        do {
+            /// this codes for making this app ready to takeover the device audio
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+            
+            player?.play()  // this was player!.play()
+        } catch let error as NSError {
+            print("error: \(error.localizedDescription)")
         }
     }
 }
