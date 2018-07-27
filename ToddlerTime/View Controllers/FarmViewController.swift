@@ -59,13 +59,13 @@ class FarmViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         playSound(forObject: "pageTurnSound")
-        resetFarmCards()
+        resetCards()
     }
     
     
     //MARK: - Functions
     @objc func appDidEnterBackground() {
-        resetFarmCards()
+        resetCards()
     }
     
     func flipCard(withImage image: UIImage, on button: UIButton) {
@@ -95,7 +95,7 @@ class FarmViewController: UIViewController {
         }
     }
     
-    func resetFarmCards() {  // move this function to card.swift
+    func resetCards() {  // move this function to card.swift
         let card0 = self.view.viewWithTag(100) as? UIButton
         let card1 = self.view.viewWithTag(101) as? UIButton
         let card2 = self.view.viewWithTag(102) as? UIButton

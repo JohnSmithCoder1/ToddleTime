@@ -59,13 +59,13 @@ class ShapesViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         primaryVC.playSound(forObject: "pageTurnSound")
-        resetShapesCards()
+        resetCards()
     }
     
     
     // MARK: - Functions
     @objc func appDidEnterBackground() {
-        resetShapesCards()
+        resetCards()
     }
     
     func flipCard(withImage image: UIImage, on button: UIButton) {
@@ -95,7 +95,7 @@ class ShapesViewController: UIViewController {
         }
     }
     
-    func resetShapesCards() {
+    func resetCards() {
         let card0 = self.view.viewWithTag(400) as? UIButton
         let card1 = self.view.viewWithTag(401) as? UIButton
         let card2 = self.view.viewWithTag(402) as? UIButton
