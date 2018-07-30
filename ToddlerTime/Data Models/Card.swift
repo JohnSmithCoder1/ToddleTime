@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Card {
+class Card {  // is this class really needed?
     var color: UIColor
     var image: UIImage
     var sound: String
@@ -24,6 +24,7 @@ class Card {
     }
 }
 
+// color is not currently used
 let cow = Card(color: #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1), image: UIImage(named: "cowImage")!, sound: "cowSound")
 let dog = Card(color: #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1), image: UIImage(named: "dogImage")!, sound: "dogSound")
 let chicken = Card(color: #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1), image: UIImage(named: "chickenImage")!, sound: "chickenSound")

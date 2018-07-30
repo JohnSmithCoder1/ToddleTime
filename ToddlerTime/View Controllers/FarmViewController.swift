@@ -41,20 +41,12 @@ class FarmViewController: UIViewController {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground), name: .UIApplicationDidEnterBackground, object: nil)
         
-        // refactor this code duplication
-        let card0 = self.view.viewWithTag(100) as? UIButton
-        let card1 = self.view.viewWithTag(101) as? UIButton
-        let card2 = self.view.viewWithTag(102) as? UIButton
-        let card3 = self.view.viewWithTag(103) as? UIButton
-        let card4 = self.view.viewWithTag(104) as? UIButton
-        let card5 = self.view.viewWithTag(105) as? UIButton
-        
-        setupButtonStyle(button: card0!)
-        setupButtonStyle(button: card1!)
-        setupButtonStyle(button: card2!)
-        setupButtonStyle(button: card3!)
-        setupButtonStyle(button: card4!)
-        setupButtonStyle(button: card5!)
+        setupButtonStyle(button: (self.view.viewWithTag(100) as? UIButton)!)
+        setupButtonStyle(button: (self.view.viewWithTag(101) as? UIButton)!)
+        setupButtonStyle(button: (self.view.viewWithTag(102) as? UIButton)!)
+        setupButtonStyle(button: (self.view.viewWithTag(103) as? UIButton)!)
+        setupButtonStyle(button: (self.view.viewWithTag(104) as? UIButton)!)
+        setupButtonStyle(button: (self.view.viewWithTag(105) as? UIButton)!)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -96,14 +88,12 @@ class FarmViewController: UIViewController {
     }
     
     func resetCards() {  // move this function to card.swift
-        let card0 = self.view.viewWithTag(100) as? UIButton
-        let card1 = self.view.viewWithTag(101) as? UIButton
-        let card2 = self.view.viewWithTag(102) as? UIButton
-        let card3 = self.view.viewWithTag(103) as? UIButton
-        let card4 = self.view.viewWithTag(104) as? UIButton
-        let card5 = self.view.viewWithTag(105) as? UIButton
-        
-        let cards = [card0, card1, card2, card3, card4, card5]
+        let cards = [self.view.viewWithTag(100) as? UIButton,
+                     self.view.viewWithTag(101) as? UIButton,
+                     self.view.viewWithTag(102) as? UIButton,
+                     self.view.viewWithTag(103) as? UIButton,
+                     self.view.viewWithTag(104) as? UIButton,
+                     self.view.viewWithTag(105) as? UIButton]
         
         for card in cards {
             card?.setImage(nil, for: .normal)
@@ -119,7 +109,7 @@ class FarmViewController: UIViewController {
         button.layer.shadowOpacity = 1
     }
     
-    func playSound(forObject: String) {  // refactor this so you don't repeat it in each VC
+    func playSound(forObject: String) {
         guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else {
             print("url not found")
             return
