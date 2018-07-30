@@ -41,12 +41,12 @@ class MarketViewController: UIViewController {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground), name: .UIApplicationDidEnterBackground, object: nil)
         
-        primaryVC.setupButtonStyle(button: (self.view.viewWithTag(200) as? UIButton)!)
-        primaryVC.setupButtonStyle(button: (self.view.viewWithTag(201) as? UIButton)!)
-        primaryVC.setupButtonStyle(button: (self.view.viewWithTag(202) as? UIButton)!)
-        primaryVC.setupButtonStyle(button: (self.view.viewWithTag(203) as? UIButton)!)
-        primaryVC.setupButtonStyle(button: (self.view.viewWithTag(204) as? UIButton)!)
-        primaryVC.setupButtonStyle(button: (self.view.viewWithTag(205) as? UIButton)!)
+        primaryVC.setupButtonStyle(button: (view.viewWithTag(200) as? UIButton)!)
+        primaryVC.setupButtonStyle(button: (view.viewWithTag(201) as? UIButton)!)
+        primaryVC.setupButtonStyle(button: (view.viewWithTag(202) as? UIButton)!)
+        primaryVC.setupButtonStyle(button: (view.viewWithTag(203) as? UIButton)!)
+        primaryVC.setupButtonStyle(button: (view.viewWithTag(204) as? UIButton)!)
+        primaryVC.setupButtonStyle(button: (view.viewWithTag(205) as? UIButton)!)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -88,12 +88,12 @@ class MarketViewController: UIViewController {
     }
     
     func resetCards() {
-        let cards = [self.view.viewWithTag(200) as? UIButton,
-                     self.view.viewWithTag(201) as? UIButton,
-                     self.view.viewWithTag(202) as? UIButton,
-                     self.view.viewWithTag(203) as? UIButton,
-                     self.view.viewWithTag(204) as? UIButton,
-                     self.view.viewWithTag(205) as? UIButton]
+        let cards = [view.viewWithTag(200) as? UIButton,
+                     view.viewWithTag(201) as? UIButton,
+                     view.viewWithTag(202) as? UIButton,
+                     view.viewWithTag(203) as? UIButton,
+                     view.viewWithTag(204) as? UIButton,
+                     view.viewWithTag(205) as? UIButton]
         
         for card in cards {
             card?.setImage(nil, for: .normal)
