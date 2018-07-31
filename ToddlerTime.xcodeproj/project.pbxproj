@@ -41,6 +41,7 @@
 		05726101209B709800781381 /* pageTurnSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05726100209B709800781381 /* pageTurnSound.wav */; };
 		058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618C2093C9E100B8640D /* NumbersViewController.swift */; };
 		05A3FDE8209920AB005BF8AF /* flipCardSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05A3FDE7209920AB005BF8AF /* flipCardSound.wav */; };
+		05B9640E2110D742009C2E1C /* CardBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9640D2110D742009C2E1C /* CardBank.swift */; };
 		05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* MarketViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		05726100209B709800781381 /* pageTurnSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pageTurnSound.wav; sourceTree = "<group>"; };
 		058B618C2093C9E100B8640D /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		05A3FDE7209920AB005BF8AF /* flipCardSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flipCardSound.wav; sourceTree = "<group>"; };
+		05B9640D2110D742009C2E1C /* CardBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBank.swift; sourceTree = "<group>"; };
 		05DD0C4C209371D100E9788A /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,24 +116,23 @@
 		050DBDC620800375004278E6 /* ToddlerTime */ = {
 			isa = PBXGroup;
 			children = (
-				050DBDCB20800375004278E6 /* Main.storyboard */,
-				056981EF20F43DE600C831B0 /* Launch Screen.storyboard */,
 				050DBDC720800375004278E6 /* AppDelegate.swift */,
-				050DBDCE20800376004278E6 /* Assets.xcassets */,
 				050DBDD320800376004278E6 /* Info.plist */,
-				0548B603210A4E170066132F /* Data Models */,
-				05DD0C4E209371E700E9788A /* View Controllers */,
-				056058E820812A1100DC8E15 /* Sounds */,
+				0548B603210A4E170066132F /* Model */,
+				05DD0C4E209371E700E9788A /* Controller */,
+				05B9640F2110DB65009C2E1C /* View */,
 			);
 			path = ToddlerTime;
 			sourceTree = "<group>";
 		};
-		0548B603210A4E170066132F /* Data Models */ = {
+		0548B603210A4E170066132F /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				0548B601210A4AD00066132F /* Card.swift */,
+				05B9640D2110D742009C2E1C /* CardBank.swift */,
+				056058E820812A1100DC8E15 /* Sounds */,
 			);
-			path = "Data Models";
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0555D9C1209BFAA80066C07E /* Farm Sounds */ = {
@@ -199,7 +200,17 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		05DD0C4E209371E700E9788A /* View Controllers */ = {
+		05B9640F2110DB65009C2E1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				050DBDCB20800375004278E6 /* Main.storyboard */,
+				056981EF20F43DE600C831B0 /* Launch Screen.storyboard */,
+				050DBDCE20800376004278E6 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05DD0C4E209371E700E9788A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				050DBDC920800375004278E6 /* FarmViewController.swift */,
@@ -207,7 +218,7 @@
 				058B618C2093C9E100B8640D /* NumbersViewController.swift */,
 				052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */,
 			);
-			path = "View Controllers";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				052C7AF6209810C8008B3BD5 /* ShapesViewController.swift in Sources */,
+				05B9640E2110D742009C2E1C /* CardBank.swift in Sources */,
 				0548B602210A4AD00066132F /* Card.swift in Sources */,
 				05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */,
 				050DBDCA20800375004278E6 /* FarmViewController.swift in Sources */,
