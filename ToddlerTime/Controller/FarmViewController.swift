@@ -19,17 +19,17 @@ class FarmViewController: UIViewController {
         
         switch card.tag {
         case 100:
-            flipCard(withImage: cards.farmCards[0].image, on: card)
+            flipCard(withImage: cards.allCards[0].image, on: card)
         case 101:
-            flipCard(withImage: cards.farmCards[1].image, on: card)
+            flipCard(withImage: cards.allCards[1].image, on: card)
         case 102:
-            flipCard(withImage: cards.farmCards[2].image, on: card)
+            flipCard(withImage: cards.allCards[2].image, on: card)
         case 103:
-            flipCard(withImage: cards.farmCards[3].image, on: card)
+            flipCard(withImage: cards.allCards[3].image, on: card)
         case 104:
-            flipCard(withImage: cards.farmCards[4].image, on: card)
+            flipCard(withImage: cards.allCards[4].image, on: card)
         case 105:
-            flipCard(withImage: cards.farmCards[5].image, on: card)
+            flipCard(withImage: cards.allCards[5].image, on: card)
         default:
             print("unkown card touched")
             return
@@ -59,6 +59,7 @@ class FarmViewController: UIViewController {
     //MARK: - Functions
     @objc func appDidEnterBackground() {
         resetCards()
+        cards.resetCards()
     }
     
     func flipCard(withImage image: UIImage, on button: UIButton) {
@@ -69,21 +70,10 @@ class FarmViewController: UIViewController {
         } else {
             button.setImage(image, for: .normal)
             
-            switch image {
-            case cow.image:
-                playSound(forObject: cow.sound)
-            case dog.image:
-                playSound(forObject: dog.sound)
-            case chicken.image:
-                playSound(forObject: chicken.sound)
-            case pig.image:
-                playSound(forObject: pig.sound)
-            case horse.image:
-                playSound(forObject: horse.sound)
-            case cat.image:
-                playSound(forObject: cat.sound)
-            default:
-                print("error finding sound")
+            for i in 0...5 {
+                if image == cards.allCards[i].image {
+                    playSound(forObject: cards.allCards[i].sound)
+                }
             }
         }
     }
@@ -102,7 +92,7 @@ class FarmViewController: UIViewController {
         }
     }
     
-    func setupButtonStyle(button: UIButton) {
+    func setupButtonStyle(button: UIButton) {  // change this to setupCardStyle and move to Card.swift?
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.black.cgColor
         button.layer.shadowOffset = CGSize(width: 4.5, height: 4.5)

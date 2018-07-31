@@ -10,16 +10,12 @@ import UIKit
 
 class Card {  // is this class really needed?
     var color: UIColor
-    var image: UIImage
+    var image: UIImage!
     var sound: String
     
     init(color: UIColor, image: UIImage, sound: String) {
         self.color = color
         self.image = image
         self.sound = sound
-    }
-    
-    func resetCards() {
-        // add universal card rest func here?
     }
 }
