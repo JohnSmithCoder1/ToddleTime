@@ -51,13 +51,6 @@ class FarmViewController: UIViewController {
         for i in 1...6 {
             cardBank.setupCardStyle(view: view.viewWithTag(i)!)
         }
-        
-//        setupButtonStyle(button: (view.viewWithTag(0) as? UIButton)!)
-//        setupButtonStyle(button: (view.viewWithTag(1) as? UIButton)!)
-//        setupButtonStyle(button: (view.viewWithTag(2) as? UIButton)!)
-//        setupButtonStyle(button: (view.viewWithTag(3) as? UIButton)!)
-//        setupButtonStyle(button: (view.viewWithTag(4) as? UIButton)!)
-//        setupButtonStyle(button: (view.viewWithTag(5) as? UIButton)!)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -89,17 +82,24 @@ class FarmViewController: UIViewController {
     }
     
     func resetCards() {  // move this function to card.swift
-        let cards = [view.viewWithTag(1) as? UIButton,
-                     view.viewWithTag(2) as? UIButton,
-                     view.viewWithTag(3) as? UIButton,
-                     view.viewWithTag(4) as? UIButton,
-                     view.viewWithTag(5) as? UIButton,
-                     view.viewWithTag(6) as? UIButton]
         
-        for card in cards {
-            card?.setImage(nil, for: .normal)
-            card?.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+        for i in 1...6 {
+            if let card = view.viewWithTag(i) as? UIButton {
+                card.setImage(nil, for: .normal)
+                card.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+            }
         }
+//        let cards = [view.viewWithTag(1) as? UIButton,
+//                     view.viewWithTag(2) as? UIButton,
+//                     view.viewWithTag(3) as? UIButton,
+//                     view.viewWithTag(4) as? UIButton,
+//                     view.viewWithTag(5) as? UIButton,
+//                     view.viewWithTag(6) as? UIButton]
+//
+//        for card in cards {
+//            card?.setImage(nil, for: .normal)
+//            card?.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+//        }
     }
     
     func playSound(forObject: String) {
