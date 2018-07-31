@@ -118,8 +118,8 @@
 			children = (
 				050DBDC720800375004278E6 /* AppDelegate.swift */,
 				050DBDD320800376004278E6 /* Info.plist */,
-				0548B603210A4E170066132F /* Model */,
 				05DD0C4E209371E700E9788A /* Controller */,
+				0548B603210A4E170066132F /* Model */,
 				05B9640F2110DB65009C2E1C /* View */,
 			);
 			path = ToddlerTime;
