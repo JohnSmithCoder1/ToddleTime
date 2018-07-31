@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CardBank {
     var allCards = [Card]()
+    var player: AVAudioPlayer?
     
-    func setupCardStyle(view: UIView) {  // change this to setupCardStyle and move to Card.swift?
+    func setupCardStyle(view: UIView) {
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.black.cgColor
         view.layer.shadowOffset = CGSize(width: 4.5, height: 4.5)
@@ -21,6 +23,25 @@ class CardBank {
     
     func resetCards() {
         // add universal card rest func here?
+    }
+    
+    func playSound(forObject: String) {
+        guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else {
+            print("url not found")
+            return
+        }
+        
+        do {
+            /// this codes for making this app ready to takeover the device audio
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+            
+            player?.play()  // this was player!.play()
+        } catch let error as NSError {
+            print("error: \(error.localizedDescription)")
+        }
     }
     
     init() {
