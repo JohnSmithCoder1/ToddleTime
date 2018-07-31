@@ -12,23 +12,24 @@ import AVFoundation
 class FarmViewController: UIViewController {
     
     var player: AVAudioPlayer?
+    let cards = CardBank()
     
     @IBAction func touchCard(_ sender: AnyObject) {
         guard let card = sender as? UIButton else { return }
         
         switch card.tag {
         case 100:
-            flipCard(withImage: cow.image, on: card)
+            flipCard(withImage: cards.farmCards[0].image, on: card)
         case 101:
-            flipCard(withImage: dog.image, on: card)
+            flipCard(withImage: cards.farmCards[1].image, on: card)
         case 102:
-            flipCard(withImage: chicken.image, on: card)
+            flipCard(withImage: cards.farmCards[2].image, on: card)
         case 103:
-            flipCard(withImage: pig.image, on: card)
+            flipCard(withImage: cards.farmCards[3].image, on: card)
         case 104:
-            flipCard(withImage: horse.image, on: card)
+            flipCard(withImage: cards.farmCards[4].image, on: card)
         case 105:
-            flipCard(withImage: cat.image, on: card)
+            flipCard(withImage: cards.farmCards[5].image, on: card)
         default:
             print("unkown card touched")
             return
