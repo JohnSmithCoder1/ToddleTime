@@ -11,6 +11,14 @@ import UIKit
 class CardBank {
     var allCards = [Card]()
     
+    func setupCardStyle(view: UIView) {  // change this to setupCardStyle and move to Card.swift?
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.black.cgColor
+        view.layer.shadowOffset = CGSize(width: 4.5, height: 4.5)
+        view.layer.shadowRadius = 4.5
+        view.layer.shadowOpacity = 1
+    }
+    
     func resetCards() {
         // add universal card rest func here?
     }
