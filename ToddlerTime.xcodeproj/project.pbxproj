@@ -10,7 +10,6 @@
 		050DBDC820800375004278E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050DBDC720800375004278E6 /* AppDelegate.swift */; };
 		050DBDCA20800375004278E6 /* FarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050DBDC920800375004278E6 /* FarmViewController.swift */; };
 		050DBDCD20800375004278E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDCB20800375004278E6 /* Main.storyboard */; };
-		050DBDCF20800376004278E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDCE20800376004278E6 /* Assets.xcassets */; };
 		050DBDE320800483004278E6 /* catSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDB20800482004278E6 /* catSound.wav */; };
 		050DBDE420800483004278E6 /* pigSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDC20800482004278E6 /* pigSound.wav */; };
 		050DBDE520800483004278E6 /* dogSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDDD20800483004278E6 /* dogSound.wav */; };
@@ -42,6 +41,7 @@
 		058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618C2093C9E100B8640D /* NumbersViewController.swift */; };
 		05A3FDE8209920AB005BF8AF /* flipCardSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05A3FDE7209920AB005BF8AF /* flipCardSound.wav */; };
 		05B9640E2110D742009C2E1C /* CardBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9640D2110D742009C2E1C /* CardBank.swift */; };
+		05B96411211122B5009C2E1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B96410211122B5009C2E1C /* Assets.xcassets */; };
 		05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* MarketViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +50,6 @@
 		050DBDC720800375004278E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		050DBDC920800375004278E6 /* FarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmViewController.swift; sourceTree = "<group>"; };
 		050DBDCC20800375004278E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		050DBDCE20800376004278E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		050DBDD320800376004278E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		050DBDDB20800482004278E6 /* catSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catSound.wav; sourceTree = "<group>"; };
 		050DBDDC20800482004278E6 /* pigSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pigSound.wav; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		058B618C2093C9E100B8640D /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		05A3FDE7209920AB005BF8AF /* flipCardSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flipCardSound.wav; sourceTree = "<group>"; };
 		05B9640D2110D742009C2E1C /* CardBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBank.swift; sourceTree = "<group>"; };
+		05B96410211122B5009C2E1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05DD0C4C209371D100E9788A /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,9 +118,9 @@
 			children = (
 				050DBDC720800375004278E6 /* AppDelegate.swift */,
 				050DBDD320800376004278E6 /* Info.plist */,
-				05DD0C4E209371E700E9788A /* Controller */,
-				0548B603210A4E170066132F /* Model */,
 				05B9640F2110DB65009C2E1C /* View */,
+				0548B603210A4E170066132F /* Model */,
+				05DD0C4E209371E700E9788A /* Controller */,
 			);
 			path = ToddlerTime;
 			sourceTree = "<group>";
@@ -128,6 +128,7 @@
 		0548B603210A4E170066132F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				05B96410211122B5009C2E1C /* Assets.xcassets */,
 				0548B601210A4AD00066132F /* Card.swift */,
 				05B9640D2110D742009C2E1C /* CardBank.swift */,
 				056058E820812A1100DC8E15 /* Sounds */,
@@ -205,7 +206,6 @@
 			children = (
 				050DBDCB20800375004278E6 /* Main.storyboard */,
 				056981EF20F43DE600C831B0 /* Launch Screen.storyboard */,
-				050DBDCE20800376004278E6 /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,11 +301,11 @@
 				0555D9DF209C092C0066C07E /* oneSound.wav in Resources */,
 				050DBDF220803332004278E6 /* chickenSound.wav in Resources */,
 				0555D9D1209C05E10066C07E /* diamondSound.wav in Resources */,
-				050DBDCF20800376004278E6 /* Assets.xcassets in Resources */,
 				05726101209B709800781381 /* pageTurnSound.wav in Resources */,
 				050DBDCD20800375004278E6 /* Main.storyboard in Resources */,
 				056981F020F43DE600C831B0 /* Launch Screen.storyboard in Resources */,
 				050DBDE420800483004278E6 /* pigSound.wav in Resources */,
+				05B96411211122B5009C2E1C /* Assets.xcassets in Resources */,
 				0555D9D9209C06070066C07E /* starSound.wav in Resources */,
 				050DBDE520800483004278E6 /* dogSound.wav in Resources */,
 			);

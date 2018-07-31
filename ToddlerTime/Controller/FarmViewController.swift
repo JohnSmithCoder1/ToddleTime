@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AVFoundation
 
 class FarmViewController: UIViewController {
     
@@ -17,6 +16,7 @@ class FarmViewController: UIViewController {
         guard let card = sender as? UIButton else { return }
         
         for i in 0...5 {
+            // i + 1 here because array starts at 0, but tags start at 1 (since a tag can't be 0)
             if card.tag == i + 1 {
                 flipCard(withImage: cardBank.allCards[i].image, on: card)
             }
@@ -68,9 +68,3 @@ class FarmViewController: UIViewController {
         }
     }
 }
-
-
-
-
-
-
