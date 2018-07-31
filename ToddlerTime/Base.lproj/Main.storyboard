@@ -237,7 +237,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Jf-pE-MEd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="apple@50x50" id="viy-xP-dYc"/>
+                    <tabBarItem key="tabBarItem" title="" image="appleTabBarIcon" id="viy-xP-dYc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUC-pu-tfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -494,7 +494,7 @@
     </scenes>
     <resources>
         <image name="123@50x50" width="50" height="50"/>
-        <image name="apple@50x50" width="50" height="50"/>
+        <image name="appleTabBarIcon" width="46" height="46"/>
         <image name="cow@50x50" width="50" height="50"/>
         <image name="star@50x50" width="50" height="50"/>
     </resources>
