@@ -1,6 +1,6 @@
 # Toddler Time
 
-Toddler Time is a simple flash card game for helping toddlers learn more about animals, foods, numbers, and shapes.
+Toddler Time is a simple flash card game for helping toddlers learn more about animals, foods, numbers, and shapes in a fun and interactive way.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ instructions to get a copy of the project up and running on your local machine
 
 ### Prerequisites
 
-things you eed to install the software and hot to install them
+things you need to install the software and how to install them
 
 ## Built With
 
