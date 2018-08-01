@@ -16,8 +16,7 @@ class ShapesViewController: UIViewController {
         guard let card = sender as? UIButton else { return }
         
         for i in 18...23 {
-            // i + 1 here because array starts at 0, but tags start at 1 (since a tag can't be 0)
-            if card.tag == i + 1 {
+            if card.tag == i + 1 {  // convert index to tags which start at 1
                 if let image = UIImage(named: cardBank.allCards[i].image) {
                     cardBank.flipCard(withImage: image, on: card)
                 }
@@ -28,7 +27,8 @@ class ShapesViewController: UIViewController {
     //MARK: - Function Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground), name: .UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground),
+                                               name: .UIApplicationDidEnterBackground, object: nil)
         
         for i in 19...24 {
             if let card = view.viewWithTag(i) {
@@ -47,11 +47,11 @@ class ShapesViewController: UIViewController {
         resetCards()
     }
     
-    func resetCards() {  // move this function to card.swift
+    func resetCards() {
         for i in 19...24 {
             if let card = view.viewWithTag(i) as? UIButton {
                 card.setImage(nil, for: .normal)
-                card.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
+                card.backgroundColor = cardBank.allCards[i - 1].color  // convert tag to index
             }
         }
     }

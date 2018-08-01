@@ -16,8 +16,7 @@ class FarmViewController: UIViewController {
         guard let card = sender as? UIButton else { return }
         
         for i in 0...5 {
-            // i + 1 here because array starts at 0, but tags start at 1 (since a tag can't be 0)
-            if card.tag == i + 1 {
+            if card.tag == i + 1 {  // convert index to tags which start at 1
                 if let image = UIImage(named: cardBank.allCards[i].image) {
                     cardBank.flipCard(withImage: image, on: card)
                 }
@@ -28,7 +27,8 @@ class FarmViewController: UIViewController {
     //MARK: - Function Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground), name: .UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground),
+                                               name: .UIApplicationDidEnterBackground, object: nil)
         
         for i in 1...6 {
             if let card = view.viewWithTag(i) {
@@ -51,7 +51,7 @@ class FarmViewController: UIViewController {
         for i in 1...6 {
             if let card = view.viewWithTag(i) as? UIButton {
                 card.setImage(nil, for: .normal)
-                card.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+                card.backgroundColor = cardBank.allCards[i - 1].color  // convert tag to index
             }
         }
     }
