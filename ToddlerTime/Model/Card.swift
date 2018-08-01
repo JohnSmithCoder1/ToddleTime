@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Card {  // is this class really needed?
+class Card {
     var color: UIColor
     var image: String
     var sound: String
