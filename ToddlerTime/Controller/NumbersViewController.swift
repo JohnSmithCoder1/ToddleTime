@@ -18,8 +18,9 @@ class NumbersViewController: UIViewController {
         for i in 12...17 {
             // i + 1 here because array starts at 0, but tags start at 1 (since a tag can't be 0)
             if card.tag == i + 1 {
-                cardBank.flipCard(withImage: cardBank.allCards[i].image, on: card)
-            }
+                if let image = UIImage(named: cardBank.allCards[i].image) {
+                    cardBank.flipCard(withImage: image, on: card)
+                }            }
         }
     }
     
@@ -44,22 +45,6 @@ class NumbersViewController: UIViewController {
     @objc func appDidEnterBackground() {
         resetCards()
     }
-    
-//    func flipCard(withImage image: UIImage, on button: UIButton) {
-//        if button.currentImage == image {
-//            cardBank.playSound(forObject: "flipCardSound")
-//            button.setImage(nil, for: .normal)
-//            button.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
-//        } else {
-//            button.setImage(image, for: .normal)
-//            
-//            for i in 12...17 {
-//                if image == cardBank.allCards[i].image {
-//                    cardBank.playSound(forObject: cardBank.allCards[i].sound)
-//                }
-//            }
-//        }
-//    }
     
     func resetCards() {  // move this function to card.swift
         for i in 13...18 {

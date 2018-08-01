@@ -18,7 +18,9 @@ class FarmViewController: UIViewController {
         for i in 0...5 {
             // i + 1 here because array starts at 0, but tags start at 1 (since a tag can't be 0)
             if card.tag == i + 1 {
-                cardBank.flipCard(withImage: cardBank.allCards[i].image, on: card)
+                if let image = UIImage(named: cardBank.allCards[i].image) {
+                    cardBank.flipCard(withImage: image, on: card)
+                }
             }
         }
     }

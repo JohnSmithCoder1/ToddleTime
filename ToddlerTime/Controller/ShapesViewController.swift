@@ -18,8 +18,9 @@ class ShapesViewController: UIViewController {
         for i in 18...23 {
             // i + 1 here because array starts at 0, but tags start at 1 (since a tag can't be 0)
             if card.tag == i + 1 {
-                cardBank.flipCard(withImage: cardBank.allCards[i].image, on: card)
-            }
+                if let image = UIImage(named: cardBank.allCards[i].image) {
+                    cardBank.flipCard(withImage: image, on: card)
+                }            }
         }
     }
     
@@ -44,22 +45,6 @@ class ShapesViewController: UIViewController {
     @objc func appDidEnterBackground() {
         resetCards()
     }
-    
-//    func flipCard(withImage image: UIImage, on button: UIButton) {
-//        if button.currentImage == image {
-//            cardBank.playSound(forObject: "flipCardSound")
-//            button.setImage(nil, for: .normal)
-//            button.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
-//        } else {
-//            button.setImage(image, for: .normal)
-//
-//            for i in 18...23 {
-//                if image == cardBank.allCards[i].image {
-//                    cardBank.playSound(forObject: cardBank.allCards[i].sound)
-//                }
-//            }
-//        }
-//    }
     
     func resetCards() {  // move this function to card.swift
         for i in 19...24 {
