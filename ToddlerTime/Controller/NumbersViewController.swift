@@ -17,7 +17,7 @@ class NumbersViewController: UIViewController {
         
         for i in 12...17 {
             if card.tag == i + 1 {  // convert index to tag which start at 1
-                if let image = UIImage(named: cardBank.allCards[i].image) {
+                if let image = UIImage(named: cardBank.cards[i].image) {
                     cardBank.flipCard(withImage: image, on: card)
                 }
             }
@@ -51,7 +51,7 @@ class NumbersViewController: UIViewController {
         for i in 13...18 {
             if let card = view.viewWithTag(i) as? UIButton {
                 card.setImage(nil, for: .normal)
-                card.backgroundColor = cardBank.allCards[i - 1].color  // convert tag to index
+                card.backgroundColor = cardBank.cards[i - 1].color  // convert tag to index
             }
         }
     }
