@@ -21,6 +21,27 @@ class CardBank {
         view.layer.shadowOpacity = 1
     }
     
+    func flipCard(withImage image: UIImage, on button: UIButton) {
+        if button.currentImage == image {
+            playSound(forObject: "flipCardSound")
+            button.setImage(nil, for: .normal)
+            
+            for i in 0...23 {
+                if image == allCards[i].image {
+                    button.backgroundColor = allCards[i].color
+                }
+            }
+        } else {
+            button.setImage(image, for: .normal)
+            
+            for i in 0...23 {
+                if image == allCards[i].image {
+                    playSound(forObject: allCards[i].sound)
+                }
+            }
+        }
+    }
+    
     func playSound(forObject: String) {
         guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else {
             print("url not found")
@@ -28,13 +49,13 @@ class CardBank {
         }
         
         do {
-            /// this codes for making this app ready to takeover the device audio
+            // prepares app to takeover the device audio
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
             
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
             
-            player?.play()  // this was player!.play()
+            player?.play()
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
         }

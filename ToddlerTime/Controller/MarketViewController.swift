@@ -18,7 +18,7 @@ class MarketViewController: UIViewController {
         for i in 6...11 {
             // i + 1 here because array starts at 0, but tags start at 1 (since a tag can't be 0)
             if card.tag == i + 1 {
-                flipCard(withImage: cardBank.allCards[i].image, on: card)
+                cardBank.flipCard(withImage: cardBank.allCards[i].image, on: card)
             }
         }
     }
@@ -45,21 +45,21 @@ class MarketViewController: UIViewController {
         resetCards()
     }
     
-    func flipCard(withImage image: UIImage, on button: UIButton) {
-        if button.currentImage == image {
-            cardBank.playSound(forObject: "flipCardSound")
-            button.setImage(nil, for: .normal)
-            button.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
-        } else {
-            button.setImage(image, for: .normal)
-            
-            for i in 6...11 {
-                if image == cardBank.allCards[i].image {
-                    cardBank.playSound(forObject: cardBank.allCards[i].sound)
-                }
-            }
-        }
-    }
+//    func flipCard(withImage image: UIImage, on button: UIButton) {
+//        if button.currentImage == image {
+//            cardBank.playSound(forObject: "flipCardSound")
+//            button.setImage(nil, for: .normal)
+//            button.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
+//        } else {
+//            button.setImage(image, for: .normal)
+//            
+//            for i in 6...11 {
+//                if image == cardBank.allCards[i].image {
+//                    cardBank.playSound(forObject: cardBank.allCards[i].sound)
+//                }
+//            }
+//        }
+//    }
     
     func resetCards() {  // move this function to card.swift
         for i in 7...12 {
