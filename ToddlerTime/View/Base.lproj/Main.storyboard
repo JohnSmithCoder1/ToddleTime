@@ -237,7 +237,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Jf-pE-MEd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="appleTabBarIcon" id="viy-xP-dYc"/>
+                    <tabBarItem key="tabBarItem" title="" image="marketTabBarIcon" id="viy-xP-dYc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUC-pu-tfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -463,7 +463,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vYt-v9-tId"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="star@50x50" id="qzT-fY-Al6"/>
+                    <tabBarItem key="tabBarItem" title="" image="shapesTabBarIcon" id="qzT-fY-Al6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KE8-kW-RLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -474,7 +474,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fSx-QU-fRb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VWw-gU-r6l">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="VWw-gU-r6l">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -494,8 +494,8 @@
     </scenes>
     <resources>
         <image name="123@50x50" width="50" height="50"/>
-        <image name="appleTabBarIcon" width="46" height="46"/>
         <image name="cow@50x50" width="50" height="50"/>
-        <image name="star@50x50" width="50" height="50"/>
+        <image name="marketTabBarIcon" width="46" height="46"/>
+        <image name="shapesTabBarIcon" width="46" height="46"/>
     </resources>
 </document>
