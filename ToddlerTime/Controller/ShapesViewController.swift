@@ -20,7 +20,8 @@ class ShapesViewController: UIViewController {
             if card.tag == i + 1 {
                 if let image = UIImage(named: cardBank.allCards[i].image) {
                     cardBank.flipCard(withImage: image, on: card)
-                }            }
+                }
+            }
         }
     }
     
