@@ -16,7 +16,7 @@ class ShapesViewController: UIViewController {
         guard let card = sender as? UIButton else { return }
         
         for i in 18...23 {
-            if card.tag == i + 1 {  // convert index to tags which start at 1
+            if card.tag == i + 1 {  // convert index to tag which start at 1
                 if let image = UIImage(named: cardBank.allCards[i].image) {
                     cardBank.flipCard(withImage: image, on: card)
                 }
