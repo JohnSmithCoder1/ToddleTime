@@ -21,10 +21,6 @@ class CardBank {
         view.layer.shadowOpacity = 1
     }
     
-    func resetCards() {
-        // add universal card rest func here?
-    }
-    
     func playSound(forObject: String) {
         guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else {
             print("url not found")

@@ -29,7 +29,9 @@ class FarmViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground), name: .UIApplicationDidEnterBackground, object: nil)
         
         for i in 1...6 {
-            cardBank.setupCardStyle(view: view.viewWithTag(i)!)
+            if let card = view.viewWithTag(i) {
+                cardBank.setupCardStyle(view: card)
+            }
         }
     }
     
@@ -59,7 +61,7 @@ class FarmViewController: UIViewController {
         }
     }
     
-    func resetCards() {  // move this function to card.swift
+    func resetCards() {
         for i in 1...6 {
             if let card = view.viewWithTag(i) as? UIButton {
                 card.setImage(nil, for: .normal)

@@ -29,7 +29,9 @@ class NumbersViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground), name: .UIApplicationDidEnterBackground, object: nil)
         
         for i in 13...18 {
-            cardBank.setupCardStyle(view: view.viewWithTag(i)!)
+            if let card = view.viewWithTag(i) {
+                cardBank.setupCardStyle(view: card)
+            }
         }
     }
     
