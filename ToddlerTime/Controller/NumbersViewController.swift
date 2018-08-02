@@ -37,7 +37,7 @@ class NumbersViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        cardBank.playSound(forObject: "pageTurnSound")
+        cardBank.playSound(forSoundNamed: "pageTurnSound")
         resetCards()
     }
     

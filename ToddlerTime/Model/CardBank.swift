@@ -23,7 +23,7 @@ class CardBank {
     
     func flipCard(withImage image: UIImage, on button: UIButton) {
         if button.currentImage == image {
-            playSound(forObject: "flipCardSound")
+            playSound(forSoundNamed: "flipCardSound")
             button.setImage(nil, for: .normal)
             
             for i in 0...23 {
@@ -36,14 +36,14 @@ class CardBank {
             
             for i in 0...23 {
                 if image == UIImage(named: cards[i].image) {
-                    playSound(forObject: cards[i].sound)
+                    playSound(forSoundNamed: cards[i].sound)
                 }
             }
         }
     }
     
-    func playSound(forObject: String) {
-        guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else { return }
+    func playSound(forSoundNamed: String) {
+        guard let url = Bundle.main.url(forResource: forSoundNamed, withExtension: "wav") else { return }
         do {
             player = try AVAudioPlayer(contentsOf: url)
             guard let player = player else { return }
