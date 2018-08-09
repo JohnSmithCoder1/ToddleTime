@@ -11,7 +11,7 @@ import AVFoundation
 
 class CardBank {
     var cards = [Card]()
-    var player: AVAudioPlayer?
+    var audioPlayer: AVAudioPlayer?
     
     func setupCardStyle(view: UIView) {
         view.layer.borderWidth = 1
@@ -23,7 +23,7 @@ class CardBank {
     
     func flipCard(withImage image: UIImage, on button: UIButton) {
         if button.currentImage == image {
-            playSound(forSound: "flipCardSound")
+            playSound(forObject: "flipCardSound")
             button.setImage(nil, for: .normal)
             
             for i in 0...23 {
@@ -36,19 +36,19 @@ class CardBank {
             
             for i in 0...23 {
                 if image == UIImage(named: cards[i].image) {
-                    playSound(forSound: cards[i].sound)
+                    playSound(forObject: cards[i].sound)
                 }
             }
         }
     }
     
-    func playSound(forSound: String) {
-        guard let url = Bundle.main.url(forResource: forSound, withExtension: "wav") else { return }
+    func playSound(forObject: String) {
+        guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else { return }
         do {
-            player = try AVAudioPlayer(contentsOf: url)
-            guard let player = player else { return }
-            player.prepareToPlay()
-            player.play()
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            guard let audioPlayer = audioPlayer else { return }
+            audioPlayer.prepareToPlay()
+            audioPlayer.play()
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
         }
