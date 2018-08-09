@@ -37,7 +37,7 @@ class FarmViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        cardBank.playSound(forSoundNamed: "pageTurnSound")
+        cardBank.playSound(forSound: "pageTurnSound")
         resetCards()
     }
     
