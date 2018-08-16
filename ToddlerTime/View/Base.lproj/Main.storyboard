@@ -129,7 +129,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="cow@50x50" id="lfF-pd-M0e"/>
+                    <tabBarItem key="tabBarItem" title="" image="farmTabBarIcon" id="lfF-pd-M0e"/>
                     <navigationItem key="navigationItem" title="Farm" id="Jrm-Nm-HrP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -526,7 +526,7 @@
     </scenes>
     <resources>
         <image name="123@50x50" width="50" height="50"/>
-        <image name="cow@50x50" width="50" height="50"/>
+        <image name="farmTabBarIcon" width="46" height="46"/>
         <image name="marketTabBarIcon" width="46" height="46"/>
         <image name="shapesTabBarIcon" width="46" height="46"/>
     </resources>
