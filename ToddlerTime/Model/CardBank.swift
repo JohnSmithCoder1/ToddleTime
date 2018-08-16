@@ -12,7 +12,7 @@ import AVFoundation
 class CardBank {
     var audioPlayer: AVAudioPlayer?
     
-    var cards = [
+    let cards = [
         Card(color: #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1), image: "cowImageLarge", sound: "cowSound"),
         Card(color: #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1), image: "dogImage", sound: "dogSound"),
         Card(color: #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1), image: "chickenImage", sound: "chickenSound"),
