@@ -374,7 +374,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tX8-wC-afm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="123@50x50" id="azx-ge-idD"/>
+                    <tabBarItem key="tabBarItem" title="" image="numbersTabBarIcon" id="azx-ge-idD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fyv-70-DfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -525,9 +525,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="123@50x50" width="50" height="50"/>
         <image name="farmTabBarIcon" width="46" height="46"/>
         <image name="marketTabBarIcon" width="46" height="46"/>
+        <image name="numbersTabBarIcon" width="46" height="46"/>
         <image name="shapesTabBarIcon" width="46" height="46"/>
     </resources>
 </document>
