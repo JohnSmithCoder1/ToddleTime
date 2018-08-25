@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loadingScreen" translatesAutoresizingMaskIntoConstraints="NO" id="YUA-gz-w1b">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Simulator Screen Shot - iPhone 8 Plus - 2018-08-24 at 22.29.02" translatesAutoresizingMaskIntoConstraints="NO" id="YUA-gz-w1b">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -33,6 +33,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="loadingScreen" width="674" height="1202"/>
+        <image name="Simulator Screen Shot - iPhone 8 Plus - 2018-08-24 at 22.29.02" width="1242" height="2208"/>
     </resources>
 </document>
