@@ -36,7 +36,6 @@
 		0555D9E6209C09540066C07E /* fourSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9E5209C09540066C07E /* fourSound.wav */; };
 		0555D9E8209C095B0066C07E /* fiveSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9E7209C095B0066C07E /* fiveSound.wav */; };
 		0555D9EA209C09630066C07E /* sixSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9E9209C09630066C07E /* sixSound.wav */; };
-		056981F020F43DE600C831B0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056981EF20F43DE600C831B0 /* Launch Screen.storyboard */; };
 		05726101209B709800781381 /* pageTurnSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05726100209B709800781381 /* pageTurnSound.wav */; };
 		058B618D2093C9E200B8640D /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B618C2093C9E100B8640D /* NumbersViewController.swift */; };
 		05A3FDE8209920AB005BF8AF /* flipCardSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05A3FDE7209920AB005BF8AF /* flipCardSound.wav */; };
@@ -77,7 +76,6 @@
 		0555D9E5209C09540066C07E /* fourSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fourSound.wav; sourceTree = "<group>"; };
 		0555D9E7209C095B0066C07E /* fiveSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fiveSound.wav; sourceTree = "<group>"; };
 		0555D9E9209C09630066C07E /* sixSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sixSound.wav; sourceTree = "<group>"; };
-		056981EF20F43DE600C831B0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		05726100209B709800781381 /* pageTurnSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pageTurnSound.wav; sourceTree = "<group>"; };
 		058B618C2093C9E100B8640D /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		05A3FDE7209920AB005BF8AF /* flipCardSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flipCardSound.wav; sourceTree = "<group>"; };
@@ -204,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				050DBDCB20800375004278E6 /* Main.storyboard */,
-				056981EF20F43DE600C831B0 /* Launch Screen.storyboard */,
 				05B96410211122B5009C2E1C /* Assets.xcassets */,
 			);
 			path = View;
@@ -303,7 +300,6 @@
 				0555D9D1209C05E10066C07E /* diamondSound.wav in Resources */,
 				05726101209B709800781381 /* pageTurnSound.wav in Resources */,
 				050DBDCD20800375004278E6 /* Main.storyboard in Resources */,
-				056981F020F43DE600C831B0 /* Launch Screen.storyboard in Resources */,
 				050DBDE420800483004278E6 /* pigSound.wav in Resources */,
 				05B96411211122B5009C2E1C /* Assets.xcassets in Resources */,
 				0555D9D9209C06070066C07E /* starSound.wav in Resources */,
@@ -460,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YNF79H478;
@@ -480,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YNF79H478;
