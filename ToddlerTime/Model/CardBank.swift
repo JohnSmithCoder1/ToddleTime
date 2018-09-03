@@ -47,7 +47,7 @@ class CardBank {
         view.layer.borderColor = UIColor.black.cgColor
         view.layer.shadowOffset = CGSize(width: 4.5, height: 4.5)
         view.layer.shadowRadius = 4.5
-        view.layer.shadowOpacity = 1
+        view.layer.shadowOpacity = 0.85
     }
     
     func flipCard(withImage image: UIImage, on button: UIButton) {
