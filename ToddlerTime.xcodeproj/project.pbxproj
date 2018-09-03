@@ -12,7 +12,6 @@
 		050DBDCD20800375004278E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDCB20800375004278E6 /* Main.storyboard */; };
 		052C7AF6209810C8008B3BD5 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */; };
 		0548B602210A4AD00066132F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548B601210A4AD00066132F /* Card.swift */; };
-		054F7FB821387C3F00AC5F32 /* fiveSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 054F7FB721387C3F00AC5F32 /* fiveSound.wav */; };
 		0555D9C3209C01DE0066C07E /* appleSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9C2209C01DE0066C07E /* appleSound.wav */; };
 		0555D9C6209C02EF0066C07E /* bananaSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9C5209C02EF0066C07E /* bananaSound.wav */; };
 		0555D9C8209C03A50066C07E /* carrotSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9C7209C03A40066C07E /* carrotSound.wav */; };
@@ -27,7 +26,6 @@
 		0555D9DD209C06180066C07E /* triangleSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9DC209C06180066C07E /* triangleSound.wav */; };
 		0555D9DF209C092C0066C07E /* oneSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9DE209C092C0066C07E /* oneSound.wav */; };
 		0555D9E2209C09430066C07E /* twoSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9E1209C09430066C07E /* twoSound.wav */; };
-		0555D9E4209C094B0066C07E /* threeSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9E3209C094B0066C07E /* threeSound.wav */; };
 		0555D9E6209C09540066C07E /* fourSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9E5209C09540066C07E /* fourSound.wav */; };
 		0555D9EA209C09630066C07E /* sixSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9E9209C09630066C07E /* sixSound.wav */; };
 		05726101209B709800781381 /* pageTurnSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05726100209B709800781381 /* pageTurnSound.wav */; };
@@ -41,6 +39,8 @@
 		05D7B704213D7D8C0070FF0E /* cowSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05D7B6FE213D7D8C0070FF0E /* cowSound.wav */; };
 		05D7B705213D7D8C0070FF0E /* dogSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05D7B6FF213D7D8C0070FF0E /* dogSound.wav */; };
 		05D7B706213D7D8C0070FF0E /* pigSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05D7B700213D7D8C0070FF0E /* pigSound.wav */; };
+		05D7B708213DA2E70070FF0E /* fiveSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05D7B707213DA2E70070FF0E /* fiveSound.wav */; };
+		05D7B70A213DA2FA0070FF0E /* threeSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05D7B709213DA2FA0070FF0E /* threeSound.wav */; };
 		05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* MarketViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +52,6 @@
 		050DBDD320800376004278E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
 		0548B601210A4AD00066132F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		054F7FB721387C3F00AC5F32 /* fiveSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fiveSound.wav; sourceTree = "<group>"; };
 		0555D9C2209C01DE0066C07E /* appleSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = appleSound.wav; sourceTree = "<group>"; };
 		0555D9C5209C02EF0066C07E /* bananaSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bananaSound.wav; sourceTree = "<group>"; };
 		0555D9C7209C03A40066C07E /* carrotSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = carrotSound.wav; sourceTree = "<group>"; };
@@ -67,7 +66,6 @@
 		0555D9DC209C06180066C07E /* triangleSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = triangleSound.wav; sourceTree = "<group>"; };
 		0555D9DE209C092C0066C07E /* oneSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = oneSound.wav; sourceTree = "<group>"; };
 		0555D9E1209C09430066C07E /* twoSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = twoSound.wav; sourceTree = "<group>"; };
-		0555D9E3209C094B0066C07E /* threeSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = threeSound.wav; sourceTree = "<group>"; };
 		0555D9E5209C09540066C07E /* fourSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fourSound.wav; sourceTree = "<group>"; };
 		0555D9E9209C09630066C07E /* sixSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sixSound.wav; sourceTree = "<group>"; };
 		05726100209B709800781381 /* pageTurnSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pageTurnSound.wav; sourceTree = "<group>"; };
@@ -81,6 +79,8 @@
 		05D7B6FE213D7D8C0070FF0E /* cowSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowSound.wav; sourceTree = "<group>"; };
 		05D7B6FF213D7D8C0070FF0E /* dogSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dogSound.wav; sourceTree = "<group>"; };
 		05D7B700213D7D8C0070FF0E /* pigSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pigSound.wav; sourceTree = "<group>"; };
+		05D7B707213DA2E70070FF0E /* fiveSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fiveSound.wav; sourceTree = "<group>"; };
+		05D7B709213DA2FA0070FF0E /* threeSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = threeSound.wav; sourceTree = "<group>"; };
 		05DD0C4C209371D100E9788A /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,9 +177,9 @@
 			children = (
 				0555D9DE209C092C0066C07E /* oneSound.wav */,
 				0555D9E1209C09430066C07E /* twoSound.wav */,
-				0555D9E3209C094B0066C07E /* threeSound.wav */,
+				05D7B709213DA2FA0070FF0E /* threeSound.wav */,
 				0555D9E5209C09540066C07E /* fourSound.wav */,
-				054F7FB721387C3F00AC5F32 /* fiveSound.wav */,
+				05D7B707213DA2E70070FF0E /* fiveSound.wav */,
 				0555D9E9209C09630066C07E /* sixSound.wav */,
 			);
 			path = "Number Sounds";
@@ -280,17 +280,16 @@
 				0555D9D7209C05FB0066C07E /* squareSound.wav in Resources */,
 				0555D9D5209C05F40066C07E /* pepperSound.wav in Resources */,
 				0555D9CA209C04470066C07E /* broccoliSound.wav in Resources */,
-				0555D9E4209C094B0066C07E /* threeSound.wav in Resources */,
 				0555D9DD209C06180066C07E /* triangleSound.wav in Resources */,
 				0555D9C6209C02EF0066C07E /* bananaSound.wav in Resources */,
 				0555D9DB209C06110066C07E /* strawberrySound.wav in Resources */,
+				05D7B708213DA2E70070FF0E /* fiveSound.wav in Resources */,
 				05D7B701213D7D8C0070FF0E /* horseSound.wav in Resources */,
 				05D7B702213D7D8C0070FF0E /* catSound.wav in Resources */,
 				0555D9E6209C09540066C07E /* fourSound.wav in Resources */,
 				0555D9C8209C03A50066C07E /* carrotSound.wav in Resources */,
 				05D7B704213D7D8C0070FF0E /* cowSound.wav in Resources */,
 				05A3FDE8209920AB005BF8AF /* flipCardSound.wav in Resources */,
-				054F7FB821387C3F00AC5F32 /* fiveSound.wav in Resources */,
 				0555D9CE209C05C00066C07E /* circleSound.wav in Resources */,
 				0555D9D3209C05EA0066C07E /* heartSound.wav in Resources */,
 				0555D9C3209C01DE0066C07E /* appleSound.wav in Resources */,
@@ -304,6 +303,7 @@
 				05D7B706213D7D8C0070FF0E /* pigSound.wav in Resources */,
 				05B96411211122B5009C2E1C /* Assets.xcassets in Resources */,
 				0555D9D9209C06070066C07E /* starSound.wav in Resources */,
+				05D7B70A213DA2FA0070FF0E /* threeSound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
