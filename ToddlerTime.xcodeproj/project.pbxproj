@@ -12,12 +12,6 @@
 		050DBDCD20800375004278E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050DBDCB20800375004278E6 /* Main.storyboard */; };
 		052C7AF6209810C8008B3BD5 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */; };
 		0548B602210A4AD00066132F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548B601210A4AD00066132F /* Card.swift */; };
-		054F7FB121387C2300AC5F32 /* chickenSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 054F7FAB21387C2300AC5F32 /* chickenSound.wav */; };
-		054F7FB221387C2300AC5F32 /* cowSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 054F7FAC21387C2300AC5F32 /* cowSound.wav */; };
-		054F7FB321387C2300AC5F32 /* pigSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 054F7FAD21387C2300AC5F32 /* pigSound.wav */; };
-		054F7FB421387C2300AC5F32 /* horseSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 054F7FAE21387C2300AC5F32 /* horseSound.wav */; };
-		054F7FB521387C2300AC5F32 /* dogSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 054F7FAF21387C2300AC5F32 /* dogSound.wav */; };
-		054F7FB621387C2300AC5F32 /* catSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 054F7FB021387C2300AC5F32 /* catSound.wav */; };
 		054F7FB821387C3F00AC5F32 /* fiveSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 054F7FB721387C3F00AC5F32 /* fiveSound.wav */; };
 		0555D9C3209C01DE0066C07E /* appleSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9C2209C01DE0066C07E /* appleSound.wav */; };
 		0555D9C6209C02EF0066C07E /* bananaSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0555D9C5209C02EF0066C07E /* bananaSound.wav */; };
@@ -41,6 +35,12 @@
 		05A3FDE8209920AB005BF8AF /* flipCardSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05A3FDE7209920AB005BF8AF /* flipCardSound.wav */; };
 		05B9640E2110D742009C2E1C /* CardBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9640D2110D742009C2E1C /* CardBank.swift */; };
 		05B96411211122B5009C2E1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B96410211122B5009C2E1C /* Assets.xcassets */; };
+		05D7B701213D7D8C0070FF0E /* horseSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05D7B6FB213D7D8B0070FF0E /* horseSound.wav */; };
+		05D7B702213D7D8C0070FF0E /* catSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05D7B6FC213D7D8B0070FF0E /* catSound.wav */; };
+		05D7B703213D7D8C0070FF0E /* chickenSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05D7B6FD213D7D8B0070FF0E /* chickenSound.wav */; };
+		05D7B704213D7D8C0070FF0E /* cowSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05D7B6FE213D7D8C0070FF0E /* cowSound.wav */; };
+		05D7B705213D7D8C0070FF0E /* dogSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05D7B6FF213D7D8C0070FF0E /* dogSound.wav */; };
+		05D7B706213D7D8C0070FF0E /* pigSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 05D7B700213D7D8C0070FF0E /* pigSound.wav */; };
 		05DD0C4D209371D100E9788A /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD0C4C209371D100E9788A /* MarketViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,12 +52,6 @@
 		050DBDD320800376004278E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		052C7AF5209810C8008B3BD5 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
 		0548B601210A4AD00066132F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		054F7FAB21387C2300AC5F32 /* chickenSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chickenSound.wav; sourceTree = "<group>"; };
-		054F7FAC21387C2300AC5F32 /* cowSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowSound.wav; sourceTree = "<group>"; };
-		054F7FAD21387C2300AC5F32 /* pigSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pigSound.wav; sourceTree = "<group>"; };
-		054F7FAE21387C2300AC5F32 /* horseSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = horseSound.wav; sourceTree = "<group>"; };
-		054F7FAF21387C2300AC5F32 /* dogSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dogSound.wav; sourceTree = "<group>"; };
-		054F7FB021387C2300AC5F32 /* catSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catSound.wav; sourceTree = "<group>"; };
 		054F7FB721387C3F00AC5F32 /* fiveSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fiveSound.wav; sourceTree = "<group>"; };
 		0555D9C2209C01DE0066C07E /* appleSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = appleSound.wav; sourceTree = "<group>"; };
 		0555D9C5209C02EF0066C07E /* bananaSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bananaSound.wav; sourceTree = "<group>"; };
@@ -81,6 +75,12 @@
 		05A3FDE7209920AB005BF8AF /* flipCardSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flipCardSound.wav; sourceTree = "<group>"; };
 		05B9640D2110D742009C2E1C /* CardBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBank.swift; sourceTree = "<group>"; };
 		05B96410211122B5009C2E1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05D7B6FB213D7D8B0070FF0E /* horseSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = horseSound.wav; sourceTree = "<group>"; };
+		05D7B6FC213D7D8B0070FF0E /* catSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catSound.wav; sourceTree = "<group>"; };
+		05D7B6FD213D7D8B0070FF0E /* chickenSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chickenSound.wav; sourceTree = "<group>"; };
+		05D7B6FE213D7D8C0070FF0E /* cowSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowSound.wav; sourceTree = "<group>"; };
+		05D7B6FF213D7D8C0070FF0E /* dogSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dogSound.wav; sourceTree = "<group>"; };
+		05D7B700213D7D8C0070FF0E /* pigSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pigSound.wav; sourceTree = "<group>"; };
 		05DD0C4C209371D100E9788A /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,12 +136,12 @@
 		0555D9C1209BFAA80066C07E /* Farm Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				054F7FB021387C2300AC5F32 /* catSound.wav */,
-				054F7FAB21387C2300AC5F32 /* chickenSound.wav */,
-				054F7FAC21387C2300AC5F32 /* cowSound.wav */,
-				054F7FAF21387C2300AC5F32 /* dogSound.wav */,
-				054F7FAE21387C2300AC5F32 /* horseSound.wav */,
-				054F7FAD21387C2300AC5F32 /* pigSound.wav */,
+				05D7B6FC213D7D8B0070FF0E /* catSound.wav */,
+				05D7B6FD213D7D8B0070FF0E /* chickenSound.wav */,
+				05D7B6FE213D7D8C0070FF0E /* cowSound.wav */,
+				05D7B6FF213D7D8C0070FF0E /* dogSound.wav */,
+				05D7B6FB213D7D8B0070FF0E /* horseSound.wav */,
+				05D7B700213D7D8C0070FF0E /* pigSound.wav */,
 			);
 			path = "Farm Sounds";
 			sourceTree = "<group>";
@@ -278,32 +278,32 @@
 			files = (
 				0555D9E2209C09430066C07E /* twoSound.wav in Resources */,
 				0555D9D7209C05FB0066C07E /* squareSound.wav in Resources */,
-				054F7FB421387C2300AC5F32 /* horseSound.wav in Resources */,
 				0555D9D5209C05F40066C07E /* pepperSound.wav in Resources */,
 				0555D9CA209C04470066C07E /* broccoliSound.wav in Resources */,
 				0555D9E4209C094B0066C07E /* threeSound.wav in Resources */,
 				0555D9DD209C06180066C07E /* triangleSound.wav in Resources */,
 				0555D9C6209C02EF0066C07E /* bananaSound.wav in Resources */,
 				0555D9DB209C06110066C07E /* strawberrySound.wav in Resources */,
+				05D7B701213D7D8C0070FF0E /* horseSound.wav in Resources */,
+				05D7B702213D7D8C0070FF0E /* catSound.wav in Resources */,
 				0555D9E6209C09540066C07E /* fourSound.wav in Resources */,
 				0555D9C8209C03A50066C07E /* carrotSound.wav in Resources */,
+				05D7B704213D7D8C0070FF0E /* cowSound.wav in Resources */,
 				05A3FDE8209920AB005BF8AF /* flipCardSound.wav in Resources */,
 				054F7FB821387C3F00AC5F32 /* fiveSound.wav in Resources */,
 				0555D9CE209C05C00066C07E /* circleSound.wav in Resources */,
 				0555D9D3209C05EA0066C07E /* heartSound.wav in Resources */,
 				0555D9C3209C01DE0066C07E /* appleSound.wav in Resources */,
+				05D7B703213D7D8C0070FF0E /* chickenSound.wav in Resources */,
 				0555D9EA209C09630066C07E /* sixSound.wav in Resources */,
 				0555D9DF209C092C0066C07E /* oneSound.wav in Resources */,
 				0555D9D1209C05E10066C07E /* diamondSound.wav in Resources */,
-				054F7FB221387C2300AC5F32 /* cowSound.wav in Resources */,
 				05726101209B709800781381 /* pageTurnSound.wav in Resources */,
-				054F7FB621387C2300AC5F32 /* catSound.wav in Resources */,
 				050DBDCD20800375004278E6 /* Main.storyboard in Resources */,
+				05D7B705213D7D8C0070FF0E /* dogSound.wav in Resources */,
+				05D7B706213D7D8C0070FF0E /* pigSound.wav in Resources */,
 				05B96411211122B5009C2E1C /* Assets.xcassets in Resources */,
 				0555D9D9209C06070066C07E /* starSound.wav in Resources */,
-				054F7FB521387C2300AC5F32 /* dogSound.wav in Resources */,
-				054F7FB321387C2300AC5F32 /* pigSound.wav in Resources */,
-				054F7FB121387C2300AC5F32 /* chickenSound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
