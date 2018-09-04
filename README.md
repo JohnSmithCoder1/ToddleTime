@@ -1,6 +1,6 @@
 # Toddle Time
 
-Toddler Time is a simple flash card game for helping toddlers learn about animals, foods, numbers, and shapes in a fun and interactive way.
+Toddle Time is a simple flash card game for helping toddlers learn about animals, foods, numbers, and shapes in a fun and interactive way.
 
 ## Built With
 
