@@ -17,10 +17,10 @@ Toddle Time is a simple flash card game for helping toddlers learn about animals
 
 * John Smith
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 * Art provided by Jessica Little
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
